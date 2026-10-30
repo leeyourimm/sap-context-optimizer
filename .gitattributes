@@ -1,0 +1,7 @@
+# Upstream fixture bytes (including CRLF/trailing whitespace) are provenance data.
+# Do not normalize them; manifest hashes remain mandatory in tests/CI.
+tests/fixtures/public_exports/rap100/** -text -whitespace
+tests/fixtures/public_exports/clas/** -text -whitespace
+tests/fixtures/public_exports/intf/** -text -whitespace
+tests/fixtures/public_exports/fugr/** -text -whitespace
+tests/fixtures/public_exports/prog/** -text -whitespace

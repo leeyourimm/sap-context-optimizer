@@ -4,6 +4,9 @@ These are unmodified bytes downloaded over HTTPS at the exact Git commits in
 manifest.json. Git blob SHA-1 was checked against each upstream tree; SHA-256 and
 byte counts are recorded for offline CI verification. No ABAP is executed and no
 source is sent to Claude or another model during this evaluation.
+The repository's .gitattributes disables text normalization and style-only
+whitespace checks for these upstream directories, preserving original CRLF and
+spacing. Integrity checks are not disabled and expected hashes are not changed.
 
 - SAP-samples/abap-platform-rap100 — Apache-2.0; copyright 2024 SAP SE or an SAP
   affiliate company and abap-platform-rap110 contributors, as stated in the
