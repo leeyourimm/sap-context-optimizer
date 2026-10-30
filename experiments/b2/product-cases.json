@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "distinction": "Concrete module questions are a separate pending accuracy group, not successful missing-information tests",
+  "cases": [
+    {
+      "id": "call-function-system-fields",
+      "group": "official_abap_accuracy",
+      "question": "ABAP 7.54에서 일반 CALL FUNCTION, 처리한 비클래스 예외, IN UPDATE TASK 등록 직후의 sy-subrc를 구분하세요.",
+      "status": "reviewed_public_body",
+      "scope": {
+        "product": "ABAP",
+        "release": "7.54",
+        "deployment": "on-premise",
+        "abap_language_version": "Standard ABAP"
+      },
+      "conditions": [
+        "Standard ABAP 7.54 syntax; no claim about ABAP Cloud API release",
+        "Ordinary call versus handled non-class-based exception versus update registration must be separated"
+      ],
+      "document_id": "abap-754-call-function",
+      "source_url": "https://help.sap.com/doc/abapdocu_754_index_htm/7.54/en-US/abapcall_function.htm",
+      "section": "System Fields",
+      "body_sha256": "bfced92ee6d28807a00891329d610173d6ad3a37e52d74e2a7e37a62add3361e",
+      "supporting_quotes": [
+        "The system field sy-subrc is set to 0 when a function module is called.",
+        "If a non-class-based exception is raised that was handled by the assignment of a value, sy-subrc is set to this value.",
+        "After the registration of an update function module using CALL FUNCTION ... IN UPDATE TASK , sy-subrc is undefined."
+      ],
+      "oracle_origin": "Manual inspection of live SAP Help body; no model judge",
+      "answer_accuracy_measured": false
+    },
+    {
+      "id": "select-empty-result",
+      "group": "official_abap_accuracy",
+      "question": "ABAP 7.54 일반 SELECT 결과가 비어 있을 때 sy-subrc를 설명하고 aggregate-only SELECT의 예외를 구별하세요.",
+      "status": "reviewed_public_body",
+      "scope": {
+        "product": "ABAP",
+        "release": "7.54",
+        "deployment": "on-premise",
+        "abap_language_version": "Standard ABAP"
+      },
+      "conditions": [
+        "Ordinary SELECT without aggregate-only projection",
+        "Aggregate-only projection must not be generalized from ordinary empty-result behavior"
+      ],
+      "document_id": "abap-754-select",
+      "source_url": "https://help.sap.com/doc/abapdocu_754_index_htm/7.54/en-US/abapselect.htm",
+      "section": "System Fields",
+      "body_sha256": "341217e052f8677c4030aad72744cdea4f637ee22a076801a8f9b9664f4f66fd",
+      "supporting_quotes": [
+        "The statement SELECT sets sy-subrc to 4 if the results set is empty.",
+        "Special rules apply when only aggregate expressions specified as columns are used in the SELECT list of the SELECT clause."
+      ],
+      "oracle_origin": "Manual inspection of live SAP Help body; no model judge",
+      "answer_accuracy_measured": false
+    },
+    {
+      "id": "fi-reconciliation",
+      "group": "module_product_accuracy",
+      "module": "FI",
+      "question": "S/4HANA 2022 on-premise에서 고객 보조부 전기와 조정계정의 관계 및 조정계정 직접 전기 제한을 설명하세요. 전기 방식과 예외 조건은 공식 제품 원문으로 확인하세요.",
+      "status": "evidence_not_acquired",
+      "scope": {
+        "product": "SAP S/4HANA",
+        "release": "2022",
+        "deployment": "on-premise",
+        "abap_language_version": "Standard ABAP"
+      },
+      "conditions": [
+        "Customer subledger, reconciliation account type and posting method must be identified"
+      ],
+      "document_id": null,
+      "source_url": null,
+      "section": null,
+      "body_sha256": null,
+      "supporting_quotes": [],
+      "oracle_origin": null,
+      "answer_accuracy_measured": false,
+      "gap_reason": "No reviewed applicable public product passage/section acquired; product landing shell is not evidence",
+      "discovery_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE"
+    },
+    {
+      "id": "co-settlement",
+      "group": "module_product_accuracy",
+      "module": "CO",
+      "question": "S/4HANA 2022 on-premise 내부오더 정산에서 수신자와 정산규칙 유효기간은 무엇을 확인해야 하나요? 실제 허용 수신자와 설정에 따라 달라지는 조건을 구분하세요.",
+      "status": "evidence_not_acquired",
+      "scope": {
+        "product": "SAP S/4HANA",
+        "release": "2022",
+        "deployment": "on-premise",
+        "abap_language_version": "Standard ABAP"
+      },
+      "conditions": [
+        "Internal order settlement; settlement profile, receiver type and period-specific rules unspecified"
+      ],
+      "document_id": null,
+      "source_url": null,
+      "section": null,
+      "body_sha256": null,
+      "supporting_quotes": [],
+      "oracle_origin": null,
+      "answer_accuracy_measured": false,
+      "gap_reason": "No reviewed applicable public product passage/section acquired; product landing shell is not evidence",
+      "discovery_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE"
+    },
+    {
+      "id": "mm-valuated-gr",
+      "group": "module_product_accuracy",
+      "module": "MM",
+      "question": "S/4HANA 2022 on-premise의 재고 구매오더에 대해 평가 입고와 비평가 입고의 회계전표 생성 차이를 비교하세요. GR/IR 관련 적용 조건도 확인하세요.",
+      "status": "evidence_not_acquired",
+      "scope": {
+        "product": "SAP S/4HANA",
+        "release": "2022",
+        "deployment": "on-premise",
+        "abap_language_version": "Standard ABAP"
+      },
+      "conditions": [
+        "Stock purchase order; valuated versus non-valuated goods receipt, account assignment and valuation must be distinguished"
+      ],
+      "document_id": null,
+      "source_url": null,
+      "section": null,
+      "body_sha256": null,
+      "supporting_quotes": [],
+      "oracle_origin": null,
+      "answer_accuracy_measured": false,
+      "gap_reason": "No reviewed applicable public product passage/section acquired; product landing shell is not evidence",
+      "discovery_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE"
+    },
+    {
+      "id": "sd-billing-accounting",
+      "group": "module_product_accuracy",
+      "module": "SD",
+      "question": "S/4HANA 2022 on-premise에서 청구문서 생성과 회계 전기의 차이를 설명하고 전기블록과 계정결정 확인 조건을 구분하세요. 특정 오류나 T-code를 추측하지 마세요.",
+      "status": "evidence_not_acquired",
+      "scope": {
+        "product": "SAP S/4HANA",
+        "release": "2022",
+        "deployment": "on-premise",
+        "abap_language_version": "Standard ABAP"
+      },
+      "conditions": [
+        "Billing type, posting block, account determination and document flow unspecified; no message code provided"
+      ],
+      "document_id": null,
+      "source_url": null,
+      "section": null,
+      "body_sha256": null,
+      "supporting_quotes": [],
+      "oracle_origin": null,
+      "answer_accuracy_measured": false,
+      "gap_reason": "No reviewed applicable public product passage/section acquired; product landing shell is not evidence",
+      "discovery_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE"
+    }
+  ]
+}

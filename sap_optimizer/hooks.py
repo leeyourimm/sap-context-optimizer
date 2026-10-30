@@ -47,7 +47,8 @@ def hook(root, event):
                 "External access: " + str(p["external_access"]) + "; declared scope (not independently verified): " + json.dumps(scope, ensure_ascii=False)}}
     if name == "PostToolUse":
         if event.get("tool_name") in ("mcp__sap-context__sap_repo_search", "mcp__sap-context__sap_repo_read",
-                                      "mcp__sap-context__sap_repo_keyword", "mcp__sap-context__sap_repo_search_compact"):
+                                      "mcp__sap-context__sap_repo_keyword", "mcp__sap-context__sap_repo_search_compact",
+                                      "mcp__sap-context__sap_repo_search_scoped"):
             result = event.get("tool_response", {})
             if isinstance(result, dict) and not result.get("isError"):
                 data = result.get("structuredContent")
@@ -66,7 +67,9 @@ def hook(root, event):
                     state.mark_repository(session)
                     return {"hookSpecificOutput": {"hookEventName": name, "additionalContext":
                             "Local snapshot source observed, not official documentation or runtime proof. Check hash, declarations, "
-                            "missing references and full original before edits. Never send this source externally."}}
+                            "missing references and full original before edits. Scoped responses defer records: inspect reference_scope "
+                            "and diagnostics_summary, fetch relevant snapshot detail pages before asserting cause/coverage. "
+                            "Never send this source externally."}}
             return {}
         if event.get("tool_name") not in ("mcp__sap-context__sap_read_step", "mcp__sap-context__sap_help_document",
                                            "mcp__sap-context__sap_read_tutorial_page"):

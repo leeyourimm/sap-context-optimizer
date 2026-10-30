@@ -24,6 +24,6 @@
     "rap-validation"
   ],
   "expected_cli_version": "REPLACE_WITH_PREFLIGHT_VERSION",
-  "suite_sha256": "3a03aac6b51c1d83d83de5897bcc31e2101fd761e5ea1a421317c106172b2966",
+  "suite_sha256": "106967f00369b64990e16b3d659e46a98e92852c1656911237ab0f1afbac6083",
   "corpus_manifest_sha256": "3c34f815cb7d1724ca332219bb84c87ca3154ba54bf82ca2f0ecd89eb69b4e66"
 }

@@ -1,0 +1,121 @@
+{
+  "snapshot": "5737ec36d36e444deaaee6b0fc1979dc3651b49fd6d824931f74a92650a1ecd7",
+  "fixture_kind": "explicit_local_requirements_not_SAP_accuracy_benchmark",
+  "A_full_files": {
+    "source_chars": 24441,
+    "source_bytes": 24441,
+    "payload_chars": 25748,
+    "payload_bytes": 25748,
+    "mcp_response_chars": 52304,
+    "mcp_response_bytes": 52304,
+    "ranges": [
+      {
+        "path": "examples/abapgit/zcl_b1_helper.clas.abap",
+        "start_line": 1,
+        "end_line": 13,
+        "sha256": "5ba93c9e449cd0dd1a52463eb986408e6196fe95871b65caed26b2d17d1766e3"
+      },
+      {
+        "path": "examples/abapgit/zcl_b1_large.clas.abap",
+        "start_line": 1,
+        "end_line": 489,
+        "sha256": "97d805197510894db386294a47f57d1a6d2bcd31f700e680480cc901991de1c1"
+      }
+    ],
+    "missing_required_objects": [],
+    "missing_required_symbols": [],
+    "quality_gate_passed": true,
+    "tokens": null,
+    "billing_cost": null
+  },
+  "B_selected_code": {
+    "source_chars": 118,
+    "source_bytes": 118,
+    "payload_chars": 3266,
+    "payload_bytes": 3266,
+    "mcp_response_chars": 6954,
+    "mcp_response_bytes": 6954,
+    "ranges": [
+      {
+        "path": "examples/abapgit/zcl_b1_large.clas.abap",
+        "start_line": 123,
+        "end_line": 123,
+        "sha256": "97d805197510894db386294a47f57d1a6d2bcd31f700e680480cc901991de1c1"
+      },
+      {
+        "path": "examples/abapgit/zcl_b1_large.clas.abap",
+        "start_line": 486,
+        "end_line": 488,
+        "sha256": "97d805197510894db386294a47f57d1a6d2bcd31f700e680480cc901991de1c1"
+      }
+    ],
+    "missing_required_objects": [
+      "CLAS:ZCL_B1_HELPER"
+    ],
+    "missing_required_symbols": [
+      {
+        "object_id": "CLAS:ZCL_B1_HELPER",
+        "symbol": "CHECK",
+        "kind": "method_declaration"
+      },
+      {
+        "object_id": "CLAS:ZCL_B1_HELPER",
+        "symbol": "CHECK",
+        "kind": "method_implementation"
+      }
+    ],
+    "quality_gate_passed": false,
+    "tokens": null,
+    "billing_cost": null
+  },
+  "C_code_and_direct_references": {
+    "source_chars": 279,
+    "source_bytes": 279,
+    "payload_chars": 5252,
+    "payload_bytes": 5252,
+    "mcp_response_chars": 11118,
+    "mcp_response_bytes": 11118,
+    "ranges": [
+      {
+        "path": "examples/abapgit/zcl_b1_large.clas.abap",
+        "start_line": 123,
+        "end_line": 123,
+        "sha256": "97d805197510894db386294a47f57d1a6d2bcd31f700e680480cc901991de1c1"
+      },
+      {
+        "path": "examples/abapgit/zcl_b1_large.clas.abap",
+        "start_line": 486,
+        "end_line": 488,
+        "sha256": "97d805197510894db386294a47f57d1a6d2bcd31f700e680480cc901991de1c1"
+      },
+      {
+        "path": "examples/abapgit/zcl_b1_helper.clas.abap",
+        "start_line": 4,
+        "end_line": 4,
+        "sha256": "5ba93c9e449cd0dd1a52463eb986408e6196fe95871b65caed26b2d17d1766e3"
+      },
+      {
+        "path": "examples/abapgit/zcl_b1_helper.clas.abap",
+        "start_line": 7,
+        "end_line": 9,
+        "sha256": "5ba93c9e449cd0dd1a52463eb986408e6196fe95871b65caed26b2d17d1766e3"
+      }
+    ],
+    "missing_required_objects": [],
+    "missing_required_symbols": [],
+    "quality_gate_passed": true,
+    "tokens": null,
+    "billing_cost": null
+  },
+  "note": "Actual source and JSON payload size, no token estimate or billing savings. Missing code fails quality gate.",
+  "wire_measurement": "Server serializer, response id=1, newline included; full files measured as separate read responses",
+  "B_stages": [
+    "exact_object_and_symbol",
+    "bm25_lexical_expansion"
+  ],
+  "C_stages": [
+    "exact_object_and_symbol",
+    "bm25_lexical_expansion",
+    "explicit_direct_references_outgoing_and_incoming"
+  ]
+}

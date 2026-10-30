@@ -1,0 +1,909 @@
+{
+  "upstreams": [
+    {
+      "repository": "SAP-samples/abap-platform-rap100",
+      "commit": "0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1",
+      "license": "Apache-2.0"
+    },
+    {
+      "repository": "abapGit-tests/CLAS",
+      "commit": "d747b65a17f586e4921f5c925457a7972b0bedfa",
+      "license": "MIT"
+    },
+    {
+      "repository": "abapGit-tests/INTF",
+      "commit": "abd7e177e506ab0d3467477c153d8b034155045f",
+      "license": "MIT"
+    },
+    {
+      "repository": "abapGit-tests/FUGR",
+      "commit": "fa666575055f97264cf250bced5ee5ebfd2dff53",
+      "license": "MIT"
+    },
+    {
+      "repository": "abapGit-tests/PROG",
+      "commit": "bb5c952ce2306c80a9dc29fd45ccd463e65582bb",
+      "license": "MIT"
+    }
+  ],
+  "verified_upstream_files": 64,
+  "objects": 15,
+  "indexed_files": 48,
+  "units": 192,
+  "diagnostics": [
+    {
+      "path": "tests/fixtures/public_exports/clas/src/package.devc.xml",
+      "status": "unsupported_object_type",
+      "type": "DEVC"
+    },
+    {
+      "path": "tests/fixtures/public_exports/fugr/src/package.devc.xml",
+      "status": "unsupported_object_type",
+      "type": "DEVC"
+    },
+    {
+      "path": "tests/fixtures/public_exports/intf/src/package.devc.xml",
+      "status": "unsupported_object_type",
+      "type": "DEVC"
+    },
+    {
+      "path": "tests/fixtures/public_exports/prog/src/package.devc.xml",
+      "status": "unsupported_object_type",
+      "type": "DEVC"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/a44673334fcfd61de050afc610a718ht.sush.xml",
+      "status": "unsupported_object_type",
+      "type": "SUSH"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/package.devc.xml",
+      "status": "unsupported_object_type",
+      "type": "DEVC"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/zrap100_atravsol.tabl.xml",
+      "status": "unsupported_object_type",
+      "type": "TABL"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/zrap100_c_traveltp_sol.ddlx.xml",
+      "status": "unsupported_object_type",
+      "type": "DDLX"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/zrap100_dtravsol.tabl.xml",
+      "status": "unsupported_object_type",
+      "type": "TABL"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/zrap100_ui_travel_o4_sol_0001_g4ba.sco2.xml",
+      "status": "unsupported_object_type",
+      "type": "SCO2"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/zrap100_ui_travel_o4_sol__00001_ibs.sia6.xml",
+      "status": "unsupported_object_type",
+      "type": "SIA6"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/zrap100_ui_travel_o4_sol__00002_ibs.sia6.xml",
+      "status": "unsupported_object_type",
+      "type": "SIA6"
+    },
+    {
+      "path": "tests/fixtures/public_exports/clas/src/package.devc.xml",
+      "status": "unvalidated_source_raw_fallback"
+    },
+    {
+      "path": "tests/fixtures/public_exports/fugr/src/package.devc.xml",
+      "status": "unvalidated_source_raw_fallback"
+    },
+    {
+      "path": "tests/fixtures/public_exports/fugr/src/zabapgit_unit_test.fugr.lzabapgit_unit_testtop.xml",
+      "status": "unvalidated_source_raw_fallback"
+    },
+    {
+      "path": "tests/fixtures/public_exports/fugr/src/zabapgit_unit_test.fugr.saplzabapgit_unit_test.xml",
+      "status": "unvalidated_source_raw_fallback"
+    },
+    {
+      "path": "tests/fixtures/public_exports/fugr/src/zabapgit_unit_test.fugr.screen_0100.abap",
+      "status": "unvalidated_source_raw_fallback"
+    },
+    {
+      "path": "tests/fixtures/public_exports/intf/src/package.devc.xml",
+      "status": "unvalidated_source_raw_fallback"
+    },
+    {
+      "path": "tests/fixtures/public_exports/prog/src/package.devc.xml",
+      "status": "unvalidated_source_raw_fallback"
+    },
+    {
+      "path": "tests/fixtures/public_exports/prog/src/zag_unit_test.prog.screen_2000.abap",
+      "status": "unvalidated_source_raw_fallback"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/a44673334fcfd61de050afc610a718ht.sush.xml",
+      "status": "unvalidated_source_raw_fallback"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/package.devc.xml",
+      "status": "unvalidated_source_raw_fallback"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/zcl_rap100_gen_data_sol.clas.abap",
+      "status": "partial_parse",
+      "detail": "instance_dispatch_unresolved"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/zcl_rap100_gen_data_sol.clas.abap",
+      "status": "partial_parse",
+      "detail": "unsupported_macro_or_template"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/zrap100_atravsol.tabl.xml",
+      "status": "unvalidated_source_raw_fallback"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/zrap100_c_traveltp_sol.ddlx.xml",
+      "status": "unvalidated_source_raw_fallback"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/zrap100_cl_eml_sol.clas.abap",
+      "status": "partial_parse",
+      "detail": "instance_dispatch_unresolved"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/zrap100_cl_eml_sol.clas.abap",
+      "status": "partial_parse",
+      "detail": "unsupported_macro_or_template"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/zrap100_dtravsol.tabl.xml",
+      "status": "unvalidated_source_raw_fallback"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/zrap100_tc_travel_eml_sol.clas.abap",
+      "status": "partial_parse",
+      "detail": "instance_dispatch_unresolved"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/zrap100_ui_travel_o4_sol_0001_g4ba.sco2.xml",
+      "status": "unvalidated_source_raw_fallback"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/zrap100_ui_travel_o4_sol__00001_ibs.sia6.xml",
+      "status": "unvalidated_source_raw_fallback"
+    },
+    {
+      "path": "tests/fixtures/public_exports/rap100/src/zrap100_ui_travel_o4_sol__00002_ibs.sia6.xml",
+      "status": "unvalidated_source_raw_fallback"
+    }
+  ],
+  "cases": [
+    {
+      "id": "class-method",
+      "passed": true,
+      "required_objects": 1,
+      "missing_objects": [],
+      "required_ranges": 2,
+      "missing_ranges": [],
+      "source_chars": 501,
+      "source_bytes": 501,
+      "data_bytes": 9602,
+      "context_budget_limited": false,
+      "stages": [
+        "exact_object_and_symbol",
+        "bm25_lexical_expansion",
+        "explicit_direct_references_outgoing_and_incoming"
+      ],
+      "returned_ranges": [
+        {
+          "path": "tests/fixtures/public_exports/clas/src/zcl_ag_unit_test.clas.abap",
+          "start_line": 10,
+          "end_line": 10,
+          "sha256": "8d6a6a4fb8c7053acbe6b3f4849fab4cfe49e8c664d61ff436d09baaab194e46"
+        },
+        {
+          "path": "tests/fixtures/public_exports/clas/src/zcl_ag_unit_test.clas.abap",
+          "start_line": 18,
+          "end_line": 19,
+          "sha256": "8d6a6a4fb8c7053acbe6b3f4849fab4cfe49e8c664d61ff436d09baaab194e46"
+        },
+        {
+          "path": "tests/fixtures/public_exports/prog/src/zag_unit_test.prog.abap",
+          "start_line": 1,
+          "end_line": 6,
+          "sha256": "66a325a5a5e772e66f8ec9fef8c99bf083130480b7719c2697380d25d51c27fd"
+        },
+        {
+          "path": "tests/fixtures/public_exports/fugr/src/zabapgit_unit_test.fugr.z_abapgit_unit_test.abap",
+          "start_line": 1,
+          "end_line": 8,
+          "sha256": "85a690f68a302caf357ba4e5f468f7148d708ec8bfd327927158c6b51f58f96d"
+        }
+      ]
+    },
+    {
+      "id": "interface-method",
+      "passed": true,
+      "required_objects": 1,
+      "missing_objects": [],
+      "required_ranges": 1,
+      "missing_ranges": [],
+      "source_chars": 693,
+      "source_bytes": 693,
+      "data_bytes": 8382,
+      "context_budget_limited": false,
+      "stages": [
+        "exact_object_and_symbol",
+        "explicit_direct_references_outgoing_and_incoming"
+      ],
+      "returned_ranges": [
+        {
+          "path": "tests/fixtures/public_exports/intf/src/zif_abapgit_unit_test.intf.abap",
+          "start_line": 1,
+          "end_line": 2,
+          "sha256": "5c20dd3e0bf8a49174fd40623480daa20cd9d762bcd8d90f8fc33e2d4e23aa88"
+        },
+        {
+          "path": "tests/fixtures/public_exports/intf/src/zif_abapgit_unit_test.intf.abap",
+          "start_line": 5,
+          "end_line": 7,
+          "sha256": "5c20dd3e0bf8a49174fd40623480daa20cd9d762bcd8d90f8fc33e2d4e23aa88"
+        },
+        {
+          "path": "tests/fixtures/public_exports/intf/src/zif_abapgit_unit_test.intf.xml",
+          "start_line": 1,
+          "end_line": 20,
+          "sha256": "1b2659af1cc00ab4131dde2924aceea0c5e333cb45816cc018d700690bd1bd8f"
+        }
+      ]
+    },
+    {
+      "id": "function-module",
+      "passed": true,
+      "required_objects": 1,
+      "missing_objects": [],
+      "required_ranges": 1,
+      "missing_ranges": [],
+      "source_chars": 812,
+      "source_bytes": 812,
+      "data_bytes": 8121,
+      "context_budget_limited": false,
+      "stages": [
+        "exact_object_and_symbol",
+        "bm25_lexical_expansion",
+        "explicit_direct_references_outgoing_and_incoming"
+      ],
+      "returned_ranges": [
+        {
+          "path": "tests/fixtures/public_exports/fugr/src/zabapgit_unit_test.fugr.z_abapgit_unit_test.abap",
+          "start_line": 1,
+          "end_line": 8,
+          "sha256": "85a690f68a302caf357ba4e5f468f7148d708ec8bfd327927158c6b51f58f96d"
+        },
+        {
+          "path": "tests/fixtures/public_exports/fugr/src/zabapgit_unit_test.fugr.xml",
+          "start_line": 1,
+          "end_line": 20,
+          "sha256": "ffeddf885be9fc30e15e5be0d47c404b5e3c800ec532884e039d0b7ba744d1bb"
+        }
+      ]
+    },
+    {
+      "id": "program",
+      "passed": true,
+      "required_objects": 1,
+      "missing_objects": [],
+      "required_ranges": 1,
+      "missing_ranges": [],
+      "source_chars": 791,
+      "source_bytes": 791,
+      "data_bytes": 7461,
+      "context_budget_limited": false,
+      "stages": [
+        "exact_object_and_symbol",
+        "bm25_lexical_expansion",
+        "explicit_direct_references_outgoing_and_incoming"
+      ],
+      "returned_ranges": [
+        {
+          "path": "tests/fixtures/public_exports/prog/src/zag_unit_test.prog.xml",
+          "start_line": 1,
+          "end_line": 20,
+          "sha256": "dafaac03254ac8a6ee1df6c254c549fd3e82fa6806acee4f526828124c38caf9"
+        },
+        {
+          "path": "tests/fixtures/public_exports/prog/src/zag_unit_test.prog.abap",
+          "start_line": 1,
+          "end_line": 6,
+          "sha256": "66a325a5a5e772e66f8ec9fef8c99bf083130480b7719c2697380d25d51c27fd"
+        }
+      ]
+    },
+    {
+      "id": "root-cds",
+      "passed": true,
+      "required_objects": 2,
+      "missing_objects": [],
+      "required_ranges": 1,
+      "missing_ranges": [],
+      "source_chars": 3495,
+      "source_bytes": 3495,
+      "data_bytes": 48106,
+      "context_budget_limited": true,
+      "stages": [
+        "exact_object_and_symbol",
+        "explicit_direct_references_outgoing_and_incoming"
+      ],
+      "returned_ranges": [
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.bdef.asbdef",
+          "start_line": 4,
+          "end_line": 4,
+          "sha256": "0bc779daa279faf6cdd08225db646af422b5fe0f6a592acbfc6c94b98c0c58b3"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.bdef.xml",
+          "start_line": 1,
+          "end_line": 20,
+          "sha256": "a2e7eb6d3f1e9bd6d2fae817ebf4f9adcb5f72e313cbe0605f2290dde0c8896b"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.ddls.asddls",
+          "start_line": 3,
+          "end_line": 48,
+          "sha256": "6188855ebab1dfcc3d2c19637d515d1f50e21c8704fde14e60bb518ff5142e56"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.ddls.xml",
+          "start_line": 1,
+          "end_line": 13,
+          "sha256": "5d7d316c2bcdae2269b1a8d869025e5d5c4c6a1a84c3eae82dd66418870cedd6"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_bp_traveltp_sol.clas.abap",
+          "start_line": 1,
+          "end_line": 5,
+          "sha256": "4d8a6e16920184caec0c6087f260a487732899e0bb75cfbd68a5bf79f5a03d48"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_bp_traveltp_sol.clas.abap",
+          "start_line": 14,
+          "end_line": 14,
+          "sha256": "4d8a6e16920184caec0c6087f260a487732899e0bb75cfbd68a5bf79f5a03d48"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_cl_eml_sol.clas.abap",
+          "start_line": 1,
+          "end_line": 4,
+          "sha256": "95f3d8bea4e5b9e52f08af616a6a7d7aa64a362d1580f426f7dfbf0b2b4d8ae5"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_cl_eml_sol.clas.abap",
+          "start_line": 21,
+          "end_line": 26,
+          "sha256": "95f3d8bea4e5b9e52f08af616a6a7d7aa64a362d1580f426f7dfbf0b2b4d8ae5"
+        }
+      ]
+    },
+    {
+      "id": "projection-cds",
+      "passed": true,
+      "required_objects": 1,
+      "missing_objects": [],
+      "required_ranges": 1,
+      "missing_ranges": [],
+      "source_chars": 5818,
+      "source_bytes": 5818,
+      "data_bytes": 22199,
+      "context_budget_limited": false,
+      "stages": [
+        "exact_object_and_symbol",
+        "explicit_direct_references_outgoing_and_incoming"
+      ],
+      "returned_ranges": [
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_c_traveltp_sol.bdef.asbdef",
+          "start_line": 4,
+          "end_line": 4,
+          "sha256": "f7c2c9848e04ba701757ff20e67bcc33b8a85cb05a2fbe4b7ce353f204f75e89"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_c_traveltp_sol.bdef.xml",
+          "start_line": 1,
+          "end_line": 20,
+          "sha256": "d58e876b703c48c5773a33e3961218ed3edee983866481773b6dffbdbe2caa1f"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_c_traveltp_sol.ddls.asddls",
+          "start_line": 7,
+          "end_line": 45,
+          "sha256": "6dccbef3b2d96f92737a7a22c30a469f44eab0247433f314fced60c379659b18"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_c_traveltp_sol.ddls.xml",
+          "start_line": 1,
+          "end_line": 13,
+          "sha256": "6e72ceb368f7563954a1293baf18dc253925f14f63797c85cf57e8d9dc0fb1bd"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.ddls.asddls",
+          "start_line": 3,
+          "end_line": 48,
+          "sha256": "6188855ebab1dfcc3d2c19637d515d1f50e21c8704fde14e60bb518ff5142e56"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.ddls.xml",
+          "start_line": 1,
+          "end_line": 13,
+          "sha256": "5d7d316c2bcdae2269b1a8d869025e5d5c4c6a1a84c3eae82dd66418870cedd6"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_ui_travel_sol.srvd.xml",
+          "start_line": 1,
+          "end_line": 19,
+          "sha256": "427983bd84063cc1db3be9cb392e38e376b750608f133f6c073bb8d1b6d739e0"
+        }
+      ]
+    },
+    {
+      "id": "abstract-cds",
+      "passed": true,
+      "required_objects": 1,
+      "missing_objects": [],
+      "required_ranges": 1,
+      "missing_ranges": [],
+      "source_chars": 901,
+      "source_bytes": 901,
+      "data_bytes": 7786,
+      "context_budget_limited": false,
+      "stages": [
+        "exact_object_and_symbol",
+        "bm25_lexical_expansion",
+        "explicit_direct_references_outgoing_and_incoming"
+      ],
+      "returned_ranges": [
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_a_travel_sol.ddls.asddls",
+          "start_line": 2,
+          "end_line": 15,
+          "sha256": "0b03a40871b761ff1a5fa9075ed6bd632ed86a06458cb6e50307f5d32cbfc634"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_a_travel_sol.ddls.xml",
+          "start_line": 1,
+          "end_line": 13,
+          "sha256": "1bebb18284b97503916110c8ec4ff17c603ce6bfe78acd0b9fabe98b62b81e7a"
+        }
+      ]
+    },
+    {
+      "id": "rap-action",
+      "passed": true,
+      "required_objects": 3,
+      "missing_objects": [],
+      "required_ranges": 3,
+      "missing_ranges": [],
+      "source_chars": 3208,
+      "source_bytes": 3208,
+      "data_bytes": 41455,
+      "context_budget_limited": false,
+      "stages": [
+        "exact_object_and_symbol",
+        "explicit_direct_references_outgoing_and_incoming"
+      ],
+      "returned_ranges": [
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap",
+          "start_line": 29,
+          "end_line": 30,
+          "sha256": "053e5b985191325b9b1ac571afeca1ffe7cf4d2d6c86b6afca932e808026a399"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap",
+          "start_line": 376,
+          "end_line": 396,
+          "sha256": "053e5b985191325b9b1ac571afeca1ffe7cf4d2d6c86b6afca932e808026a399"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.bdef.asbdef",
+          "start_line": 41,
+          "end_line": 41,
+          "sha256": "0bc779daa279faf6cdd08225db646af422b5fe0f6a592acbfc6c94b98c0c58b3"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.ddls.asddls",
+          "start_line": 3,
+          "end_line": 48,
+          "sha256": "6188855ebab1dfcc3d2c19637d515d1f50e21c8704fde14e60bb518ff5142e56"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.ddls.xml",
+          "start_line": 1,
+          "end_line": 13,
+          "sha256": "5d7d316c2bcdae2269b1a8d869025e5d5c4c6a1a84c3eae82dd66418870cedd6"
+        }
+      ]
+    },
+    {
+      "id": "rap-validation",
+      "passed": true,
+      "required_objects": 2,
+      "missing_objects": [],
+      "required_ranges": 3,
+      "missing_ranges": [],
+      "source_chars": 5999,
+      "source_bytes": 5999,
+      "data_bytes": 53431,
+      "context_budget_limited": false,
+      "stages": [
+        "exact_object_and_symbol",
+        "explicit_direct_references_outgoing_and_incoming"
+      ],
+      "returned_ranges": [
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap",
+          "start_line": 23,
+          "end_line": 24,
+          "sha256": "053e5b985191325b9b1ac571afeca1ffe7cf4d2d6c86b6afca932e808026a399"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap",
+          "start_line": 197,
+          "end_line": 257,
+          "sha256": "053e5b985191325b9b1ac571afeca1ffe7cf4d2d6c86b6afca932e808026a399"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.bdef.asbdef",
+          "start_line": 36,
+          "end_line": 36,
+          "sha256": "0bc779daa279faf6cdd08225db646af422b5fe0f6a592acbfc6c94b98c0c58b3"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.bdef.asbdef",
+          "start_line": 52,
+          "end_line": 52,
+          "sha256": "0bc779daa279faf6cdd08225db646af422b5fe0f6a592acbfc6c94b98c0c58b3"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.ddls.asddls",
+          "start_line": 3,
+          "end_line": 48,
+          "sha256": "6188855ebab1dfcc3d2c19637d515d1f50e21c8704fde14e60bb518ff5142e56"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.ddls.xml",
+          "start_line": 1,
+          "end_line": 13,
+          "sha256": "5d7d316c2bcdae2269b1a8d869025e5d5c4c6a1a84c3eae82dd66418870cedd6"
+        }
+      ]
+    },
+    {
+      "id": "rap-determination",
+      "passed": true,
+      "required_objects": 2,
+      "missing_objects": [],
+      "required_ranges": 2,
+      "missing_ranges": [],
+      "source_chars": 3377,
+      "source_bytes": 3377,
+      "data_bytes": 40973,
+      "context_budget_limited": false,
+      "stages": [
+        "exact_object_and_symbol",
+        "explicit_direct_references_outgoing_and_incoming"
+      ],
+      "returned_ranges": [
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap",
+          "start_line": 18,
+          "end_line": 21,
+          "sha256": "053e5b985191325b9b1ac571afeca1ffe7cf4d2d6c86b6afca932e808026a399"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap",
+          "start_line": 109,
+          "end_line": 133,
+          "sha256": "053e5b985191325b9b1ac571afeca1ffe7cf4d2d6c86b6afca932e808026a399"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.bdef.asbdef",
+          "start_line": 33,
+          "end_line": 33,
+          "sha256": "0bc779daa279faf6cdd08225db646af422b5fe0f6a592acbfc6c94b98c0c58b3"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.ddls.asddls",
+          "start_line": 3,
+          "end_line": 48,
+          "sha256": "6188855ebab1dfcc3d2c19637d515d1f50e21c8704fde14e60bb518ff5142e56"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.ddls.xml",
+          "start_line": 1,
+          "end_line": 13,
+          "sha256": "5d7d316c2bcdae2269b1a8d869025e5d5c4c6a1a84c3eae82dd66418870cedd6"
+        }
+      ]
+    },
+    {
+      "id": "service",
+      "passed": true,
+      "required_objects": 2,
+      "missing_objects": [],
+      "required_ranges": 1,
+      "missing_ranges": [],
+      "source_chars": 3629,
+      "source_bytes": 3629,
+      "data_bytes": 13685,
+      "context_budget_limited": false,
+      "stages": [
+        "exact_object_and_symbol",
+        "bm25_lexical_expansion",
+        "explicit_direct_references_outgoing_and_incoming"
+      ],
+      "returned_ranges": [
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_ui_travel_sol.srvd.xml",
+          "start_line": 1,
+          "end_line": 19,
+          "sha256": "427983bd84063cc1db3be9cb392e38e376b750608f133f6c073bb8d1b6d739e0"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_ui_travel_sol.srvd.srvdsrv",
+          "start_line": 1,
+          "end_line": 4,
+          "sha256": "1be0978f9e8d789fdb07dcd0a8a9022edf593b5308a4af619bca4324d1871836"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_c_traveltp_sol.ddls.asddls",
+          "start_line": 7,
+          "end_line": 45,
+          "sha256": "6dccbef3b2d96f92737a7a22c30a469f44eab0247433f314fced60c379659b18"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_c_traveltp_sol.ddls.xml",
+          "start_line": 1,
+          "end_line": 13,
+          "sha256": "6e72ceb368f7563954a1293baf18dc253925f14f63797c85cf57e8d9dc0fb1bd"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_ui_travel_o4_sol.srvb.xml",
+          "start_line": 1,
+          "end_line": 20,
+          "sha256": "a31d4e58afd6f2502d55fec656fe42943f393e1f35113a2fb9e253c311ddb22f"
+        }
+      ]
+    },
+    {
+      "id": "eml",
+      "passed": true,
+      "required_objects": 2,
+      "missing_objects": [],
+      "required_ranges": 1,
+      "missing_ranges": [],
+      "source_chars": 6001,
+      "source_bytes": 6001,
+      "data_bytes": 26552,
+      "context_budget_limited": false,
+      "stages": [
+        "exact_object_and_symbol",
+        "bm25_lexical_expansion",
+        "explicit_direct_references_outgoing_and_incoming"
+      ],
+      "returned_ranges": [
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_cl_eml_sol.clas.abap",
+          "start_line": 21,
+          "end_line": 26,
+          "sha256": "95f3d8bea4e5b9e52f08af616a6a7d7aa64a362d1580f426f7dfbf0b2b4d8ae5"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_cl_eml_sol.clas.abap",
+          "start_line": 87,
+          "end_line": 114,
+          "sha256": "95f3d8bea4e5b9e52f08af616a6a7d7aa64a362d1580f426f7dfbf0b2b4d8ae5"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_cl_eml_sol.clas.abap",
+          "start_line": 36,
+          "end_line": 70,
+          "sha256": "95f3d8bea4e5b9e52f08af616a6a7d7aa64a362d1580f426f7dfbf0b2b4d8ae5"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_cl_eml_sol.clas.abap",
+          "start_line": 33,
+          "end_line": 84,
+          "sha256": "95f3d8bea4e5b9e52f08af616a6a7d7aa64a362d1580f426f7dfbf0b2b4d8ae5"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.ddls.asddls",
+          "start_line": 3,
+          "end_line": 48,
+          "sha256": "6188855ebab1dfcc3d2c19637d515d1f50e21c8704fde14e60bb518ff5142e56"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.ddls.xml",
+          "start_line": 1,
+          "end_line": 13,
+          "sha256": "5d7d316c2bcdae2269b1a8d869025e5d5c4c6a1a84c3eae82dd66418870cedd6"
+        }
+      ]
+    },
+    {
+      "id": "namespace-and-korean",
+      "passed": true,
+      "required_objects": 1,
+      "missing_objects": [],
+      "required_ranges": 1,
+      "missing_ranges": [],
+      "source_chars": 5221,
+      "source_bytes": 5221,
+      "data_bytes": 47323,
+      "context_budget_limited": false,
+      "stages": [
+        "exact_object_and_symbol",
+        "explicit_direct_references_outgoing_and_incoming"
+      ],
+      "returned_ranges": [
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap",
+          "start_line": 20,
+          "end_line": 21,
+          "sha256": "053e5b985191325b9b1ac571afeca1ffe7cf4d2d6c86b6afca932e808026a399"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap",
+          "start_line": 138,
+          "end_line": 192,
+          "sha256": "053e5b985191325b9b1ac571afeca1ffe7cf4d2d6c86b6afca932e808026a399"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.bdef.asbdef",
+          "start_line": 35,
+          "end_line": 35,
+          "sha256": "0bc779daa279faf6cdd08225db646af422b5fe0f6a592acbfc6c94b98c0c58b3"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.bdef.asbdef",
+          "start_line": 51,
+          "end_line": 51,
+          "sha256": "0bc779daa279faf6cdd08225db646af422b5fe0f6a592acbfc6c94b98c0c58b3"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.ddls.asddls",
+          "start_line": 3,
+          "end_line": 48,
+          "sha256": "6188855ebab1dfcc3d2c19637d515d1f50e21c8704fde14e60bb518ff5142e56"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_r_traveltp_sol.ddls.xml",
+          "start_line": 1,
+          "end_line": 13,
+          "sha256": "5d7d316c2bcdae2269b1a8d869025e5d5c4c6a1a84c3eae82dd66418870cedd6"
+        }
+      ]
+    },
+    {
+      "id": "same-method-unscoped",
+      "passed": true,
+      "required_objects": 2,
+      "missing_objects": [],
+      "required_ranges": 2,
+      "missing_ranges": [],
+      "source_chars": 5024,
+      "source_bytes": 5024,
+      "data_bytes": 22499,
+      "context_budget_limited": false,
+      "stages": [
+        "exact_object_and_symbol",
+        "bm25_lexical_expansion"
+      ],
+      "returned_ranges": [
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zcl_rap100_gen_data_sol.clas.abap",
+          "start_line": 15,
+          "end_line": 58,
+          "sha256": "63317513a1fc7f697b76ec0cb12cbffcc5ae053605581ab4ab6af35beed0ea58"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_cl_eml_sol.clas.abap",
+          "start_line": 33,
+          "end_line": 84,
+          "sha256": "95f3d8bea4e5b9e52f08af616a6a7d7aa64a362d1580f426f7dfbf0b2b4d8ae5"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_cl_eml_sol.clas.abap",
+          "start_line": 1,
+          "end_line": 35,
+          "sha256": "95f3d8bea4e5b9e52f08af616a6a7d7aa64a362d1580f426f7dfbf0b2b4d8ae5"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zcl_rap100_gen_data_sol.clas.abap",
+          "start_line": 1,
+          "end_line": 35,
+          "sha256": "63317513a1fc7f697b76ec0cb12cbffcc5ae053605581ab4ab6af35beed0ea58"
+        }
+      ]
+    },
+    {
+      "id": "same-method-scoped",
+      "passed": true,
+      "required_objects": 1,
+      "missing_objects": [],
+      "required_ranges": 1,
+      "missing_ranges": [],
+      "source_chars": 2193,
+      "source_bytes": 2193,
+      "data_bytes": 16167,
+      "context_budget_limited": false,
+      "stages": [
+        "exact_object_and_symbol"
+      ],
+      "returned_ranges": [
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_cl_eml_sol.clas.abap",
+          "start_line": 1,
+          "end_line": 4,
+          "sha256": "95f3d8bea4e5b9e52f08af616a6a7d7aa64a362d1580f426f7dfbf0b2b4d8ae5"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_cl_eml_sol.clas.abap",
+          "start_line": 31,
+          "end_line": 31,
+          "sha256": "95f3d8bea4e5b9e52f08af616a6a7d7aa64a362d1580f426f7dfbf0b2b4d8ae5"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_cl_eml_sol.clas.abap",
+          "start_line": 33,
+          "end_line": 84,
+          "sha256": "95f3d8bea4e5b9e52f08af616a6a7d7aa64a362d1580f426f7dfbf0b2b4d8ae5"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_cl_eml_sol.clas.xml",
+          "start_line": 1,
+          "end_line": 16,
+          "sha256": "f5f8b3bf13b9335e3dae0e75e0bb79f9185da4b784110a442bb2a75c318af16b"
+        },
+        {
+          "path": "tests/fixtures/public_exports/rap100/src/zrap100_cl_eml_sol.clas.abap",
+          "start_line": 21,
+          "end_line": 26,
+          "sha256": "95f3d8bea4e5b9e52f08af616a6a7d7aa64a362d1580f426f7dfbf0b2b4d8ae5"
+        }
+      ]
+    }
+  ],
+  "passed": 15,
+  "total": 15,
+  "missing_required_objects": 0,
+  "missing_required_ranges": 0,
+  "model_calls": 0,
+  "billing_tokens": null,
+  "sap_answer_accuracy": "unverified",
+  "scope": "Known pinned public source retrieval regression; not a representative or held-out SAP correctness score",
+  "claude_runtime": {
+    "claude_executable_present": false,
+    "agent_sdk_discoverable": false,
+    "binding_presence_only": {
+      "ANTHROPIC_API_KEY": false,
+      "ANTHROPIC_AUTH_TOKEN": false,
+      "CLAUDE_CODE_USE_BEDROCK": false,
+      "CLAUDE_CODE_USE_VERTEX": false,
+      "CLAUDE_CODE_USE_FOUNDRY": false
+    },
+    "credential_readiness": "not_tested",
+    "runtime_test_attempted": false,
+    "model_calls": 0,
+    "automatic_tool_selection": "unverified",
+    "final_model_input": "unverified",
+    "actual_billing_tokens": null,
+    "actual_cost": null,
+    "reason": "Claude Code executable unavailable",
+    "output_contract": "content.text and structuredContent preserved; wire duplication is not billing-token evidence"
+  }
+}

@@ -1,5 +1,7 @@
 # B2: approved-runtime experiment
 
+**B2.1 update:** use [the current runbook](B21-RUNBOOK.md) for the one-task smoke, counterbalanced approvals, shared native/MCP source gate and expanded product-evidence groups. Version-1 approvals below remain legacy compatibility only.
+
 **Real Claude Code E2E has NOT run in the Codex environment.** The CLI is absent. Offline/mock tests prove runner and serialization contracts only. No installation, login, paid model request, JEV, or deployment is performed here.
 
 ## Read-only preflight
@@ -8,7 +10,7 @@
 python scripts/run_claude_e2e.py
 ```
 
-This probes executable presence, numeric CLI version, required help flags, read-only `claude auth status --json`, cwd read/write permission and POSIX process-group support. It prints no credentials, CLI stderr, account identity or credential-file contents. Unknown authentication/options/version fails closed. Provider-specific auth implementations which do not return `loggedIn: true` need a reviewed adapter; the runner does not try an interactive fallback.
+This probes executable presence, numeric CLI version, required help flags, read-only `claude auth status` (default JSON), cwd read/write permission and POSIX process-group support. It prints no credentials, CLI stderr, account identity or credential-file contents. Unknown authentication/options/version fails closed. Provider-specific auth implementations which do not return `loggedIn: true` need a reviewed adapter; the runner does not try an interactive fallback.
 
 ## Prepare an approved environment
 
@@ -17,7 +19,7 @@ Use a fresh, operator-controlled POSIX container/VM with this branch checked out
 The runner stages new temporary workspaces from only 64 hash-pinned public upstream files, fixed integration Python modules and three reviewed `.claude` files. It does not copy project-local policies/settings, private exports, `.git`, arbitrary modules, oracle files, or credentials. Same prompt/product/release/model/budget is used across arms. The normal repository policy remains unchanged.
 
 1. Run the preflight. Review CLI version, approved provider route, isolation, auth, budgets and the nine public tasks in `tasks.json`. Version/help checks cannot prove all flag semantics; an unsupported live CLI fails and preserves local logs.
-2. Copy `approval.example.json` to an **ignored local path**, e.g. `.sap-context/b2-approval.json`. Set the two approval booleans only after authorization, set `approved_by`, an exact approved model ID and observed CLI version. Review task/corpus hashes against the approved checkout. Select task IDs and bound cost/turn/time explicitly. Do not lower accuracy requirements to fit the budget. Example default cap is 9 × 3 × USD 0.50 = USD 13.50, not a predicted charge; actual invoice and failed/timeout charges require reconciliation.
+2. Copy `approval.example.json` to an **ignored local path**, e.g. `.sap-context/b2-approval.json`. Set the two approval booleans only after authorization, set `approved_by`, an exact approved model ID and observed CLI version. Review task/corpus hashes against the approved checkout. Select task IDs and bound cost/turn/time explicitly. Do not lower accuracy requirements to fit the budget. Example default requested client-control sum is 9 × 3 × USD 0.50 = USD 13.50, not a predicted charge or invoice cap; actual invoice and failed/timeout charges require reconciliation.
 3. Run one opt-in command (output parent must already exist; leaf must be NEW):
 
 ```sh
@@ -36,11 +38,11 @@ Never run this command merely to complete CI. No automatic retry, login, install
 
 B0 is the existing policy-enforced official MCP integration, not unrestricted direct access to SAP. Settings sources are project-only; strict MCP ignores ambient MCP servers. Read, the reviewed Skill (B arms), approved MCP tools and hooks are permitted; Bash/Edit/Write/WebFetch/WebSearch/Task/Agent are denied. Automatic tool choice is part of the experiment, never a premise. Integration code itself can be read in B arms; this is a disclosed difference from A.
 
-The nine tasks cover tutorial evidence, deliberately underspecified FI/CO/MM/SD errors, a real ABAP keyword document, pinned public Function Module, RAP Action and Validation. Product/release conditions are fixed per task across arms. S/4HANA 2022 is an experimental declaration, not proof that the RAP100 sample or a proposed fix is applicable. Module-error cases intentionally lack message codes; success requires admitting missing evidence and requesting the necessary code/long text/Customizing, not inventing a fix.
+The original nine tasks cover tutorial evidence, deliberately underspecified FI/CO/MM/SD errors, a real ABAP keyword document, pinned public Function Module, RAP Action and Validation. Product/release conditions are fixed per task across arms. S/4HANA 2022 is an experimental declaration, not proof that the RAP100 sample or a proposed fix is applicable. Module-error cases intentionally lack message codes; success requires admitting missing evidence and requesting the necessary code/long text/Customizing, not inventing a fix.
 
 `summary.json` separates terminal CLI usage (input/output/cache), provider-reported USD, per-model usage, tool-use IDs/names/errors, elapsed time, exact source/hash/range observations, and answer evaluation. Terminal UUIDs are deduplicated; assistant cumulative counters are not summed. Multiple terminal results fail. Missing data is null. Model-call counts, semantic retry counts, final model input, answer correctness and independently invoiced cost remain null/unobserved. CLI cost is not an audited invoice. Tool calls are observed calls, not proof that all necessary tools were selected.
 
-Mandatory ranges come from the manually inspected PR #3 public-source oracle. A range observation requires a matching MCP tool-use/result ID, success, exact path/SHA and exact original snippet. Native `Read` text is deliberately not parsed; a false observation gate means **no machine-verified range delivery**, not proof that A failed to read it. Compare A/B0 native reads manually. JSON wire size is not billed tokens. Hooks use additionalContext only; `updatedToolOutput` is not used and no schema rewriting is assumed.
+Mandatory ranges come from the manually inspected PR #3 public-source oracle. A range observation requires a matching MCP tool-use/result ID, success, exact path/SHA and exact original snippet. B2.1 recognizes only numbered-arrow/tab native `Read` lines matching the same pinned originals; unrecognized formats require manual review. A false observation gate means **no machine-verified range delivery**, not proof that A failed to read it. Verify unsupported native formats manually. Native hashes are fixture hashes, not returned by Read. JSON wire size is not billed tokens. Hooks use additionalContext only; `updatedToolOutput` is not used and no schema rewriting is assumed.
 
 ## Human evaluation, before comparing costs
 

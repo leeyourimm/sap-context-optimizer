@@ -1,0 +1,60 @@
+{
+  "live_public_body_check_requested": false,
+  "cases": [
+    {
+      "case_id": "call-function-system-fields",
+      "group": "official_abap_accuracy",
+      "answer_accuracy": null,
+      "applicability_verified": false,
+      "eligible_for_accuracy_review": false,
+      "evidence_state": "live_revalidation_not_run"
+    },
+    {
+      "case_id": "select-empty-result",
+      "group": "official_abap_accuracy",
+      "answer_accuracy": null,
+      "applicability_verified": false,
+      "eligible_for_accuracy_review": false,
+      "evidence_state": "live_revalidation_not_run"
+    },
+    {
+      "case_id": "fi-reconciliation",
+      "group": "module_product_accuracy",
+      "answer_accuracy": null,
+      "applicability_verified": false,
+      "eligible_for_accuracy_review": false,
+      "evidence_state": "evidence_not_acquired",
+      "reason": "No applicable original product passage; exclude from positive accuracy denominator"
+    },
+    {
+      "case_id": "co-settlement",
+      "group": "module_product_accuracy",
+      "answer_accuracy": null,
+      "applicability_verified": false,
+      "eligible_for_accuracy_review": false,
+      "evidence_state": "evidence_not_acquired",
+      "reason": "No applicable original product passage; exclude from positive accuracy denominator"
+    },
+    {
+      "case_id": "mm-valuated-gr",
+      "group": "module_product_accuracy",
+      "answer_accuracy": null,
+      "applicability_verified": false,
+      "eligible_for_accuracy_review": false,
+      "evidence_state": "evidence_not_acquired",
+      "reason": "No applicable original product passage; exclude from positive accuracy denominator"
+    },
+    {
+      "case_id": "sd-billing-accounting",
+      "group": "module_product_accuracy",
+      "answer_accuracy": null,
+      "applicability_verified": false,
+      "eligible_for_accuracy_review": false,
+      "evidence_state": "evidence_not_acquired",
+      "reason": "No applicable original product passage; exclude from positive accuracy denominator"
+    }
+  ],
+  "model_calls": 0,
+  "model_answer_accuracy": null,
+  "module_accuracy_gap_cases": 4
+}
