@@ -7,7 +7,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from sap_optimizer.claude_e2e import preflight, run
+from sap_optimizer.claude_e2e import RuntimeNotReady, preflight, run
 from sap_optimizer.policy import PolicyError
 
 
@@ -24,6 +24,10 @@ def main():
         p.error("--execute requires --approval and a NEW --output directory")
     try:
         report = run(ROOT, json.loads(args.approval.read_text()), args.output)
+    except RuntimeNotReady as exc:
+        print(json.dumps({"status": "runtime_not_ready", "preflight": exc.report,
+                          "action": "No model invocation attempted; use approved provisioned runtime"}))
+        return 1
     except (PolicyError, OSError, ValueError) as exc:
         # Do not expose CLI/provider stderr or arbitrary input values.
         print(json.dumps({"status": "refused_or_failed", "error_type": type(exc).__name__,

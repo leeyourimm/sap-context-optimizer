@@ -174,3 +174,9 @@ Claude가 설치된 승인 환경에서 `.mcp.json` 인식 → Hook event 전달
 [Reproducible B2 instructions](experiments/b2/README.md) cover the opt-in A/B0/B1 runner, nine public tasks, approval manifest, protected local logs and manual accuracy/security evaluation. `python scripts/run_claude_e2e.py` performs read-only preflight; it does not install, log in or call a model. Actual Claude Code E2E remains **unexecuted** in this environment.
 
 New offline `sap_help_catalog` lists reviewed product/release IDs and coverage gaps. `sap_help_document` can read two verified public ABAP 7.54 keyword pages with title/body-marker/hash checks. This is **not** full SAP Help search or verified FI/CO/MM/SD error coverage. Note/KBA bodies requiring login remain unread. The experimental compact local search is opt-in; the default MCP contract and full-original reads remain available. See [B2 validation results](reports/B2-VALIDATION.md) for measured wire bytes and explicit limitations; no token/cost savings are claimed.
+
+## B2.1 offline preparation
+
+[Current approved-runtime runbook](experiments/b2/B21-RUNBOOK.md) adds a single-public-task smoke and six-order counterbalanced comparison. CLI auth uses default JSON `claude auth status`; flag detection is not live compatibility proof. Budget flags are client controls, not invoice caps. No real Claude E2E has run here.
+
+Scoped local search preserves original code/SHA/direct relations and explicitly defers unrelated object-wide unresolved references and diagnostic details to snapshot-bound pages. Legacy full search/read and opt-in compact are preserved. The separate product oracle has two revalidated ABAP cases and four concrete FI/CO/MM/SD cases marked **evidence not acquired**, excluded from positive accuracy scoring. See [B2.1 validation](reports/B21-VALIDATION.md) for source gates, wire/call cost boundaries and limitations.

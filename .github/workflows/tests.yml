@@ -21,6 +21,10 @@ jobs:
         run: python scripts/verify_public_exports.py --output .sap-context/ci-public/report.json
       - name: B2 offline compact and runtime preflight (no model calls)
         run: python scripts/verify_b2.py --output .sap-context/ci-b2/report.json
+      - name: B2.1 scoped source quality and full-detail cost boundary (offline)
+        run: python scripts/verify_b21.py --output .sap-context/ci-b21/scoped.json
+      - name: B2.1 official-product oracle readiness (offline, no model or HTTP)
+        run: python scripts/verify_product_cases.py --output .sap-context/ci-b21/evidence.json
       - name: Preserve public-only validation reports
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
@@ -30,3 +34,4 @@ jobs:
             .sap-context/ci-smoke/*.json
             .sap-context/ci-public/*.json
             .sap-context/ci-b2/*.json
+            .sap-context/ci-b21/*.json

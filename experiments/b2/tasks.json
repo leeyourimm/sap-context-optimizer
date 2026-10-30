@@ -9,7 +9,8 @@
       "release": "2022",
       "deployment": "on-premise",
       "abap_language_version": "Standard ABAP",
-      "required_ranges": []
+      "required_ranges": [],
+      "evaluation_group": "public_retrieval"
     },
     {
       "id": "fi",
@@ -18,7 +19,8 @@
       "release": "2022",
       "deployment": "on-premise",
       "abap_language_version": "Standard ABAP",
-      "required_ranges": []
+      "required_ranges": [],
+      "evaluation_group": "uncertainty_handling"
     },
     {
       "id": "co",
@@ -27,7 +29,8 @@
       "release": "2022",
       "deployment": "on-premise",
       "abap_language_version": "Standard ABAP",
-      "required_ranges": []
+      "required_ranges": [],
+      "evaluation_group": "uncertainty_handling"
     },
     {
       "id": "mm",
@@ -36,7 +39,8 @@
       "release": "2022",
       "deployment": "on-premise",
       "abap_language_version": "Standard ABAP",
-      "required_ranges": []
+      "required_ranges": [],
+      "evaluation_group": "uncertainty_handling"
     },
     {
       "id": "sd",
@@ -45,7 +49,8 @@
       "release": "2022",
       "deployment": "on-premise",
       "abap_language_version": "Standard ABAP",
-      "required_ranges": []
+      "required_ranges": [],
+      "evaluation_group": "uncertainty_handling"
     },
     {
       "id": "keyword-document",
@@ -54,7 +59,9 @@
       "release": "7.54",
       "deployment": "on-premise",
       "abap_language_version": "Standard ABAP",
-      "required_ranges": []
+      "required_ranges": [],
+      "evaluation_group": "official_abap_accuracy",
+      "accuracy_case_id": "call-function-system-fields"
     },
     {
       "id": "function-module",
@@ -69,7 +76,8 @@
           "start": 1,
           "end": 8
         }
-      ]
+      ],
+      "evaluation_group": "public_retrieval"
     },
     {
       "id": "rap-action",
@@ -94,7 +102,8 @@
           "start": 41,
           "end": 41
         }
-      ]
+      ],
+      "evaluation_group": "public_retrieval"
     },
     {
       "id": "rap-validation",
@@ -119,7 +128,63 @@
           "start": 36,
           "end": 36
         }
-      ]
+      ],
+      "evaluation_group": "public_retrieval"
+    },
+    {
+      "id": "select-empty-result",
+      "prompt": "ABAP 7.54 일반 SELECT 결과가 비어 있을 때 sy-subrc를 설명하고 aggregate-only SELECT의 예외를 구별하세요.",
+      "product": "ABAP",
+      "release": "7.54",
+      "deployment": "on-premise",
+      "abap_language_version": "Standard ABAP",
+      "required_ranges": [],
+      "evaluation_group": "official_abap_accuracy",
+      "accuracy_case_id": "select-empty-result"
+    },
+    {
+      "id": "fi-reconciliation",
+      "prompt": "S/4HANA 2022 on-premise에서 고객 보조부 전기와 조정계정의 관계 및 조정계정 직접 전기 제한을 설명하세요. 전기 방식과 예외 조건은 공식 제품 원문으로 확인하세요.",
+      "product": "SAP S/4HANA",
+      "release": "2022",
+      "deployment": "on-premise",
+      "abap_language_version": "Standard ABAP",
+      "required_ranges": [],
+      "evaluation_group": "module_product_accuracy",
+      "accuracy_case_id": "fi-reconciliation"
+    },
+    {
+      "id": "co-settlement",
+      "prompt": "S/4HANA 2022 on-premise 내부오더 정산에서 수신자와 정산규칙 유효기간은 무엇을 확인해야 하나요? 실제 허용 수신자와 설정에 따라 달라지는 조건을 구분하세요.",
+      "product": "SAP S/4HANA",
+      "release": "2022",
+      "deployment": "on-premise",
+      "abap_language_version": "Standard ABAP",
+      "required_ranges": [],
+      "evaluation_group": "module_product_accuracy",
+      "accuracy_case_id": "co-settlement"
+    },
+    {
+      "id": "mm-valuated-gr",
+      "prompt": "S/4HANA 2022 on-premise의 재고 구매오더에 대해 평가 입고와 비평가 입고의 회계전표 생성 차이를 비교하세요. GR/IR 관련 적용 조건도 확인하세요.",
+      "product": "SAP S/4HANA",
+      "release": "2022",
+      "deployment": "on-premise",
+      "abap_language_version": "Standard ABAP",
+      "required_ranges": [],
+      "evaluation_group": "module_product_accuracy",
+      "accuracy_case_id": "mm-valuated-gr"
+    },
+    {
+      "id": "sd-billing-accounting",
+      "prompt": "S/4HANA 2022 on-premise에서 청구문서 생성과 회계 전기의 차이를 설명하고 전기블록과 계정결정 확인 조건을 구분하세요. 특정 오류나 T-code를 추측하지 마세요.",
+      "product": "SAP S/4HANA",
+      "release": "2022",
+      "deployment": "on-premise",
+      "abap_language_version": "Standard ABAP",
+      "required_ranges": [],
+      "evaluation_group": "module_product_accuracy",
+      "accuracy_case_id": "sd-billing-accounting"
     }
   ]
 }

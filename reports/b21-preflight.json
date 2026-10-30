@@ -1,0 +1,16 @@
+{
+  "executable_present": false,
+  "version": null,
+  "auth_readiness": "unverified",
+  "supported_flags": false,
+  "flag_detection_only": true,
+  "flag_semantics_verified": false,
+  "auth_command": "claude auth status (JSON default)",
+  "ready": false,
+  "model_calls": 0,
+  "cwd_readable": true,
+  "cwd_writable": true,
+  "process_group_timeout_supported": true,
+  "permissions": "CLI restrictions configured by runner; OS/provider isolation requires operator approval",
+  "reason": "Claude Code executable unavailable; no installation or login attempted"
+}

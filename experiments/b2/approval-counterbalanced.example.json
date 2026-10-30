@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "approved_public_model_calls": false,
+  "approved_runtime_isolated": false,
+  "approved_by": "REPLACE_AFTER_REVIEW",
+  "model": "REPLACE_WITH_PINNED_MODEL_ID",
+  "per_run_budget_usd": 0.5,
+  "max_turns": 12,
+  "timeout_seconds": 300,
+  "arms": [
+    "A",
+    "B0",
+    "B1"
+  ],
+  "task_ids": [
+    "keyword-document"
+  ],
+  "expected_cli_version": "REPLACE_WITH_PREFLIGHT_VERSION",
+  "suite_sha256": "106967f00369b64990e16b3d659e46a98e92852c1656911237ab0f1afbac6083",
+  "corpus_manifest_sha256": "3c34f815cb7d1724ca332219bb84c87ca3154ba54bf82ca2f0ecd89eb69b4e66",
+  "run_mode": "counterbalanced",
+  "smoke_arm": "B1",
+  "repetitions": 6,
+  "evidence_suite_sha256": "1c77abedff456eec7fec9e637a3dcae64a11662b27979d770c46d84dc2ff0daf"
+}

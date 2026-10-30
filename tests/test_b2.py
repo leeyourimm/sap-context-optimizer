@@ -223,7 +223,7 @@ class RunnerContracts(unittest.TestCase):
                 subprocess.CompletedProcess([], 0, '{"loggedIn":true}', '')]
         with patch('shutil.which', return_value='/mock/claude'), patch('subprocess.run', side_effect=good) as cmd:
             self.assertTrue(preflight()['ready'])
-            self.assertEqual([c.args[0][1:] for c in cmd.call_args_list], [['--version'], ['--help'], ['auth', 'status', '--json']])
+            self.assertEqual([c.args[0][1:] for c in cmd.call_args_list], [['--version'], ['--help'], ['auth', 'status']])
         good[-1] = subprocess.CompletedProcess([], 0, '{"loggedIn":false}', '')
         with patch('shutil.which', return_value='/mock/claude'), patch('subprocess.run', side_effect=good):
             self.assertFalse(preflight()['ready'])

@@ -1,0 +1,96 @@
+{
+  "observed_at_utc": "2026-10-30T12:40:56.382093+00:00",
+  "client": "real stdio subprocess, NOT Claude Code model",
+  "external_access": false,
+  "initialize": {
+    "protocolVersion": "2025-03-26",
+    "capabilities": {
+      "tools": {
+        "listChanged": false
+      }
+    },
+    "serverInfo": {
+      "name": "sap-context-optimizer",
+      "version": "0.2.0"
+    }
+  },
+  "dual_output_contract_preserved": true,
+  "data": "public authored synthetic fixture only",
+  "records": [
+    {
+      "tool": "sap_repo_search",
+      "isError": false,
+      "wire_chars": 11118,
+      "wire_bytes": 11118,
+      "content_text_utf8_bytes": 5252,
+      "structured_json_utf8_bytes": 5252,
+      "dual_representation_equal": true,
+      "snapshot": "5737ec36d36e444deaaee6b0fc1979dc3651b49fd6d824931f74a92650a1ecd7",
+      "source_chars": 279,
+      "ranges": [
+        {
+          "path": "examples/abapgit/zcl_b1_large.clas.abap",
+          "start_line": 123,
+          "end_line": 123,
+          "sha256": "97d805197510894db386294a47f57d1a6d2bcd31f700e680480cc901991de1c1"
+        },
+        {
+          "path": "examples/abapgit/zcl_b1_large.clas.abap",
+          "start_line": 486,
+          "end_line": 488,
+          "sha256": "97d805197510894db386294a47f57d1a6d2bcd31f700e680480cc901991de1c1"
+        },
+        {
+          "path": "examples/abapgit/zcl_b1_helper.clas.abap",
+          "start_line": 4,
+          "end_line": 4,
+          "sha256": "5ba93c9e449cd0dd1a52463eb986408e6196fe95871b65caed26b2d17d1766e3"
+        },
+        {
+          "path": "examples/abapgit/zcl_b1_helper.clas.abap",
+          "start_line": 7,
+          "end_line": 9,
+          "sha256": "5ba93c9e449cd0dd1a52463eb986408e6196fe95871b65caed26b2d17d1766e3"
+        }
+      ]
+    },
+    {
+      "tool": "sap_repo_read",
+      "isError": false,
+      "wire_chars": 50461,
+      "wire_bytes": 50461,
+      "content_text_utf8_bytes": 24908,
+      "structured_json_utf8_bytes": 24908,
+      "dual_representation_equal": true,
+      "snapshot": "5737ec36d36e444deaaee6b0fc1979dc3651b49fd6d824931f74a92650a1ecd7",
+      "source_chars": 24019,
+      "ranges": []
+    },
+    {
+      "tool": "sap_repo_references",
+      "isError": false,
+      "wire_chars": 2064,
+      "wire_bytes": 2064,
+      "content_text_utf8_bytes": 924,
+      "structured_json_utf8_bytes": 924,
+      "dual_representation_equal": true,
+      "snapshot": "5737ec36d36e444deaaee6b0fc1979dc3651b49fd6d824931f74a92650a1ecd7",
+      "source_chars": 0,
+      "ranges": []
+    },
+    {
+      "tool": "sap_repo_status",
+      "isError": false,
+      "wire_chars": 1670,
+      "wire_bytes": 1670,
+      "content_text_utf8_bytes": 741,
+      "structured_json_utf8_bytes": 741,
+      "dual_representation_equal": true,
+      "snapshot": "5737ec36d36e444deaaee6b0fc1979dc3651b49fd6d824931f74a92650a1ecd7",
+      "source_chars": 0,
+      "ranges": []
+    }
+  ],
+  "benchmark_wire_size_matched": true,
+  "exit_code": 0
+}

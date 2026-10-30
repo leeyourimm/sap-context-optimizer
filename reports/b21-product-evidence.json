@@ -1,0 +1,76 @@
+{
+  "live_public_body_check_requested": true,
+  "cases": [
+    {
+      "case_id": "call-function-system-fields",
+      "group": "official_abap_accuracy",
+      "answer_accuracy": null,
+      "applicability_verified": false,
+      "eligible_for_accuracy_review": true,
+      "evidence_state": "original_body_and_support_revalidated",
+      "source_url": "https://help.sap.com/doc/abapdocu_754_index_htm/7.54/en-US/abapcall_function.htm",
+      "body_sha256": "bfced92ee6d28807a00891329d610173d6ad3a37e52d74e2a7e37a62add3361e",
+      "section": "System Fields",
+      "conditions": [
+        "Standard ABAP 7.54 syntax; no claim about ABAP Cloud API release",
+        "Ordinary call versus handled non-class-based exception versus update registration must be separated"
+      ],
+      "retrieved_at_utc": "2026-10-30T12:34:53.008911+00:00"
+    },
+    {
+      "case_id": "select-empty-result",
+      "group": "official_abap_accuracy",
+      "answer_accuracy": null,
+      "applicability_verified": false,
+      "eligible_for_accuracy_review": true,
+      "evidence_state": "original_body_and_support_revalidated",
+      "source_url": "https://help.sap.com/doc/abapdocu_754_index_htm/7.54/en-US/abapselect.htm",
+      "body_sha256": "341217e052f8677c4030aad72744cdea4f637ee22a076801a8f9b9664f4f66fd",
+      "section": "System Fields",
+      "conditions": [
+        "Ordinary SELECT without aggregate-only projection",
+        "Aggregate-only projection must not be generalized from ordinary empty-result behavior"
+      ],
+      "retrieved_at_utc": "2026-10-30T12:34:53.667256+00:00"
+    },
+    {
+      "case_id": "fi-reconciliation",
+      "group": "module_product_accuracy",
+      "answer_accuracy": null,
+      "applicability_verified": false,
+      "eligible_for_accuracy_review": false,
+      "evidence_state": "evidence_not_acquired",
+      "reason": "No applicable original product passage; exclude from positive accuracy denominator"
+    },
+    {
+      "case_id": "co-settlement",
+      "group": "module_product_accuracy",
+      "answer_accuracy": null,
+      "applicability_verified": false,
+      "eligible_for_accuracy_review": false,
+      "evidence_state": "evidence_not_acquired",
+      "reason": "No applicable original product passage; exclude from positive accuracy denominator"
+    },
+    {
+      "case_id": "mm-valuated-gr",
+      "group": "module_product_accuracy",
+      "answer_accuracy": null,
+      "applicability_verified": false,
+      "eligible_for_accuracy_review": false,
+      "evidence_state": "evidence_not_acquired",
+      "reason": "No applicable original product passage; exclude from positive accuracy denominator"
+    },
+    {
+      "case_id": "sd-billing-accounting",
+      "group": "module_product_accuracy",
+      "answer_accuracy": null,
+      "applicability_verified": false,
+      "eligible_for_accuracy_review": false,
+      "evidence_state": "evidence_not_acquired",
+      "reason": "No applicable original product passage; exclude from positive accuracy denominator"
+    }
+  ],
+  "model_calls": 0,
+  "model_answer_accuracy": null,
+  "module_accuracy_gap_cases": 4
+}
