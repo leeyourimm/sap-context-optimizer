@@ -1,0 +1,3 @@
+REPORT zb1_program.
+INCLUDE zb1_include.
+CALL FUNCTION 'Z_B1_CHECK'.

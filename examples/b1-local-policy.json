@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "external_access": false,
+  "product": null,
+  "release": null,
+  "deployment": null,
+  "abap_language_version": null,
+  "official_documents": {},
+  "local_repository": {
+    "roots": ["examples/abapgit"],
+    "allow_model_context": true,
+    "settings": {
+      "max_results": 8,
+      "max_lines": 80,
+      "max_context_chars": 18000,
+      "min_candidates": 3,
+      "reference_depth": 1
+    }
+  }
+}

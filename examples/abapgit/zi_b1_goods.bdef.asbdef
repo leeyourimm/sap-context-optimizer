@@ -1,0 +1,10 @@
+managed implementation in class zbp_b1_goods unique;
+strict ( 2 );
+define behavior for ZI_B1_Goods alias Goods
+persistent table zb1_goods_table
+lock master
+{
+  action Complete result [1] $self;
+  validation validateQuantity on save { create; field Quantity; }
+  determination deriveStatus on modify { create; }
+}

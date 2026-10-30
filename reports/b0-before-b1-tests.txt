@@ -1,0 +1,44 @@
+test_actual_live_failure_record_not_reported_as_body_success (test_b0.ContractTests.test_actual_live_failure_record_not_reported_as_body_success) ... ok
+test_cap_action_mismatch (test_b0.ContractTests.test_cap_action_mismatch) ... ok
+test_changed_required_schema_blocks (test_b0.ContractTests.test_changed_required_schema_blocks) ... ok
+test_empty_body_not_verified (test_b0.ContractTests.test_empty_body_not_verified) ... ok
+test_full_page_fallback_is_explicit (test_b0.ContractTests.test_full_page_fallback_is_explicit) ... ok
+test_graph_does_not_count_as_body (test_b0.ContractTests.test_graph_does_not_count_as_body) ... ok
+test_help_body_has_distinct_source_and_declared_scope (test_b0.ContractTests.test_help_body_has_distinct_source_and_declared_scope) ... ok
+test_help_shell_is_not_body (test_b0.ContractTests.test_help_shell_is_not_body) ... ok
+test_http_sse_cap_live_record_contract (test_b0.ContractTests.test_http_sse_cap_live_record_contract) ... ok
+test_missing_live_tool_blocks (test_b0.ContractTests.test_missing_live_tool_blocks) ... ok
+test_network_error_is_not_empty_success (test_b0.ContractTests.test_network_error_is_not_empty_success) ... ok
+test_real_entrypoint_stdio_offline (test_b0.ContractTests.test_real_entrypoint_stdio_offline) ... ok
+test_rpc_id_and_errors_fail_closed (test_b0.ContractTests.test_rpc_id_and_errors_fail_closed) ... ok
+test_search_metadata_not_body (test_b0.ContractTests.test_search_metadata_not_body) ... ok
+test_stdio_in_memory_round_trip (test_b0.ContractTests.test_stdio_in_memory_round_trip) ... ok
+test_step_body_scope_remains_unverified (test_b0.ContractTests.test_step_body_scope_remains_unverified) ... ok
+test_tool_error_not_evidence (test_b0.ContractTests.test_tool_error_not_evidence) ... ok
+test_body_does_not_certify_scope (test_b0.HookTests.test_body_does_not_certify_scope) ... ok
+test_direct_mcp_and_web_blocked (test_b0.HookTests.test_direct_mcp_and_web_blocked) ... ok
+test_failed_tool_cannot_set_body (test_b0.HookTests.test_failed_tool_cannot_set_body) ... ok
+test_invalid_policy_hook_fails_closed (test_b0.HookTests.test_invalid_policy_hook_fails_closed) ... ok
+test_metrics_store_no_prompt (test_b0.HookTests.test_metrics_store_no_prompt) ... ok
+test_new_turn_resets_body (test_b0.HookTests.test_new_turn_resets_body) ... ok
+test_no_search_detected_at_stop (test_b0.HookTests.test_no_search_detected_at_stop) ... ok
+test_policy_tampering_guard (test_b0.HookTests.test_policy_tampering_guard) ... ok
+test_usage_unknown_not_zero_and_no_assistant_double_count (test_b0.HookTests.test_usage_unknown_not_zero_and_no_assistant_double_count) ... ok
+test_bool_is_not_step_integer (test_b0.PolicyTests.test_bool_is_not_step_integer) ... ok
+test_caller_slug_not_forwarded (test_b0.PolicyTests.test_caller_slug_not_forwarded) ... ok
+test_default_denies_before_any_request (test_b0.PolicyTests.test_default_denies_before_any_request) ... ok
+test_extra_arguments_cannot_smuggle_text (test_b0.PolicyTests.test_extra_arguments_cannot_smuggle_text) ... ok
+test_help_arbitrary_url_rejected_before_fetch (test_b0.PolicyTests.test_help_arbitrary_url_rejected_before_fetch) ... ok
+test_help_policy_rejects_credentials_redirect_domains_query (test_b0.PolicyTests.test_help_policy_rejects_credentials_redirect_domains_query) ... ok
+test_missing_policy_denies (test_b0.PolicyTests.test_missing_policy_denies) ... ok
+test_private_inputs_never_reach_wire (test_b0.PolicyTests.test_private_inputs_never_reach_wire) ... ok
+test_redirects_refused (test_b0.PolicyTests.test_redirects_refused) ... ok
+test_revocation_applies_to_warm_session (test_b0.PolicyTests.test_revocation_applies_to_warm_session) ... ok
+test_semantic_admin_and_generic_tools_denied (test_b0.PolicyTests.test_semantic_admin_and_generic_tools_denied) ... ok
+test_state_symlink_refused (test_b0.PolicyTests.test_state_symlink_refused) ... ok
+test_string_true_is_not_permission (test_b0.PolicyTests.test_string_true_is_not_permission) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 0.113s
+
+OK

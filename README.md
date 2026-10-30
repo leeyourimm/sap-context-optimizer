@@ -1,6 +1,27 @@
-# SAP Context Optimizer — M0 / B0
+# SAP Context Optimizer — M0 / B0 / B1
 
-Python 3.12+ 표준 라이브러리만 사용하는 Claude Code 프로젝트입니다. **추가 패키지 설치가 필요 없습니다.** SAP 공식 Developers Search/Graph를 재사용하는 얇은 stdio MCP 게이트웨이이며 자체 문서 검색 엔진이 아닙니다.
+Python 3.12+ 표준 라이브러리만 사용하는 Claude Code 프로젝트입니다. **추가 패키지 설치가 필요 없습니다.** SAP 공식 Developers Search/Graph를 재사용하고, B1에서 로컬 abapGit 스냅샷의 정확 검색·BM25·원문 범위·직접 참조를 제공합니다. 자체 공식 문서 검색 엔진이나 완전한 ABAP 컴파일러는 아닙니다.
+
+## B1 빠른 시작 (외부 통신 없음)
+
+저장소 루트에서 실행합니다. 예제는 직접 작성한 공개 합성 ABAP이며 회사 소스가 아닙니다.
+
+```sh
+cp -n examples/b1-local-policy.json sap-context.local.json
+python3 scripts/sap_context.py repo-status
+python3 scripts/sap_context.py repo-search '입고 완료 Complete Action 분석'
+python3 scripts/sap_context.py repo-references CLAS:ZBP_B1_GOODS
+python3 scripts/sap_context.py repo-read examples/abapgit/zbp_b1_goods.clas.locals_imp.abap
+python3 -m unittest discover -s tests -v
+```
+
+기존 로컬 정책이 있으면 덮어쓰지 말고 예제의 `local_repository` 설정을 검토해 병합하세요. 현재 작업 환경은 합성 예제만 허용하고 `external_access: false`입니다. 배포 기본값은 Repository roots 없음·MCP 코드 제공 차단입니다.
+
+**중요:** 로컬 처리와 Claude 모델 전송 허용은 별개입니다. MCP 결과는 Claude가 모델로 보낼 수 있으므로 `local_repository.allow_model_context`는 기본 false입니다. 공개 합성 예제에서만 true로 설정했습니다. 회사 소스는 승인된 모델·계약·네트워크 경로가 없으면 이 값을 켜지 말고 로컬 CLI에서만 조사하세요. Hook은 Bash 등 다른 경로를 완전히 통제하지 않습니다.
+
+실제 회사 export는 Git에서 제외한 `local-abap/` 아래에 두고 roots를 명시합니다. 절대 경로·상위 경로·심볼릭 링크는 거부합니다. 전용 read-only MCP 도구는 `sap_repo_search`, `sap_repo_keyword`, `sap_repo_read`, `sap_repo_references`, `sap_repo_status`이며 기존 `.mcp.json`의 같은 서버에서 자동 발견됩니다. 검색 모드를 질문마다 고를 필요 없이 Skill이 `sap_repo_search`의 auto 모드를 우선 사용합니다. 실제 Claude 자동 선택은 여전히 미검증입니다.
+
+[B1 구현 범위·지원 문법·보안·재현 방법](docs/b1-local-repository.md), [B1 실행 결과](reports/B1-VALIDATION.md), [크기 비교 JSON](reports/b1-context-comparison.json)을 참고하세요.
 
 ## 현재 검증 상태
 
@@ -24,7 +45,7 @@ python3 scripts/sap_context.py status
 
 배포 기본 정책 `sap-context.json`은 `external_access: false`입니다. 이 상태에서는 초기 remote discovery조차 하지 않고 차단합니다. 로컬 `sap_status`, stdio discovery, 오프라인 테스트는 가능합니다.
 
-프로젝트 소유자가 공개 SAP 고정 용어 전송을 승인한 경우에만 다음 설정을 만듭니다. 현재 작업 환경에는 사용자가 허용한 공개 시험용 로컬 설정이 만들어져 있습니다. 이 파일은 Git에서 제외됩니다.
+프로젝트 소유자가 공개 SAP 고정 용어 전송을 승인한 경우에만 다음 설정을 검토합니다. M0/B0 당시 공개 연결 시험은 실행했지만, 현재 B1 작업 환경의 외부 접근은 false입니다. 로컬 설정 파일은 Git에서 제외됩니다. 기존 B1 roots·모델 전송 정책을 보존하고 필요한 필드만 변경하세요.
 
 ```sh
 cp examples/public-policy.json sap-context.local.json
@@ -131,4 +152,4 @@ python3 scripts/sap_context.py usage /승인된/로컬/단일실험-stream.jsonl
 
 Claude가 설치된 승인 환경에서 `.mcp.json` 인식 → Hook event 전달 → 평소 질문의 실제 도구 선택 → 본문/누락 표시 → 최종 모델 입력 관찰 → provider 사용량·청구 대조 순으로 검증합니다. Hook 로그/화면/모델이 표식을 말한 것만으로 최종 요청 payload를 확인했다고 주장하지 않습니다. 승인된 요청 계측 경로가 없다면 직접 관찰 미완료로 기록하세요.
 
-[28개 평가 과제 및 비교 절차](docs/evaluation.md)와 [검증 결과](reports/VALIDATION.md)를 참고하세요. B1은 로컬 스냅샷의 정확 검색·필수 객체 참조에 한정하고, 이번에는 구현하지 않았습니다.
+[28개 평가 과제 및 비교 절차](docs/evaluation.md), [M0/B0 검증 결과](reports/VALIDATION.md), [B1 검증 결과](reports/B1-VALIDATION.md)를 참고하세요. 로컬 B1 도구는 구현됐으며, 완전한 RAP 그래프·라이브 ADT 연결·모델 사용량 검증은 포함하지 않습니다.
