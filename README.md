@@ -23,6 +23,21 @@ python3 -m unittest discover -s tests -v
 
 [B1 구현 범위·지원 문법·보안·재현 방법](docs/b1-local-repository.md), [B1 실행 결과](reports/B1-VALIDATION.md), [크기 비교 JSON](reports/b1-context-comparison.json)을 참고하세요.
 
+## PR #2 검토 보강: 실제 공개 export·CI
+
+[공개 소스 검증 결과](reports/B1-REVIEW-VALIDATION.md): SAP RAP100과 abapGit-tests 4개 저장소의 **고정 커밋 원본 64개 파일**을 라이선스·Git blob/SHA-256 해시와 함께 포함했습니다. 파서와 독립적으로 지정한 **15개 검색 과제, 필수 객체 23건·원문 범위 22건**을 검사합니다. 동일명 메서드, namespace 참조, stale read, 필수 코드 누락 및 예산 초과 음성 대조도 포함합니다. 이는 작은 개발용 회귀 corpus의 근거 범위 검증이며 SAP 답변 정답률이 아닙니다.
+
+```sh
+python3 -m unittest discover -s tests -v
+python3 scripts/verify_b1.py --isolated --output-dir .sap-context/verification
+python3 scripts/verify_public_exports.py --output .sap-context/verification/public.json
+python3 scripts/check_claude_runtime.py
+```
+
+`--isolated`는 공개 합성 예제만 임시 프로젝트에 복사해 실제 stdio 실행을 검증하며 현재 로컬 정책을 덮어쓰지 않습니다. CI는 Python 3.12/3.13에서 단위 테스트뿐 아니라 위 stdio·공개 원본 검증을 필수 단계로 실행하고 공개 데이터만 포함한 결과 artifact를 보존합니다. 테스트/검증은 오프라인입니다.
+
+`content.text`와 `structuredContent`는 그대로 유지합니다. stdio 원문 바이트·각 표현 크기를 기록하지만, 이 환경에는 Claude 실행 파일·SDK가 없어 모델이 둘 다 받는지와 실제 청구 토큰은 **미검증**입니다. 임의로 출력 형식을 삭제하거나 wire 크기를 청구 절감률로 바꾸지 않습니다. 런타임 점검은 환경변수 값·자격 증명을 출력하거나 모델에 요청하지 않습니다.
+
 ## 현재 검증 상태
 
 - 실제 공식 Search/Graph 초기 연결·tools/list·튜토리얼 검색·메타데이터·Graph 응답을 확인했습니다.

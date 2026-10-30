@@ -1,0 +1,20 @@
+{
+  "claude_executable_present": false,
+  "agent_sdk_discoverable": false,
+  "binding_presence_only": {
+    "ANTHROPIC_API_KEY": false,
+    "ANTHROPIC_AUTH_TOKEN": false,
+    "CLAUDE_CODE_USE_BEDROCK": false,
+    "CLAUDE_CODE_USE_VERTEX": false,
+    "CLAUDE_CODE_USE_FOUNDRY": false
+  },
+  "credential_readiness": "not_tested",
+  "runtime_test_attempted": false,
+  "model_calls": 0,
+  "automatic_tool_selection": "unverified",
+  "final_model_input": "unverified",
+  "actual_billing_tokens": null,
+  "actual_cost": null,
+  "reason": "Claude Code executable unavailable",
+  "output_contract": "content.text and structuredContent preserved; wire duplication is not billing-token evidence"
+}

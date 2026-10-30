@@ -105,10 +105,10 @@ class Repository:
                             raise ValueError("binary")
                         files[path] = {"text": text, "lines": text.splitlines(keepends=True),
                                        "raw": raw, "sha256": digest(raw), "root": root}
-                    except (OSError, ValueError):
-                        diagnostics.append({"path": path, "status": "unreadable_or_non_utf8"})
                     except PolicyError:
                         diagnostics.append({"path": path, "status": "source_byte_limit_or_access_denied"})
+                    except (OSError, ValueError):
+                        diagnostics.append({"path": path, "status": "unreadable_or_non_utf8"})
             except (OSError, PolicyError):
                 diagnostics.append({"path": root, "status": "root_unavailable_or_denied"})
         signature = digest(json.dumps({"project": self.fs.identity, "roots": self.roots,
