@@ -311,6 +311,34 @@ class ProductEvidenceContracts(unittest.TestCase):
         self.assertFalse(validate_case(self.case, self.http)['eligible_for_accuracy_review'])
 
 class AdditionalCompatibilityTests(unittest.TestCase):
+    def test_documented_help_hidden_max_turns_is_not_false_negative(self):
+        from sap_optimizer.claude_e2e import REQUIRED_FLAGS
+        help_text = ' '.join(f for f in REQUIRED_FLAGS if f != '--max-turns')
+        responses = [subprocess.CompletedProcess([], 0, '2.1.308 (Claude Code)', ''),
+                     subprocess.CompletedProcess([], 0, help_text, ''),
+                     subprocess.CompletedProcess([], 0, '{"loggedIn":true}', '')]
+        with patch('shutil.which', return_value='/mock/claude'), patch('subprocess.run', side_effect=responses):
+            result = preflight()
+        self.assertTrue(result['ready'])
+        self.assertTrue(result['supported_flags'])
+        self.assertEqual(result['help_missing_flags'], ['--max-turns'])
+        self.assertEqual(result['help_documented_hidden_flags'], ['--max-turns'])
+        self.assertFalse(result['flag_semantics_verified'])
+        self.assertEqual(result['model_calls'], 0)
+
+    def test_other_missing_help_flag_still_refuses(self):
+        from sap_optimizer.claude_e2e import REQUIRED_FLAGS
+        help_text = ' '.join(f for f in REQUIRED_FLAGS if f not in ('--max-turns', '--mcp-config'))
+        responses = [subprocess.CompletedProcess([], 0, '2.1.308', ''),
+                     subprocess.CompletedProcess([], 0, help_text, ''),
+                     subprocess.CompletedProcess([], 0, '{"loggedIn":true}', '')]
+        with patch('shutil.which', return_value='/mock/claude'), patch('subprocess.run', side_effect=responses):
+            result = preflight()
+        self.assertFalse(result['ready'])
+        self.assertFalse(result['supported_flags'])
+        self.assertEqual(result['help_missing_flags'], ['--max-turns', '--mcp-config'])
+        self.assertEqual(result['help_documented_hidden_flags'], ['--max-turns'])
+
     def test_runtime_refusal_carries_safe_preflight_diagnostic(self):
         from sap_optimizer.claude_e2e import RuntimeNotReady
         value = PlanContracts().manifest()
