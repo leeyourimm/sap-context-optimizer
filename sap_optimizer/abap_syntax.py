@@ -233,7 +233,10 @@ def analyze(text, object_type):
             if t.kind != "id":
                 continue
             if object_type == "DDLS":
-                if v[:2] == ["VIEW", "ENTITY"] and len(v) > 2:
+                if v[:3] == ["DEFINE", "ABSTRACT", "ENTITY"] and len(v) > 3:
+                    entry = symbol(v[3], "cds_entity", tokens[i + 3], len(lines))
+                    entry["cds_entity_kind"] = "abstract"
+                elif v[:2] == ["VIEW", "ENTITY"] and len(v) > 2:
                     symbol(v[2], "cds_entity", tokens[i + 2], len(lines))
                 elif v[:2] == ["DEFINE", "VIEW"] and len(v) > 2 and v[2] != "ENTITY":
                     symbol(v[2], "cds_entity", tokens[i + 2], len(lines))
@@ -271,6 +274,11 @@ def analyze(text, object_type):
                             k += 1
                         k += 1
                     if k < len(tokens) and tokens[k].kind == "id":
+                        kind = "rap_" + v[0].lower()
+                        # Real RAP draft Prepare blocks reference an existing
+                        # validation; they do not declare a second validation.
+                        if v[0] in ("VALIDATION", "DETERMINATION") and k + 1 < len(tokens) and tokens[k + 1].value == ";":
+                            kind += "_reference"
                         end, depth = k, 0
                         while end < len(tokens):
                             value = tokens[end].value
@@ -285,7 +293,7 @@ def analyze(text, object_type):
                             elif value == ";" and depth == 0:
                                 break
                             end += 1
-                        symbol(tokens[k].value, "rap_" + v[0].lower(), tokens[k], tokens[min(end, len(tokens) - 1)].line)
+                        symbol(tokens[k].value, kind, tokens[k], tokens[min(end, len(tokens) - 1)].line)
             elif object_type == "SRVD" and v[0] == "EXPOSE" and len(v) > 1 and tokens[i + 1].kind == "id":
                 edge(v[1], "service_exposes", tokens[i + 1], "DDLS")
         if object_type == "DDLS" and not any(s["kind"] == "cds_entity" for s in symbols):

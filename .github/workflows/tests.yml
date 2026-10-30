@@ -5,9 +5,25 @@ permissions:
 jobs:
   unittest:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        python: ['3.12', '3.13']
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
-          python-version: '3.12'
+          python-version: ${{ matrix.python }}
       - run: python -m unittest discover -s tests -v
+      - name: Required executable stdio and context measurement
+        run: python scripts/verify_b1.py --isolated --output-dir .sap-context/ci-smoke
+      - name: Required pinned public export retrieval evaluation
+        run: python scripts/verify_public_exports.py --output .sap-context/ci-public/report.json
+      - name: Preserve public-only validation reports
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: b1-validation-python-${{ matrix.python }}
+          path: |
+            .sap-context/ci-smoke/*.json
+            .sap-context/ci-public/*.json

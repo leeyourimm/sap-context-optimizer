@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "oracle": "Manually inspected pinned source line ranges; not generated from optimizer symbols",
+  "cases": [
+    {"id":"class-method","query":"HELLO","required_objects":["CLAS:ZCL_AG_UNIT_TEST"],"ranges":[{"path":"clas/src/zcl_ag_unit_test.clas.abap","start":10,"end":10},{"path":"clas/src/zcl_ag_unit_test.clas.abap","start":18,"end":19}]},
+    {"id":"interface-method","query":"ZIF_ABAPGIT_UNIT_TEST UNIT_TEST","required_objects":["INTF:ZIF_ABAPGIT_UNIT_TEST"],"ranges":[{"path":"intf/src/zif_abapgit_unit_test.intf.abap","start":5,"end":7}]},
+    {"id":"function-module","query":"Z_ABAPGIT_UNIT_TEST","required_objects":["FUGR:ZABAPGIT_UNIT_TEST"],"ranges":[{"path":"fugr/src/zabapgit_unit_test.fugr.z_abapgit_unit_test.abap","start":1,"end":8}]},
+    {"id":"program","query":"ZAG_UNIT_TEST","required_objects":["PROG:ZAG_UNIT_TEST"],"ranges":[{"path":"prog/src/zag_unit_test.prog.abap","start":4,"end":6}]},
+    {"id":"root-cds","query":"ZRAP100_R_TRAVELTP_SOL","required_objects":["DDLS:ZRAP100_R_TRAVELTP_SOL","BDEF:ZRAP100_R_TRAVELTP_SOL"],"ranges":[{"path":"rap100/src/zrap100_r_traveltp_sol.ddls.asddls","start":3,"end":48}]},
+    {"id":"projection-cds","query":"ZRAP100_C_TRAVELTP_SOL","required_objects":["DDLS:ZRAP100_C_TRAVELTP_SOL"],"ranges":[{"path":"rap100/src/zrap100_c_traveltp_sol.ddls.asddls","start":7,"end":45}]},
+    {"id":"abstract-cds","query":"ZRAP100_A_TRAVEL_SOL","required_objects":["DDLS:ZRAP100_A_TRAVEL_SOL"],"ranges":[{"path":"rap100/src/zrap100_a_travel_sol.ddls.asddls","start":2,"end":15}]},
+    {"id":"rap-action","query":"acceptTravel","required_objects":["CLAS:ZRAP100_BP_TRAVELTP_SOL","BDEF:ZRAP100_R_TRAVELTP_SOL","DDLS:ZRAP100_R_TRAVELTP_SOL"],"ranges":[{"path":"rap100/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap","start":29,"end":30},{"path":"rap100/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap","start":376,"end":396},{"path":"rap100/src/zrap100_r_traveltp_sol.bdef.asbdef","start":41,"end":41}]},
+    {"id":"rap-validation","query":"validateDates","required_objects":["CLAS:ZRAP100_BP_TRAVELTP_SOL","BDEF:ZRAP100_R_TRAVELTP_SOL"],"ranges":[{"path":"rap100/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap","start":23,"end":24},{"path":"rap100/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap","start":197,"end":257},{"path":"rap100/src/zrap100_r_traveltp_sol.bdef.asbdef","start":36,"end":36}]},
+    {"id":"rap-determination","query":"setStatusToOpen","required_objects":["CLAS:ZRAP100_BP_TRAVELTP_SOL","BDEF:ZRAP100_R_TRAVELTP_SOL"],"ranges":[{"path":"rap100/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap","start":109,"end":133},{"path":"rap100/src/zrap100_r_traveltp_sol.bdef.asbdef","start":33,"end":33}]},
+    {"id":"service","query":"ZRAP100_UI_TRAVEL_SOL","required_objects":["SRVD:ZRAP100_UI_TRAVEL_SOL","DDLS:ZRAP100_C_TRAVELTP_SOL"],"ranges":[{"path":"rap100/src/zrap100_ui_travel_sol.srvd.srvdsrv","start":2,"end":4}]},
+    {"id":"eml","query":"read_travel","required_objects":["CLAS:ZRAP100_CL_EML_SOL","DDLS:ZRAP100_R_TRAVELTP_SOL"],"ranges":[{"path":"rap100/src/zrap100_cl_eml_sol.clas.abap","start":87,"end":114}]},
+    {"id":"namespace-and-korean","query":"고객 validateCustomer /DMO/CM_FLIGHT_MESSAGES 확인","required_objects":["CLAS:ZRAP100_BP_TRAVELTP_SOL"],"ranges":[{"path":"rap100/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap","start":138,"end":192}]},
+    {"id":"same-method-unscoped","query":"IF_OO_ADT_CLASSRUN~MAIN","include_references":false,"required_objects":["CLAS:ZCL_RAP100_GEN_DATA_SOL","CLAS:ZRAP100_CL_EML_SOL"],"ranges":[{"path":"rap100/src/zcl_rap100_gen_data_sol.clas.abap","start":15,"end":58},{"path":"rap100/src/zrap100_cl_eml_sol.clas.abap","start":33,"end":84}]},
+    {"id":"same-method-scoped","query":"ZRAP100_CL_EML_SOL IF_OO_ADT_CLASSRUN~MAIN","include_references":false,"required_objects":["CLAS:ZRAP100_CL_EML_SOL"],"ranges":[{"path":"rap100/src/zrap100_cl_eml_sol.clas.abap","start":33,"end":84}]}
+  ]
+}

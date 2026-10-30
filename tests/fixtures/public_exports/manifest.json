@@ -1,0 +1,563 @@
+{
+  "version": 1,
+  "data_use": "Public upstream ABAP exports; unmodified bytes, never executed or sent to a model",
+  "repositories": [
+    {
+      "id": "rap100",
+      "repository": "SAP-samples/abap-platform-rap100",
+      "commit": "0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1",
+      "license": "Apache-2.0",
+      "source_root": "tests/fixtures/public_exports/rap100/src",
+      "files": [
+        {
+          "path": "rap100/.abapgit.xml",
+          "upstream_path": ".abapgit.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/.abapgit.xml",
+          "git_blob_sha1": "1e9116635f30f3e28145a0289f203bf948df27d8",
+          "sha256": "c2d6f81e068efa068702e6fee1f8de6bf3115e2c46b21e5ed3c7416d2ee9fb18",
+          "bytes": 559
+        },
+        {
+          "path": "rap100/LICENSE",
+          "upstream_path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/LICENSE",
+          "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357
+        },
+        {
+          "path": "rap100/LICENSES/Apache-2.0.txt",
+          "upstream_path": "LICENSES/Apache-2.0.txt",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/LICENSES/Apache-2.0.txt",
+          "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357
+        },
+        {
+          "path": "rap100/REUSE.toml",
+          "upstream_path": "REUSE.toml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/REUSE.toml",
+          "git_blob_sha1": "e3ecdafe4be821c6ef6dbd829fb96b7902fb4902",
+          "sha256": "a7126f93fa662e9f02bd0c4a42ae9ddd9001216f0e7064530fbb56fbd7c35ae1",
+          "bytes": 1945
+        },
+        {
+          "path": "rap100/src/a44673334fcfd61de050afc610a718ht.sush.xml",
+          "upstream_path": "src/a44673334fcfd61de050afc610a718ht.sush.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/a44673334fcfd61de050afc610a718ht.sush.xml",
+          "git_blob_sha1": "c16f3935cbcf41b26115ca4e071fb834f3823365",
+          "sha256": "bf7275a57e9ba222c7f02919aa219d1e6422f1fd795754a5af15effd1b1c6d35",
+          "bytes": 1125
+        },
+        {
+          "path": "rap100/src/package.devc.xml",
+          "upstream_path": "src/package.devc.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/package.devc.xml",
+          "git_blob_sha1": "a075a7bc4acadc3c2602d4243503f5969cd926d6",
+          "sha256": "1f8df2fc50f7e1cd75caceccfd5cb1c482b0d8bdcce500371ecd36e681bc6ca3",
+          "bytes": 324
+        },
+        {
+          "path": "rap100/src/zcl_rap100_gen_data_sol.clas.abap",
+          "upstream_path": "src/zcl_rap100_gen_data_sol.clas.abap",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zcl_rap100_gen_data_sol.clas.abap",
+          "git_blob_sha1": "794c937dab76a97b641e59ddaaef7afe697439ca",
+          "sha256": "63317513a1fc7f697b76ec0cb12cbffcc5ae053605581ab4ab6af35beed0ea58",
+          "bytes": 1976
+        },
+        {
+          "path": "rap100/src/zcl_rap100_gen_data_sol.clas.xml",
+          "upstream_path": "src/zcl_rap100_gen_data_sol.clas.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zcl_rap100_gen_data_sol.clas.xml",
+          "git_blob_sha1": "f2ab87e6a31693036ae22f4483963223e6a28189",
+          "sha256": "be6f25128974741825475d5a5e2623df7e3eb327f41a6c97a55b64623600d313",
+          "bytes": 485
+        },
+        {
+          "path": "rap100/src/zrap100_a_travel_sol.ddls.asddls",
+          "upstream_path": "src/zrap100_a_travel_sol.ddls.asddls",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_a_travel_sol.ddls.asddls",
+          "git_blob_sha1": "fc96391acbc375235c96981f68936029b6502d8d",
+          "sha256": "0b03a40871b761ff1a5fa9075ed6bd632ed86a06458cb6e50307f5d32cbfc634",
+          "bytes": 530
+        },
+        {
+          "path": "rap100/src/zrap100_a_travel_sol.ddls.baseinfo",
+          "upstream_path": "src/zrap100_a_travel_sol.ddls.baseinfo",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_a_travel_sol.ddls.baseinfo",
+          "git_blob_sha1": "8a07ae1395651c40216e0d1c97833ce6887e4eff",
+          "sha256": "b83b3ade02d9991f5bb7fdd945187c09b46824e9fedf47bdc31e9d63074df63c",
+          "bytes": 143
+        },
+        {
+          "path": "rap100/src/zrap100_a_travel_sol.ddls.xml",
+          "upstream_path": "src/zrap100_a_travel_sol.ddls.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_a_travel_sol.ddls.xml",
+          "git_blob_sha1": "9b88aee45c26b98ba05c5facd217910236138c61",
+          "sha256": "1bebb18284b97503916110c8ec4ff17c603ce6bfe78acd0b9fabe98b62b81e7a",
+          "bytes": 423
+        },
+        {
+          "path": "rap100/src/zrap100_atravsol.tabl.xml",
+          "upstream_path": "src/zrap100_atravsol.tabl.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_atravsol.tabl.xml",
+          "git_blob_sha1": "e5cc240cdc1ef43af63ba4edf4b62c94e1de05da",
+          "sha256": "b8f6a9ae96493a67c43fba95084bb0097841315d14998219a77dda529722979c",
+          "bytes": 4531
+        },
+        {
+          "path": "rap100/src/zrap100_bp_traveltp_sol.clas.abap",
+          "upstream_path": "src/zrap100_bp_traveltp_sol.clas.abap",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_bp_traveltp_sol.clas.abap",
+          "git_blob_sha1": "b4187daaf6fab3b3c0dd58281ac43b5abe473cac",
+          "sha256": "4d8a6e16920184caec0c6087f260a487732899e0bb75cfbd68a5bf79f5a03d48",
+          "bytes": 234
+        },
+        {
+          "path": "rap100/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap",
+          "upstream_path": "src/zrap100_bp_traveltp_sol.clas.locals_imp.abap",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap",
+          "git_blob_sha1": "d362477020fdc10530a92893c8ec041fa7913948",
+          "sha256": "053e5b985191325b9b1ac571afeca1ffe7cf4d2d6c86b6afca932e808026a399",
+          "bytes": 20560
+        },
+        {
+          "path": "rap100/src/zrap100_bp_traveltp_sol.clas.xml",
+          "upstream_path": "src/zrap100_bp_traveltp_sol.clas.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_bp_traveltp_sol.clas.xml",
+          "git_blob_sha1": "c2c2c6d19c0932ce149a27e693da2c1d3d7d1f26",
+          "sha256": "0d8a567c5382dd245a87664beee7bee70607cdcbb215df572a5f8b49dace220d",
+          "bytes": 580
+        },
+        {
+          "path": "rap100/src/zrap100_c_traveltp_sol.bdef.asbdef",
+          "upstream_path": "src/zrap100_c_traveltp_sol.bdef.asbdef",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_c_traveltp_sol.bdef.asbdef",
+          "git_blob_sha1": "57817267bcbc78ab6d8d8d9d8ff9ffdce8dcd473",
+          "sha256": "f7c2c9848e04ba701757ff20e67bcc33b8a85cb05a2fbe4b7ce353f204f75e89",
+          "bytes": 365
+        },
+        {
+          "path": "rap100/src/zrap100_c_traveltp_sol.bdef.xml",
+          "upstream_path": "src/zrap100_c_traveltp_sol.bdef.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_c_traveltp_sol.bdef.xml",
+          "git_blob_sha1": "f823d4529aa941a0fc0d2e0e4234f34789e54705",
+          "sha256": "d58e876b703c48c5773a33e3961218ed3edee983866481773b6dffbdbe2caa1f",
+          "bytes": 1444
+        },
+        {
+          "path": "rap100/src/zrap100_c_traveltp_sol.ddls.asddls",
+          "upstream_path": "src/zrap100_c_traveltp_sol.ddls.asddls",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_c_traveltp_sol.ddls.asddls",
+          "git_blob_sha1": "664e8ae0b2b8c679a697f019b5e982e7e59597f7",
+          "sha256": "6dccbef3b2d96f92737a7a22c30a469f44eab0247433f314fced60c379659b18",
+          "bytes": 1726
+        },
+        {
+          "path": "rap100/src/zrap100_c_traveltp_sol.ddls.baseinfo",
+          "upstream_path": "src/zrap100_c_traveltp_sol.ddls.baseinfo",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_c_traveltp_sol.ddls.baseinfo",
+          "git_blob_sha1": "7b22ed642f929a05842ff929a5ab67781deed9ba",
+          "sha256": "2b525f1b9031e98c9e09d0a67a7b46cfbd14e12bc64bcf7c62e87833c41ed797",
+          "bytes": 266
+        },
+        {
+          "path": "rap100/src/zrap100_c_traveltp_sol.ddls.xml",
+          "upstream_path": "src/zrap100_c_traveltp_sol.ddls.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_c_traveltp_sol.ddls.xml",
+          "git_blob_sha1": "e0719f3e7494c2772445d878ce42b99689d1b294",
+          "sha256": "6e72ceb368f7563954a1293baf18dc253925f14f63797c85cf57e8d9dc0fb1bd",
+          "bytes": 427
+        },
+        {
+          "path": "rap100/src/zrap100_c_traveltp_sol.ddlx.asddlxs",
+          "upstream_path": "src/zrap100_c_traveltp_sol.ddlx.asddlxs",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_c_traveltp_sol.ddlx.asddlxs",
+          "git_blob_sha1": "b7c19fe9c8a08a04fc1576b203c46de3df7d228a",
+          "sha256": "87d63ef01be1432135b95af49db1906ab27af2463708c49749f841116231410a",
+          "bytes": 2485
+        },
+        {
+          "path": "rap100/src/zrap100_c_traveltp_sol.ddlx.xml",
+          "upstream_path": "src/zrap100_c_traveltp_sol.ddlx.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_c_traveltp_sol.ddlx.xml",
+          "git_blob_sha1": "584de22576ed76063db55225b57a8d8a70d1c568",
+          "sha256": "363b99b81b4f541a3f25e0766c7264d42b21c863e9ab6055285118d6f5ad2f8e",
+          "bytes": 443
+        },
+        {
+          "path": "rap100/src/zrap100_cl_eml_sol.clas.abap",
+          "upstream_path": "src/zrap100_cl_eml_sol.clas.abap",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_cl_eml_sol.clas.abap",
+          "git_blob_sha1": "279955adf8173f84333f824b8f95066fe43ad53e",
+          "sha256": "95f3d8bea4e5b9e52f08af616a6a7d7aa64a362d1580f426f7dfbf0b2b4d8ae5",
+          "bytes": 10265
+        },
+        {
+          "path": "rap100/src/zrap100_cl_eml_sol.clas.xml",
+          "upstream_path": "src/zrap100_cl_eml_sol.clas.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_cl_eml_sol.clas.xml",
+          "git_blob_sha1": "7d23f4e02c006cca4c56db78fda0f26b5c43398c",
+          "sha256": "f5f8b3bf13b9335e3dae0e75e0bb79f9185da4b784110a442bb2a75c318af16b",
+          "bytes": 476
+        },
+        {
+          "path": "rap100/src/zrap100_dtravsol.tabl.xml",
+          "upstream_path": "src/zrap100_dtravsol.tabl.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_dtravsol.tabl.xml",
+          "git_blob_sha1": "7bd40ec2ce2900b981dbfaa8d4eb12abec841a6d",
+          "sha256": "d7fe97afeaaaead1d52e67ab826e17f6e7474410e0fe57d0048422a7306c16ac",
+          "bytes": 4792
+        },
+        {
+          "path": "rap100/src/zrap100_r_traveltp_sol.bdef.asbdef",
+          "upstream_path": "src/zrap100_r_traveltp_sol.bdef.asbdef",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_r_traveltp_sol.bdef.asbdef",
+          "git_blob_sha1": "a62441460e21d7d6019392eec350278ed3639797",
+          "sha256": "0bc779daa279faf6cdd08225db646af422b5fe0f6a592acbfc6c94b98c0c58b3",
+          "bytes": 2083
+        },
+        {
+          "path": "rap100/src/zrap100_r_traveltp_sol.bdef.xml",
+          "upstream_path": "src/zrap100_r_traveltp_sol.bdef.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_r_traveltp_sol.bdef.xml",
+          "git_blob_sha1": "6a3084ca03f22c60fbb9ebb09fe84041bc1deb23",
+          "sha256": "a2e7eb6d3f1e9bd6d2fae817ebf4f9adcb5f72e313cbe0605f2290dde0c8896b",
+          "bytes": 1444
+        },
+        {
+          "path": "rap100/src/zrap100_r_traveltp_sol.ddls.asddls",
+          "upstream_path": "src/zrap100_r_traveltp_sol.ddls.asddls",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_r_traveltp_sol.ddls.asddls",
+          "git_blob_sha1": "319ed8f33af0c3e0a7095b8f108511c5d4f25800",
+          "sha256": "6188855ebab1dfcc3d2c19637d515d1f50e21c8704fde14e60bb518ff5142e56",
+          "bytes": 1964
+        },
+        {
+          "path": "rap100/src/zrap100_r_traveltp_sol.ddls.baseinfo",
+          "upstream_path": "src/zrap100_r_traveltp_sol.ddls.baseinfo",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_r_traveltp_sol.ddls.baseinfo",
+          "git_blob_sha1": "578b5d6e14f00b7a43ff219de071053d44cf7bf4",
+          "sha256": "b70fc085f39cd927c5e4f2e9ee9d3f078a5f9431bdea4f5556e9645e1dac5d3a",
+          "bytes": 241
+        },
+        {
+          "path": "rap100/src/zrap100_r_traveltp_sol.ddls.xml",
+          "upstream_path": "src/zrap100_r_traveltp_sol.ddls.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_r_traveltp_sol.ddls.xml",
+          "git_blob_sha1": "64e5055c52e19ce05b29f1310d772b991e9cbf9d",
+          "sha256": "5d7d316c2bcdae2269b1a8d869025e5d5c4c6a1a84c3eae82dd66418870cedd6",
+          "bytes": 427
+        },
+        {
+          "path": "rap100/src/zrap100_tc_travel_eml_sol.clas.abap",
+          "upstream_path": "src/zrap100_tc_travel_eml_sol.clas.abap",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_tc_travel_eml_sol.clas.abap",
+          "git_blob_sha1": "8c231927c698f1aa988465aa91b6b867101521ac",
+          "sha256": "4f091a6b08f2b62852f70507c2c0c5a3e162ae4eff16ba4048f8ed816b26eab8",
+          "bytes": 5879
+        },
+        {
+          "path": "rap100/src/zrap100_tc_travel_eml_sol.clas.xml",
+          "upstream_path": "src/zrap100_tc_travel_eml_sol.clas.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_tc_travel_eml_sol.clas.xml",
+          "git_blob_sha1": "14a6ae064792bd050b1afcd63110296de391e356",
+          "sha256": "5dcb333c63ea2869820dfca7a4f647b896cc04fbdf73c5a2291b09f4433be7ec",
+          "bytes": 583
+        },
+        {
+          "path": "rap100/src/zrap100_ui_travel_o4_sol.srvb.xml",
+          "upstream_path": "src/zrap100_ui_travel_o4_sol.srvb.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_ui_travel_o4_sol.srvb.xml",
+          "git_blob_sha1": "b7b483a68ee2677591fa39a79ad130ca045b94a9",
+          "sha256": "a31d4e58afd6f2502d55fec656fe42943f393e1f35113a2fb9e253c311ddb22f",
+          "bytes": 2974
+        },
+        {
+          "path": "rap100/src/zrap100_ui_travel_o4_sol_0001_g4ba.sco2.xml",
+          "upstream_path": "src/zrap100_ui_travel_o4_sol_0001_g4ba.sco2.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_ui_travel_o4_sol_0001_g4ba.sco2.xml",
+          "git_blob_sha1": "064aadf3c5c106c927984f9856d6adfceabef0bd",
+          "sha256": "89b3131d1f6a357d1d4451184c3a4ac4525758329312de11e9d60748d5f8b27e",
+          "bytes": 674
+        },
+        {
+          "path": "rap100/src/zrap100_ui_travel_o4_sol__00001_ibs.sia6.xml",
+          "upstream_path": "src/zrap100_ui_travel_o4_sol__00001_ibs.sia6.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_ui_travel_o4_sol__00001_ibs.sia6.xml",
+          "git_blob_sha1": "290338e7531ece411c339ce55ca01ea7be5d9b6f",
+          "sha256": "3888a8bb4b94eb69b483c59bfbcf7388a396e5183e411868e2eca1fa6a9b0dbf",
+          "bytes": 946
+        },
+        {
+          "path": "rap100/src/zrap100_ui_travel_o4_sol__00002_ibs.sia6.xml",
+          "upstream_path": "src/zrap100_ui_travel_o4_sol__00002_ibs.sia6.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_ui_travel_o4_sol__00002_ibs.sia6.xml",
+          "git_blob_sha1": "c5534e10079eb63e35b1301f9355c18df248f4b8",
+          "sha256": "8342b19db289a8f94a3c1b2e325ff42f9896306f7939a10de0939af82c9725c1",
+          "bytes": 946
+        },
+        {
+          "path": "rap100/src/zrap100_ui_travel_sol.srvd.srvdsrv",
+          "upstream_path": "src/zrap100_ui_travel_sol.srvd.srvdsrv",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_ui_travel_sol.srvd.srvdsrv",
+          "git_blob_sha1": "4d45e564798e7c67de949f6e051c2ef6a8f8ca64",
+          "sha256": "1be0978f9e8d789fdb07dcd0a8a9022edf593b5308a4af619bca4324d1871836",
+          "bytes": 154
+        },
+        {
+          "path": "rap100/src/zrap100_ui_travel_sol.srvd.xml",
+          "upstream_path": "src/zrap100_ui_travel_sol.srvd.xml",
+          "url": "https://raw.githubusercontent.com/SAP-samples/abap-platform-rap100/0c84e7e44b7c024fbc129ca6d7401aef1ea1d0b1/src/zrap100_ui_travel_sol.srvd.xml",
+          "git_blob_sha1": "b9370270c65872f3cbfa0695e4d3dd2a6a359591",
+          "sha256": "427983bd84063cc1db3be9cb392e38e376b750608f133f6c073bb8d1b6d739e0",
+          "bytes": 757
+        }
+      ]
+    },
+    {
+      "id": "clas",
+      "repository": "abapGit-tests/CLAS",
+      "commit": "d747b65a17f586e4921f5c925457a7972b0bedfa",
+      "license": "MIT",
+      "source_root": "tests/fixtures/public_exports/clas/src",
+      "files": [
+        {
+          "path": "clas/.abapgit.xml",
+          "upstream_path": ".abapgit.xml",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/CLAS/d747b65a17f586e4921f5c925457a7972b0bedfa/.abapgit.xml",
+          "git_blob_sha1": "8e8b80edbc31c4f9c0a40feb6bfa7de3f8da4009",
+          "sha256": "9a177879e97461f3d5fee4ade30da9df99b36db1acc0c6c83c8b2b5cedfea1e3",
+          "bytes": 458
+        },
+        {
+          "path": "clas/LICENSE",
+          "upstream_path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/CLAS/d747b65a17f586e4921f5c925457a7972b0bedfa/LICENSE",
+          "git_blob_sha1": "1efa9b1dc66281714ec27b808229b468363a21b1",
+          "sha256": "fde176129a113dcee5a466a223def62fddb97c5350663742a631edc523c8616a",
+          "bytes": 1070
+        },
+        {
+          "path": "clas/src/package.devc.xml",
+          "upstream_path": "src/package.devc.xml",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/CLAS/d747b65a17f586e4921f5c925457a7972b0bedfa/src/package.devc.xml",
+          "git_blob_sha1": "3dacdd41216f6fc6ffdfbedd87c450c2e88596a9",
+          "sha256": "6e5cab624f3c33e920fa5efbf77e729f5b3088ec4410ce8518797384d3195581",
+          "bytes": 296
+        },
+        {
+          "path": "clas/src/zcl_ag_unit_test.clas.abap",
+          "upstream_path": "src/zcl_ag_unit_test.clas.abap",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/CLAS/d747b65a17f586e4921f5c925457a7972b0bedfa/src/zcl_ag_unit_test.clas.abap",
+          "git_blob_sha1": "db534e6e736255f6a815b8cfda673f112de35f7c",
+          "sha256": "8d6a6a4fb8c7053acbe6b3f4849fab4cfe49e8c664d61ff436d09baaab194e46",
+          "bytes": 234
+        },
+        {
+          "path": "clas/src/zcl_ag_unit_test.clas.xml",
+          "upstream_path": "src/zcl_ag_unit_test.clas.xml",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/CLAS/d747b65a17f586e4921f5c925457a7972b0bedfa/src/zcl_ag_unit_test.clas.xml",
+          "git_blob_sha1": "fca8ccf535a56439d6b926398d680a68d659cbf0",
+          "sha256": "0e9148f3837122ba069dde94288579f73377ce372764519ca544d7470032cf20",
+          "bytes": 677
+        }
+      ]
+    },
+    {
+      "id": "intf",
+      "repository": "abapGit-tests/INTF",
+      "commit": "abd7e177e506ab0d3467477c153d8b034155045f",
+      "license": "MIT",
+      "source_root": "tests/fixtures/public_exports/intf/src",
+      "files": [
+        {
+          "path": "intf/.abapgit.xml",
+          "upstream_path": ".abapgit.xml",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/INTF/abd7e177e506ab0d3467477c153d8b034155045f/.abapgit.xml",
+          "git_blob_sha1": "8e8b80edbc31c4f9c0a40feb6bfa7de3f8da4009",
+          "sha256": "9a177879e97461f3d5fee4ade30da9df99b36db1acc0c6c83c8b2b5cedfea1e3",
+          "bytes": 458
+        },
+        {
+          "path": "intf/LICENSE",
+          "upstream_path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/INTF/abd7e177e506ab0d3467477c153d8b034155045f/LICENSE",
+          "git_blob_sha1": "1efa9b1dc66281714ec27b808229b468363a21b1",
+          "sha256": "fde176129a113dcee5a466a223def62fddb97c5350663742a631edc523c8616a",
+          "bytes": 1070
+        },
+        {
+          "path": "intf/src/package.devc.xml",
+          "upstream_path": "src/package.devc.xml",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/INTF/abd7e177e506ab0d3467477c153d8b034155045f/src/package.devc.xml",
+          "git_blob_sha1": "68e3ef35fd4fae726872da0478c2978c394526d0",
+          "sha256": "af32e34543e4f6f095f97a221e0cba1bd4c1ba2d0745c0a7ab4a7ff6ae355d2d",
+          "bytes": 291
+        },
+        {
+          "path": "intf/src/zif_abapgit_unit_test.intf.abap",
+          "upstream_path": "src/zif_abapgit_unit_test.intf.abap",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/INTF/abd7e177e506ab0d3467477c153d8b034155045f/src/zif_abapgit_unit_test.intf.abap",
+          "git_blob_sha1": "6b58decada09f938585b0f8e66e1db83491fc3ac",
+          "sha256": "5c20dd3e0bf8a49174fd40623480daa20cd9d762bcd8d90f8fc33e2d4e23aa88",
+          "bytes": 122
+        },
+        {
+          "path": "intf/src/zif_abapgit_unit_test.intf.xml",
+          "upstream_path": "src/zif_abapgit_unit_test.intf.xml",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/INTF/abd7e177e506ab0d3467477c153d8b034155045f/src/zif_abapgit_unit_test.intf.xml",
+          "git_blob_sha1": "f27068ea1dd473bf4fa6c5c53b4cd684662f3040",
+          "sha256": "1b2659af1cc00ab4131dde2924aceea0c5e333cb45816cc018d700690bd1bd8f",
+          "bytes": 655
+        }
+      ]
+    },
+    {
+      "id": "fugr",
+      "repository": "abapGit-tests/FUGR",
+      "commit": "fa666575055f97264cf250bced5ee5ebfd2dff53",
+      "license": "MIT",
+      "source_root": "tests/fixtures/public_exports/fugr/src",
+      "files": [
+        {
+          "path": "fugr/.abapgit.xml",
+          "upstream_path": ".abapgit.xml",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/FUGR/fa666575055f97264cf250bced5ee5ebfd2dff53/.abapgit.xml",
+          "git_blob_sha1": "8e8b80edbc31c4f9c0a40feb6bfa7de3f8da4009",
+          "sha256": "9a177879e97461f3d5fee4ade30da9df99b36db1acc0c6c83c8b2b5cedfea1e3",
+          "bytes": 458
+        },
+        {
+          "path": "fugr/LICENSE",
+          "upstream_path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/FUGR/fa666575055f97264cf250bced5ee5ebfd2dff53/LICENSE",
+          "git_blob_sha1": "1efa9b1dc66281714ec27b808229b468363a21b1",
+          "sha256": "fde176129a113dcee5a466a223def62fddb97c5350663742a631edc523c8616a",
+          "bytes": 1070
+        },
+        {
+          "path": "fugr/src/package.devc.xml",
+          "upstream_path": "src/package.devc.xml",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/FUGR/fa666575055f97264cf250bced5ee5ebfd2dff53/src/package.devc.xml",
+          "git_blob_sha1": "d985c44033db48e7dea2fde835b17c04f1b18aed",
+          "sha256": "d7fb6ddd227de1cf1713069f777b2cf82d5bdad9b208f96aa47c2465a16fc4c2",
+          "bytes": 291
+        },
+        {
+          "path": "fugr/src/zabapgit_unit_test.fugr.lzabapgit_unit_testtop.abap",
+          "upstream_path": "src/zabapgit_unit_test.fugr.lzabapgit_unit_testtop.abap",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/FUGR/fa666575055f97264cf250bced5ee5ebfd2dff53/src/zabapgit_unit_test.fugr.lzabapgit_unit_testtop.abap",
+          "git_blob_sha1": "b5d07bf8a3e6d2d7a2545acab30a21173f00543d",
+          "sha256": "5ef04b5fb190994800db6a479eb76b867d46bd229528132b73639715a1772a03",
+          "bytes": 130
+        },
+        {
+          "path": "fugr/src/zabapgit_unit_test.fugr.lzabapgit_unit_testtop.xml",
+          "upstream_path": "src/zabapgit_unit_test.fugr.lzabapgit_unit_testtop.xml",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/FUGR/fa666575055f97264cf250bced5ee5ebfd2dff53/src/zabapgit_unit_test.fugr.lzabapgit_unit_testtop.xml",
+          "git_blob_sha1": "8c325ab152745cfe3be8bc36a7a0b5bf562d6785",
+          "sha256": "ea2e770699e2ecde7c1445aa8c389b4e7298262a8e3544a49f30b75708890dc4",
+          "bytes": 408
+        },
+        {
+          "path": "fugr/src/zabapgit_unit_test.fugr.saplzabapgit_unit_test.abap",
+          "upstream_path": "src/zabapgit_unit_test.fugr.saplzabapgit_unit_test.abap",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/FUGR/fa666575055f97264cf250bced5ee5ebfd2dff53/src/zabapgit_unit_test.fugr.saplzabapgit_unit_test.abap",
+          "git_blob_sha1": "972a3de63fe5a4d3375f88ec855adf3f1d657b09",
+          "sha256": "4a13c8c62bb2a5c3aa343c660bd1f502f671c206c97dffe9a5cd633c060a9481",
+          "bytes": 904
+        },
+        {
+          "path": "fugr/src/zabapgit_unit_test.fugr.saplzabapgit_unit_test.xml",
+          "upstream_path": "src/zabapgit_unit_test.fugr.saplzabapgit_unit_test.xml",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/FUGR/fa666575055f97264cf250bced5ee5ebfd2dff53/src/zabapgit_unit_test.fugr.saplzabapgit_unit_test.xml",
+          "git_blob_sha1": "02ab4319cd95b75901bb94f6ebf42b8994a3cd41",
+          "sha256": "9294cc93c521929bc049eed52ff3ff534dc6e1309bba452f1a91dc2e89d023af",
+          "bytes": 564
+        },
+        {
+          "path": "fugr/src/zabapgit_unit_test.fugr.screen_0100.abap",
+          "upstream_path": "src/zabapgit_unit_test.fugr.screen_0100.abap",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/FUGR/fa666575055f97264cf250bced5ee5ebfd2dff53/src/zabapgit_unit_test.fugr.screen_0100.abap",
+          "git_blob_sha1": "2b90f4d0ce1396ddabb427ae2a4d6b6d540a1d7f",
+          "sha256": "81bca6ccfb9914ae16e97522a91d8aa5290003064e421d8e5018bd6566261220",
+          "bytes": 96
+        },
+        {
+          "path": "fugr/src/zabapgit_unit_test.fugr.xml",
+          "upstream_path": "src/zabapgit_unit_test.fugr.xml",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/FUGR/fa666575055f97264cf250bced5ee5ebfd2dff53/src/zabapgit_unit_test.fugr.xml",
+          "git_blob_sha1": "2dd496413239068626d23f8eb0f8cc955f38dfbc",
+          "sha256": "ffeddf885be9fc30e15e5be0d47c404b5e3c800ec532884e039d0b7ba744d1bb",
+          "bytes": 1594
+        },
+        {
+          "path": "fugr/src/zabapgit_unit_test.fugr.z_abapgit_unit_test.abap",
+          "upstream_path": "src/zabapgit_unit_test.fugr.z_abapgit_unit_test.abap",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/FUGR/fa666575055f97264cf250bced5ee5ebfd2dff53/src/zabapgit_unit_test.fugr.z_abapgit_unit_test.abap",
+          "git_blob_sha1": "3f510ce8fa51b99cb7a35cdde426c9a959c00cf1",
+          "sha256": "85a690f68a302caf357ba4e5f468f7148d708ec8bfd327927158c6b51f58f96d",
+          "bytes": 238
+        }
+      ]
+    },
+    {
+      "id": "prog",
+      "repository": "abapGit-tests/PROG",
+      "commit": "bb5c952ce2306c80a9dc29fd45ccd463e65582bb",
+      "license": "MIT",
+      "source_root": "tests/fixtures/public_exports/prog/src",
+      "files": [
+        {
+          "path": "prog/.abapgit.xml",
+          "upstream_path": ".abapgit.xml",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/PROG/bb5c952ce2306c80a9dc29fd45ccd463e65582bb/.abapgit.xml",
+          "git_blob_sha1": "8e8b80edbc31c4f9c0a40feb6bfa7de3f8da4009",
+          "sha256": "9a177879e97461f3d5fee4ade30da9df99b36db1acc0c6c83c8b2b5cedfea1e3",
+          "bytes": 458
+        },
+        {
+          "path": "prog/LICENSE",
+          "upstream_path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/PROG/bb5c952ce2306c80a9dc29fd45ccd463e65582bb/LICENSE",
+          "git_blob_sha1": "1efa9b1dc66281714ec27b808229b468363a21b1",
+          "sha256": "fde176129a113dcee5a466a223def62fddb97c5350663742a631edc523c8616a",
+          "bytes": 1070
+        },
+        {
+          "path": "prog/src/package.devc.xml",
+          "upstream_path": "src/package.devc.xml",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/PROG/bb5c952ce2306c80a9dc29fd45ccd463e65582bb/src/package.devc.xml",
+          "git_blob_sha1": "5cec48af7741a603fc07fe53498c558906778f7b",
+          "sha256": "02a9461f79dcbea0fcb401e25a61784c2efda2cff6541c48324bb1a9a74df956",
+          "bytes": 291
+        },
+        {
+          "path": "prog/src/zag_unit_test.prog.abap",
+          "upstream_path": "src/zag_unit_test.prog.abap",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/PROG/bb5c952ce2306c80a9dc29fd45ccd463e65582bb/src/zag_unit_test.prog.abap",
+          "git_blob_sha1": "1f7c74cd1ef1bf18d293837600be98c6a92a22cc",
+          "sha256": "66a325a5a5e772e66f8ec9fef8c99bf083130480b7719c2697380d25d51c27fd",
+          "bytes": 216
+        },
+        {
+          "path": "prog/src/zag_unit_test.prog.screen_2000.abap",
+          "upstream_path": "src/zag_unit_test.prog.screen_2000.abap",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/PROG/bb5c952ce2306c80a9dc29fd45ccd463e65582bb/src/zag_unit_test.prog.screen_2000.abap",
+          "git_blob_sha1": "261e7b9ee0f6e3c9499de8469a7f4c6f915ccc4b",
+          "sha256": "383ab036f7bff45ab47eb5b0d2c998e7248eb06fe37c47b67722ed8c166a4a0a",
+          "bytes": 96
+        },
+        {
+          "path": "prog/src/zag_unit_test.prog.xml",
+          "upstream_path": "src/zag_unit_test.prog.xml",
+          "url": "https://raw.githubusercontent.com/abapGit-tests/PROG/bb5c952ce2306c80a9dc29fd45ccd463e65582bb/src/zag_unit_test.prog.xml",
+          "git_blob_sha1": "0a339aaa935501b8cbe40482c0d608672e2c76b0",
+          "sha256": "dafaac03254ac8a6ee1df6c254c549fd3e82fa6806acee4f526828124c38caf9",
+          "bytes": 1564
+        }
+      ]
+    }
+  ]
+}
