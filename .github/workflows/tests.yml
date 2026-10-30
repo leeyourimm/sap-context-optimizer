@@ -19,6 +19,8 @@ jobs:
         run: python scripts/verify_b1.py --isolated --output-dir .sap-context/ci-smoke
       - name: Required pinned public export retrieval evaluation
         run: python scripts/verify_public_exports.py --output .sap-context/ci-public/report.json
+      - name: B2 offline compact and runtime preflight (no model calls)
+        run: python scripts/verify_b2.py --output .sap-context/ci-b2/report.json
       - name: Preserve public-only validation reports
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
@@ -27,3 +29,4 @@ jobs:
           path: |
             .sap-context/ci-smoke/*.json
             .sap-context/ci-public/*.json
+            .sap-context/ci-b2/*.json

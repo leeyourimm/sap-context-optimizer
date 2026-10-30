@@ -168,3 +168,9 @@ python3 scripts/sap_context.py usage /승인된/로컬/단일실험-stream.jsonl
 Claude가 설치된 승인 환경에서 `.mcp.json` 인식 → Hook event 전달 → 평소 질문의 실제 도구 선택 → 본문/누락 표시 → 최종 모델 입력 관찰 → provider 사용량·청구 대조 순으로 검증합니다. Hook 로그/화면/모델이 표식을 말한 것만으로 최종 요청 payload를 확인했다고 주장하지 않습니다. 승인된 요청 계측 경로가 없다면 직접 관찰 미완료로 기록하세요.
 
 [28개 평가 과제 및 비교 절차](docs/evaluation.md), [M0/B0 검증 결과](reports/VALIDATION.md), [B1 검증 결과](reports/B1-VALIDATION.md)를 참고하세요. 로컬 B1 도구는 구현됐으며, 완전한 RAP 그래프·라이브 ADT 연결·모델 사용량 검증은 포함하지 않습니다.
+
+## B2: approved Claude Code experiment and product evidence
+
+[Reproducible B2 instructions](experiments/b2/README.md) cover the opt-in A/B0/B1 runner, nine public tasks, approval manifest, protected local logs and manual accuracy/security evaluation. `python scripts/run_claude_e2e.py` performs read-only preflight; it does not install, log in or call a model. Actual Claude Code E2E remains **unexecuted** in this environment.
+
+New offline `sap_help_catalog` lists reviewed product/release IDs and coverage gaps. `sap_help_document` can read two verified public ABAP 7.54 keyword pages with title/body-marker/hash checks. This is **not** full SAP Help search or verified FI/CO/MM/SD error coverage. Note/KBA bodies requiring login remain unread. The experimental compact local search is opt-in; the default MCP contract and full-original reads remain available. See [B2 validation results](reports/B2-VALIDATION.md) for measured wire bytes and explicit limitations; no token/cost savings are claimed.

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "approved_public_model_calls": false,
+  "approved_runtime_isolated": false,
+  "approved_by": "REPLACE_AFTER_REVIEW",
+  "model": "REPLACE_WITH_PINNED_MODEL_ID",
+  "per_run_budget_usd": 0.5,
+  "max_turns": 12,
+  "timeout_seconds": 300,
+  "arms": [
+    "A",
+    "B0",
+    "B1"
+  ],
+  "task_ids": [
+    "tutorial",
+    "fi",
+    "co",
+    "mm",
+    "sd",
+    "keyword-document",
+    "function-module",
+    "rap-action",
+    "rap-validation"
+  ],
+  "expected_cli_version": "REPLACE_WITH_PREFLIGHT_VERSION",
+  "suite_sha256": "3a03aac6b51c1d83d83de5897bcc31e2101fd761e5ea1a421317c106172b2966",
+  "corpus_manifest_sha256": "3c34f815cb7d1724ca332219bb84c87ca3154ba54bf82ca2f0ecd89eb69b4e66"
+}
