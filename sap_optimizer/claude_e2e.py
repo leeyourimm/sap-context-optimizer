@@ -21,6 +21,9 @@ REQUIRED_FLAGS = ("--print", "--verbose", "--output-format", "--model", "--max-t
                   "--tools", "--strict-mcp-config", "--mcp-config", "--setting-sources",
                   "--settings", "--no-session-persistence")
 DENIED_TOOLS = "Bash,Write,Edit,NotebookEdit,WebSearch,WebFetch,Task,Agent"
+# Anthropic documents this print-mode flag even though some CLI versions omit it
+# from --help. This exception is NOT a runtime semantics check.
+DOCUMENTED_HELP_HIDDEN_FLAGS = frozenset({"--max-turns"})
 
 
 class RuntimeNotReady(PolicyError):
@@ -37,6 +40,7 @@ def preflight():
     executable = shutil.which("claude")
     report = {"executable_present": bool(executable), "version": None, "auth_readiness": "unverified",
               "supported_flags": False, "flag_detection_only": True, "flag_semantics_verified": False,
+              "help_missing_flags": [], "help_documented_hidden_flags": [],
               "auth_command": "claude auth status (JSON default)", "ready": False, "model_calls": 0,
               "cwd_readable": os.access(Path.cwd(), os.R_OK), "cwd_writable": os.access(Path.cwd(), os.W_OK),
               "process_group_timeout_supported": os.name == "posix",
@@ -51,7 +55,13 @@ def preflight():
         import re
         match = re.search(r"\b\d+\.\d+\.\d+\b", version.stdout)
         report["version"] = match.group() if match else None
-        report["supported_flags"] = all(re.search(r"(?<![\w-])" + re.escape(f) + r"(?![\w-])", help_.stdout) for f in REQUIRED_FLAGS)
+        help_missing = [f for f in REQUIRED_FLAGS
+                        if not re.search(r"(?<![\w-])" + re.escape(f) + r"(?![\w-])", help_.stdout)]
+        report["help_missing_flags"] = help_missing
+        report["help_documented_hidden_flags"] = [f for f in help_missing if f in DOCUMENTED_HELP_HIDDEN_FLAGS]
+        # Help output is not exhaustive: accept only explicitly documented hidden flags.
+        # Any other absent flag still blocks readiness. Real semantics remain unverified.
+        report["supported_flags"] = all(f in DOCUMENTED_HELP_HIDDEN_FLAGS for f in help_missing)
         auth = subprocess.run([executable, "auth", "status"], capture_output=True,
                               text=True, timeout=15)
         value = json.loads(auth.stdout) if auth.returncode == 0 else {}
