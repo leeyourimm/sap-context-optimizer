@@ -1,0 +1,2330 @@
+{
+  "observed_at_utc": "2026-10-30T10:48:15.870629+00:00",
+  "client": "Python MCP protocol client, NOT Claude Code",
+  "claude_code_verified": false,
+  "calls": [
+    {
+      "service": "search",
+      "tool": "search_tutorials",
+      "public_arguments": {
+        "query": "ABAP RAP",
+        "limit": 3
+      },
+      "raw_response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "action: search_tutorials\nkind: function\nresult[3]:\n  - slug: abap-environment-vs-code\n    title: \"Create a SAP Fiori App in Visual Studio Code and Deploy it to SAP BTP, ABAP Environment\"\n    snippet: \"Create a SAP Fiori Elements app for a RAP business object from SAP BTP, ABAP Environment in Visual Studio Code and deploy it to SAP BTP, ABAP Environment.\"\n    tags[1]: software-product>sap-btp--abap-environment\n  - slug: abap-environment-rap-generator\n    title: Generate a RAP Business Service With The Wizard\n    snippet: Generate a RAP business service in SAP BTP ABAP Environment using the ABAP Repository Objects Wizard\n    tags[1]: programming-tool>abap-development\n  - slug: abap-environment-create-rap-business-events\n    title: Create a RAP Business Event in SAP BTP ABAP Environment\n    snippet: Create a RAP business event in SAP BTP ABAP Environment and test it using a local event handler\n    tags[1]: software-product>sap-btp--abap-environment"
+          }
+        ],
+        "structuredContent": {
+          "action": "search_tutorials",
+          "kind": "function",
+          "result": [
+            {
+              "slug": "abap-environment-vs-code",
+              "title": "Create a SAP Fiori App in Visual Studio Code and Deploy it to SAP BTP, ABAP Environment",
+              "snippet": "Create a SAP Fiori Elements app for a RAP business object from SAP BTP, ABAP Environment in Visual Studio Code and deploy it to SAP BTP, ABAP Environment.",
+              "tags": [
+                "software-product>sap-btp--abap-environment"
+              ]
+            },
+            {
+              "slug": "abap-environment-rap-generator",
+              "title": "Generate a RAP Business Service With The Wizard",
+              "snippet": "Generate a RAP business service in SAP BTP ABAP Environment using the ABAP Repository Objects Wizard",
+              "tags": [
+                "programming-tool>abap-development"
+              ]
+            },
+            {
+              "slug": "abap-environment-create-rap-business-events",
+              "title": "Create a RAP Business Event in SAP BTP ABAP Environment",
+              "snippet": "Create a RAP business event in SAP BTP ABAP Environment and test it using a local event handler",
+              "tags": [
+                "software-product>sap-btp--abap-environment"
+              ]
+            }
+          ]
+        }
+      },
+      "observed_shape": {
+        "type": "array",
+        "count": 3,
+        "first_item": {
+          "slug": "str",
+          "title": "str",
+          "snippet": "str",
+          "tags": {
+            "type": "array",
+            "count": 1,
+            "first_item": "str"
+          }
+        }
+      }
+    },
+    {
+      "service": "search",
+      "tool": "get_tutorial",
+      "public_arguments": {
+        "slug": "abap-environment-vs-code"
+      },
+      "raw_response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "action: get_tutorial\nkind: function\nresult:\n  slug: abap-environment-vs-code\n  title: \"Create a SAP Fiori App in Visual Studio Code and Deploy it to SAP BTP, ABAP Environment\"\n  description: \"Create a SAP Fiori Elements app for a RAP business object from SAP BTP, ABAP Environment in Visual Studio Code and deploy it to SAP BTP, ABAP Environment.\"\n  tags[1]: software-product>sap-btp--abap-environment\n  steps[7]{number,title}:\n    1,Create SAP Fiori application\n    2,Start SAP Fiori application\n    3,Deploy SAP Fiori application\n    4,Check BSP library and SAP Fiori Launchpad app descriptor item in Eclipse\n    5,Create IAM App and business catalog\n    6,Run SAP Fiori application\n    7,Test yourself"
+          }
+        ],
+        "structuredContent": {
+          "action": "get_tutorial",
+          "kind": "function",
+          "result": {
+            "slug": "abap-environment-vs-code",
+            "title": "Create a SAP Fiori App in Visual Studio Code and Deploy it to SAP BTP, ABAP Environment",
+            "description": "Create a SAP Fiori Elements app for a RAP business object from SAP BTP, ABAP Environment in Visual Studio Code and deploy it to SAP BTP, ABAP Environment.",
+            "tags": [
+              "software-product>sap-btp--abap-environment"
+            ],
+            "steps": [
+              {
+                "number": 1,
+                "title": "Create SAP Fiori application"
+              },
+              {
+                "number": 2,
+                "title": "Start SAP Fiori application"
+              },
+              {
+                "number": 3,
+                "title": "Deploy SAP Fiori application"
+              },
+              {
+                "number": 4,
+                "title": "Check BSP library and SAP Fiori Launchpad app descriptor item in Eclipse"
+              },
+              {
+                "number": 5,
+                "title": "Create IAM App and business catalog"
+              },
+              {
+                "number": 6,
+                "title": "Run SAP Fiori application"
+              },
+              {
+                "number": 7,
+                "title": "Test yourself"
+              }
+            ]
+          }
+        }
+      },
+      "observed_shape": {
+        "slug": "str",
+        "title": "str",
+        "description": "str",
+        "tags": {
+          "type": "array",
+          "count": 1,
+          "first_item": "str"
+        },
+        "steps": {
+          "type": "array",
+          "count": 7,
+          "first_item": {
+            "number": "int",
+            "title": "str"
+          }
+        }
+      }
+    },
+    {
+      "service": "search",
+      "tool": "get_tutorial_step",
+      "public_arguments": {
+        "slug": "abap-environment-vs-code",
+        "stepNumber": 1,
+        "format": "markdown"
+      },
+      "raw_response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Error calling get_tutorial_step: step not found"
+          }
+        ],
+        "isError": true
+      },
+      "error": "Remote tool returned isError"
+    },
+    {
+      "service": "canonical_tutorial",
+      "url": "https://developers.sap.com/tutorials/abap-environment-vs-code.md",
+      "purpose": "Explicit full-page fallback; not step API success",
+      "status": 200,
+      "body_bytes": 12467,
+      "public_body": "---\nparser: v2\nauto_validation: true\nprimary_tag: software-product>sap-btp--abap-environment\ntags: [  tutorial>beginner, programming-tool>abap-development, software-product>sap-business-technology-platform ]\ntime: 15\nauthor_name: Merve Temel\nauthor_profile: https://github.com/mervey45\nslug: abap-environment-vs-code\ncanonical_url: https://developers.sap.com/tutorials/abap-environment-vs-code\n---\n\n# Create a SAP Fiori App in Visual Studio Code and Deploy it to SAP BTP, ABAP Environment\n<!-- description --> Create a SAP Fiori Elements app for a RAP business object from SAP BTP, ABAP Environment in Visual Studio Code and deploy it to SAP BTP, ABAP Environment.\n\n## Prerequisites\n  - You need an SAP BTP, ABAP environment [trial user](abap-environment-trial-onboarding) or a license.\n  - You have completed [Develop a Fiori App Using the ABAP RESTful Application Programming Model (Managed Scenario)](group.abap-env-restful-managed).\n  - Installation of:\n    - [Git](https://git-scm.com/downloads)\n    - [Node.js and VS Code](https://help.sap.com/viewer/454b7fb9aacd4e369e5be8f7e909d3ec/Latest/en-US/61383cac9de24b75a4e2b8c9d11e8af0.html)\n  - You also need to install [Python](https://www.python.org/downloads/) for **Windows**.\n  - Installation of [Extensions](https://help.sap.com/viewer/454b7fb9aacd4e369e5be8f7e909d3ec/Latest/en-US/61383cac9de24b75a4e2b8c9d11e8af0.html)\n\n\n## You will learn  \n  - How to create an SAP Fiori application\n  - How to run an SAP Fiori application\n  - How to deploy an SAP Fiori application\n\n## Intro\n>**HINT**: If you are not able to see the **Fiori Application Generator**, please install the generator again by opening the terminal and adding following: npm `install -g yo`.\n\n---\n\n### Create SAP Fiori application\n\n\n1. Open Visual Studio Code and select **View** > **Command Palette**.\n\n    ![app](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/app.png)\n\n2. Search **Fiori: Open Application Generator** and select it.\n\n    ![app](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/app2.png)\n\n3. Select **SAP Fiori elements** as application type, **List Report Object Page** as `floorplan` and click **Next >**.\n\n    ![app](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/app3.png)\n\n4. Select **Data Source** and **Service**:\n\n    - Data source: Connect to an SAP System\n    - System: New System\n    - System type: ABAP Environment on SAP Business Technology Platform\n    - ABAP environment definition source: Upload a Service Key File\n    - Service key file path: `<your_service_key>`\n    - System name: `<your_system_name>`\n    - Service: `<your_service_definition>`\n\n    ![app](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/app5.png)\n\n      Click **Next >**.\n\n      You have downloaded the service key earlier in the SAP BTP Trial Cockpit.\n\n5. Select **`TravelProcessor`** and click **Next >**.\n\n    ![app](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/app6.png)\n\n6. Add project attributes:\n\n    - Module name: `ztravel_app_xxx`\n    - Application title: Travel App XXX\n    - Project folder path: `C:\\Users\\<your_user>\\projects`\n    - Add deployment configuration: Yes\n    - Add FLP configuration: Yes\n\n    ![app](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/app7.png)\n\n    Click **Next >**.\n\n7. Configure deployment:\n\n     - Target: ABAP\n     - Is this an SAP Business Technology Platform system? Yes\n     - Target System URL: `<your_abap_system_url>`\n     - Name: `ztravel_app_xxx`\n     - Package: `ztravel_app_xxx`\n     - Transport Request: `<your_transport_request>`\n     - Deployment description: deployment xxx\n\n    ![app](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/app9.png)\n\n    Click **Next >**.\n\n    >**HINT: If you want to copy your transport request, please do following:**  Open Eclipse, search your package **`ZTRAVEL_APP_XXX`** and open it. Open your transport organizer to see your transport request. Copy your transport request for later use. You can find your **transport request** underneath the **Modifiable** folder.\n    >      ![deploy](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/deploy31.png)\n\n\n8. Configure Fiori Launchpad:\n\n     - Semantic Object: `ztravel_app_xxx`\n     - Action: display\n     - Title: Travel App XXX\n\n    ![app](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/app10.png)\n\n    Click **Finish**.\n\n9. Now all files have been generated.\n\n    ![app](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/app8.png)\n\n\n\n### Start SAP Fiori application\n\n\n1. Right-click **`ztravel_app_xxx`** and select **Open in Integrated Terminal**.\n\n    ![start](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/start.png)\n\n2. Start your application with `npm start` and press enter.\n\n    ![start](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/start2.png)\n\n3. Press **Go** and check your result.\n\n    ![start](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/start3.png)\n\n\n\n### Deploy SAP Fiori application\n\n\n1. Open your terminal and enter `npm run deploy`. When prompted, check deployment configuration and press **y**.\n\n     ![deploy](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/deploy6.png)\n\n2. Now your application is deployed.\n\n     ![deploy](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/deploy7.png)\n\n\n>**HINT: If you want to update your SAP Fiori Launchpad configuration, then you can do following steps:**\n\n>  1. Open your terminal, enter `npx fiori add flp-config` and press enter.\n>     ![deploy](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/deploy.png)\n\n>  2. Enter following:\n     - Semantic object: `ztravel_app_xxx`\n     - Action: display\n     - Title: Travel App XXX\n     - Subtitle: (press enter)  \n\n>      ![deploy](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/deploy2.png)\n\n>  3. Open `manifest.json` in your `webapp` folder.\n\n>      ![deploy](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/deploy3.png)\n\n>  4. Check your semantic object. It should be **`ztravel_app_xxx`**.\n\n>      ![deploy](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/deploy4.png)\n\n>  5.  Open Eclipse, search your package **`ZTRAVEL_APP_XXX`** and open it. Open your transport organizer to see your transport request. Copy your transport request for later use. You can find your **transport request** underneath the **Modifiable** folder.\n\n>      ![deploy](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/deploy31.png)\n\n>  6. Open your terminal, enter `npx fiori add deploy-config` and press enter.   \n     Enter following:\n     - Target: ABAP\n     - SAP BTP System: Y\n     - Target System URL: `<your_target_system_url>`\n     - Name: (press enter)\n     - Package: `ztravel_app_xxx`\n     - Transport Number: `<your_transport_number>`\n\n>    ![deploy](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/deploy5.png)\n\n>    Your `yaml` file should be written after entering all information.\n\n\n\n\n### Check BSP library and SAP Fiori Launchpad app descriptor item in Eclipse\n\n\n  1. Open Eclipse and check the **BSP library** and **SAP Fiori Launchpad app descriptor item folder** in your package **`ZTRAVEL_APP_XXX`**. If you are not able to see BSP applications and SAP Fiori Launchpad app description items, refresh your package `ZTRAVEL_APP_XXX` by pressing `F5`.\n\n   ![library](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/library.png)\n\n\n\n### Create IAM App and business catalog\n\n\n  1. In Eclipse right-click your package **`ZTRAVEL_APP_XXX`** and select **New** > **Other Repository Object**.\n\n      ![iam](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/iam.png)\n\n  2. Search for **IAM App**, select it and click **Next >**.\n\n      ![iam](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/iam2.png)\n\n  3. Create a new IAM App:\n     - Name: **`ZTRAVEL_IAM_XXX`**\n     - Description: IAM App\n\n      ![iam](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/iam3.png)\n\n      Click **Next >**.\n\n  4. Click **Finish**.\n\n      ![iam](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/iam4.png)\n\n  5. Select **Services** and add a new one.\n\n      ![iam](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/iam5.png)\n\n  6. Select following:\n      - Service Type: `OData V2`\n      - Service Name: `ZUI_C_TRAVEL_M_XXX_0001`    \n\n      ![iam](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/iam6.png)\n\n      Click **OK**.\n\n      **Save** and **activate** your IAM app.\n\n  7. Right-click your package **`ZTRAVEL_APP_XXX`** and select  **New** > **Other Repository Object**.\n\n      ![catalog](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/catalog.png)\n\n  8. Search for **Business Catalog**, select it and click **Next >**.\n\n      ![catalog](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/catalog2.png)\n\n  9. Create a new business catalog:\n     - Name: **`ZTRAVEL_BC_XXX`**\n     - Description: Business catalog\n\n      ![catalog](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/catalog3.png)\n\n      Click **Next >**.\n\n 10. Click **Finish**.\n\n      ![catalog](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/catalog4.png)\n\n 11. Select **Apps** and add a new one.\n\n      ![catalog](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/catalog5.png)\n\n 12. Create a new business catalog:\n     - IAM App: `ZTRAVEL_IAM_XXX_EXT`\n     - Name: `ZTRAVEL_BC_XXX_0001`\n\n      ![catalog](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/catalog6.png)\n\n      Click **Next >**.\n\n 13. Click **Finish**.\n\n       ![catalog](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/catalog7.png)\n\n 14. Click **Publish Locally** to publish your business catalog.\n\n       ![catalog](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/catalog8.png)\n\n\n\n### Run SAP Fiori application\n\n\n 1. Switch to Visual Studio Code and open the integrated terminal. Enter `npm run deploy`. When prompted, check deployment configuration and press **y**.\n\n     ![deploy](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/deploy6.png)\n\n 2. Press **CTRL** and click the following link to open the URL in a browser.\n\n      ![deploy](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/deploy7.png)\n\n 3. Log in to your system and press go to see your result.\n\n      ![deploy](https://raw.githubusercontent.com/sap-tutorials/abap-core-development/main/tutorials/abap-environment-vs-code/deploy8.png)\n\n\n\n### Test yourself\n\n\n---\n"
+    },
+    {
+      "service": "graph",
+      "tool": "kg_neighborhood",
+      "public_arguments": {
+        "slug": "abap-environment-vs-code",
+        "depth": 2
+      },
+      "raw_response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "action: kg_neighborhood\nkind: function\nresult:\n  prerequisites[2]{slug,title,score,isolated}:\n    abap-create-basic-app,Create and Run an ABAP Application,1.069461941154216,false\n    abap-dev-create-package,Create an ABAP Package,1.0338605246310708,false\n  whatToLearnNext[2]{slug,title,score,isolated}:\n    cp-portal-cloud-foundry-url-applaunchpad,Integrate a URL App to SAP Build Work Zone,0.6377083297557591,false\n    abap-environment-rap100-enhance-data-model,Enhance the Business Object Data Model and Enable OData Streams,0.6171058862111303,false\n  sharedConcepts[2]{slug,title,score,isolated}:\n    cp-portal-cloud-foundry-url-applaunchpad,Integrate a URL App to SAP Build Work Zone,0.6377083297557591,false\n    abap-environment-authorization-control,Providing Authorization Control for a Business Configuration Maintenance Object,0.5509412976752295,false\n  teaches[2]{slug,title,score,isolated}:\n    fiori-launchpad-app-integration,Fiori Launchpad App Integration,0,false\n    business-catalog,Business Catalog,0,false"
+          }
+        ],
+        "structuredContent": {
+          "action": "kg_neighborhood",
+          "kind": "function",
+          "result": {
+            "prerequisites": [
+              {
+                "slug": "abap-create-basic-app",
+                "title": "Create and Run an ABAP Application",
+                "score": 1.069461941154216,
+                "isolated": false
+              },
+              {
+                "slug": "abap-dev-create-package",
+                "title": "Create an ABAP Package",
+                "score": 1.0338605246310708,
+                "isolated": false
+              }
+            ],
+            "whatToLearnNext": [
+              {
+                "slug": "cp-portal-cloud-foundry-url-applaunchpad",
+                "title": "Integrate a URL App to SAP Build Work Zone",
+                "score": 0.6377083297557591,
+                "isolated": false
+              },
+              {
+                "slug": "abap-environment-rap100-enhance-data-model",
+                "title": "Enhance the Business Object Data Model and Enable OData Streams",
+                "score": 0.6171058862111303,
+                "isolated": false
+              }
+            ],
+            "sharedConcepts": [
+              {
+                "slug": "cp-portal-cloud-foundry-url-applaunchpad",
+                "title": "Integrate a URL App to SAP Build Work Zone",
+                "score": 0.6377083297557591,
+                "isolated": false
+              },
+              {
+                "slug": "abap-environment-authorization-control",
+                "title": "Providing Authorization Control for a Business Configuration Maintenance Object",
+                "score": 0.5509412976752295,
+                "isolated": false
+              }
+            ],
+            "teaches": [
+              {
+                "slug": "fiori-launchpad-app-integration",
+                "title": "Fiori Launchpad App Integration",
+                "score": 0,
+                "isolated": false
+              },
+              {
+                "slug": "business-catalog",
+                "title": "Business Catalog",
+                "score": 0,
+                "isolated": false
+              }
+            ]
+          }
+        }
+      },
+      "observed_shape": {
+        "prerequisites": {
+          "type": "array",
+          "count": 2,
+          "first_item": {
+            "slug": "str",
+            "title": "str",
+            "score": "float",
+            "isolated": "bool"
+          }
+        },
+        "whatToLearnNext": {
+          "type": "array",
+          "count": 2,
+          "first_item": {
+            "slug": "str",
+            "title": "str",
+            "score": "float",
+            "isolated": "bool"
+          }
+        },
+        "sharedConcepts": {
+          "type": "array",
+          "count": 2,
+          "first_item": {
+            "slug": "str",
+            "title": "str",
+            "score": "float",
+            "isolated": "bool"
+          }
+        },
+        "teaches": {
+          "type": "array",
+          "count": 2,
+          "first_item": {
+            "slug": "str",
+            "title": "str",
+            "score": "int",
+            "isolated": "bool"
+          }
+        }
+      }
+    },
+    {
+      "service": "search",
+      "tool": "get_tutorial",
+      "public_arguments": {
+        "slug": "sap-context-optimizer-nonexistent-public-probe"
+      },
+      "raw_response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "action: get_tutorial\nkind: function\nresult: null"
+          }
+        ],
+        "structuredContent": {
+          "action": "get_tutorial",
+          "kind": "function",
+          "result": null
+        }
+      },
+      "observed_shape": "NoneType"
+    },
+    {
+      "service": "search",
+      "tool": "get_tutorial_step",
+      "public_arguments": {
+        "slug": "sap-context-optimizer-nonexistent-public-probe",
+        "stepNumber": 1,
+        "format": "markdown"
+      },
+      "raw_response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Error calling get_tutorial_step: step not found"
+          }
+        ],
+        "isError": true
+      },
+      "error": "Remote tool returned isError"
+    }
+  ],
+  "services": {
+    "search": {
+      "url": "https://developers.sap.com/mcp/search",
+      "initialize": {
+        "protocolVersion": "2025-03-26",
+        "capabilities": {
+          "tools": {
+            "listChanged": false
+          }
+        },
+        "serverInfo": {
+          "name": "SearchService",
+          "version": "1.0.0",
+          "description": "MCP server for SearchService"
+        },
+        "instructions": "Use the `describe` tool to explore the data model and available actions/functions. Then use `query` to read data or `call` to invoke actions or functions."
+      },
+      "tools": [
+        {
+          "name": "describe",
+          "description": "Describe the data model of SearchService service. Returns an overview of all entities and actions with descriptions. Specify 'entity' to get element details, or 'action' to get parameter details.",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "entities": {
+                "description": "Specific entities to get element details for.",
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "SearchableItems",
+                    "Tags"
+                  ]
+                }
+              },
+              "actions": {
+                "description": "Specific actions or functions to get parameter details for.",
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "get_tutorial_step",
+                    "search_events",
+                    "search_teched",
+                    "search_channels",
+                    "semantic_search",
+                    "getFacets",
+                    "search_tutorials",
+                    "list_missions",
+                    "get_mission",
+                    "get_tutorial"
+                  ]
+                }
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "query",
+          "description": "Query any entity in SearchService service. Use describe to discover available entities and their fields.",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "entity": {
+                "type": "string",
+                "enum": [
+                  "SearchableItems",
+                  "Tags"
+                ],
+                "description": "The entity to query"
+              },
+              "where": {
+                "description": "CQN where clause as array of expression tokens. Format: [expr, operator, expr, keyword?, expr, operator, expr, ...]\n\nExpressions:\n- Field reference: { \"ref\": [\"fieldName\"] } or { \"ref\": [\"assoc\", \"field\"] }\n- Infix filter: { \"ref\": [{ \"id\": \"books\", \"where\": [{ \"ref\": [\"stock\"] }, \">\", { \"val\": 100 }] }] }\n- Literal value: { \"val\": value }\n- List of values: { \"list\": [{ \"val\": v1 }, { \"val\": v2 }] }\n- Nested expression: { \"xpr\": [...tokens...] }\n- Function call: { \"func\": \"funcName\", \"args\": [expr, ...] }\n\nExamples:\n- [{ \"ref\": [\"title\"] }, \"=\", { \"val\": \"Jane Eyre\" }]\n- [{ \"ref\": [\"price\"] }, \">\", { \"val\": 10 }, \"and\", { \"ref\": [\"stock\"] }, \">\", { \"val\": 0 }]\n- [{ \"ref\": [\"name\"] }, \"like\", { \"val\": \"A%\" }]\n- [{ \"ref\": [\"status\"] }, \"is\", \"null\"]\n- [{ \"ref\": [\"price\"] }, \"between\", { \"val\": 10 }, \"and\", { \"val\": 50 }]\n- [\"exists\", { \"ref\": [{ \"id\": \"books\", \"where\": [{ \"ref\": [\"stock\"] }, \">\", { \"val\": 100 }] }] }]\n- [{ \"func\": \"year\", \"args\": [{ \"ref\": [\"publishedAt\"] }] }, \"=\", { \"val\": 2024 }]\n- [{ \"ref\": [\"createdAt\"] }, \"<=\", { \"ref\": [\"$now\"] }] - compare with current timestamp\n- [{ \"ref\": [\"createdBy\"] }, \"=\", { \"ref\": [\"$user\"] }] - filter by current user",
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/__schema0"
+                }
+              },
+              "select": {
+                "description": "List of column expressions to return. Defaults to all fields if not specified.\n\nColumn types:\n- Ref path: { \"ref\": [\"field\"], \"as\": \"alias\" } for fields with optional alias\n- Path expression: { \"ref\": [\"assoc\", \"field\"], \"as\": \"alias\" } for association navigation\n- Expand: { \"ref\": [\"assoc\"], \"expand\": [{ \"ref\": [\"field1\"] }, { \"ref\": [\"field2\"] }] } for to-many as nested arrays. Use [\"*\"] to expand all.\n- Function call: { \"func\": \"funcName\", \"args\": [expr, ...], \"as\": \"alias\" }\n- Expression: { \"xpr\": [expr, operator, expr, ...], \"as\": \"alias\" } for calculated columns\n\nExamples:\n- [{ \"ref\": [\"title\"] }, { \"ref\": [\"price\"] }] - select fields\n- [{ \"ref\": [\"author\", \"name\"], \"as\": \"authorName\" }] - association path with alias\n- [{ \"ref\": [\"books\"], \"expand\": [{ \"ref\": [\"title\"] }, { \"ref\": [\"price\"] }] }] - expand to-many\n- [{ \"func\": \"count\", \"args\": [\"*\"], \"as\": \"total\" }] - count all rows\n- [{ \"func\": \"toupper\", \"args\": [{ \"ref\": [\"title\"] }], \"as\": \"upperTitle\" }] - string function\n- [{ \"xpr\": [{ \"ref\": [\"price\"] }, \"*\", { \"ref\": [\"stock\"] }], \"as\": \"totalValue\" }] - calculated column",
+                "type": "array",
+                "items": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "ref": {
+                          "minItems": 1,
+                          "type": "array",
+                          "items": {
+                            "anyOf": [
+                              {
+                                "type": "string"
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "where": {
+                                    "type": "array",
+                                    "items": {
+                                      "$ref": "#/definitions/__schema0"
+                                    }
+                                  }
+                                },
+                                "required": [
+                                  "id"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "as": {
+                          "type": "string"
+                        },
+                        "expand": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/definitions/__schema3"
+                          }
+                        }
+                      },
+                      "required": [
+                        "ref"
+                      ]
+                    },
+                    {
+                      "$ref": "#/definitions/__schema2"
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "xpr": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/definitions/__schema0"
+                          }
+                        },
+                        "as": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "xpr"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "groupBy": {
+                "description": "Field(s) to group results by for aggregation queries. Use \"field\" for simple fields or \"assoc.field\" for association paths. Use with aggregate functions in select.",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "having": {
+                "description": "CQN having clause for filtering grouped results. Same format as where clause but applied after GROUP BY.\n\nExamples:\n- [{ \"func\": \"count\", \"args\": [\"*\"] }, \">\", { \"val\": 5 }] - groups with more than 5 items\n- [{ \"func\": \"sum\", \"args\": [{ \"ref\": [\"stock\"] }] }, \">=\", { \"val\": 100 }] - groups with total stock >= 100",
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/__schema0"
+                }
+              },
+              "limit": {
+                "description": "Maximum number of results to return",
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              },
+              "offset": {
+                "description": "Number of results to skip before returning rows (OFFSET / $skip). Use together with limit and orderBy for stable pagination.",
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "orderBy": {
+                "description": "Array of order expressions to sort results.\n\nEach expression:\n- ref: Field reference as array, e.g. [\"fieldName\"] or [\"assoc\", \"field\"]\n- sort: \"asc\" or \"desc\" (optional)\n- nulls: \"first\" or \"last\" (optional)\n\nExamples:\n- [{ \"ref\": [\"price\"], \"sort\": \"desc\" }] - sort by price descending\n- [{ \"ref\": [\"name\"] }, { \"ref\": [\"date\"], \"sort\": \"desc\" }] - multi-field sort",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "ref": {
+                      "minItems": 1,
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "sort": {
+                      "type": "string",
+                      "enum": [
+                        "asc",
+                        "desc"
+                      ]
+                    },
+                    "nulls": {
+                      "type": "string",
+                      "enum": [
+                        "first",
+                        "last"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "ref"
+                  ]
+                }
+              },
+              "search": {
+                "description": "Full-text search term. Searches across all string elements of the entity. Use this for fuzzy or keyword-based lookups instead of constructing complex where clauses.",
+                "type": "string"
+              },
+              "distinct": {
+                "description": "Return only unique/distinct rows",
+                "type": "boolean"
+              },
+              "one": {
+                "description": "Return a single record object instead of an array. Implies limit of 1.",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "entity"
+            ],
+            "definitions": {
+              "__schema0": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "ref": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "where": {
+                                  "type": "array",
+                                  "items": {
+                                    "$ref": "#/definitions/__schema0"
+                                  }
+                                }
+                              },
+                              "required": [
+                                "id"
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "required": [
+                      "ref"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "val": {
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "number"
+                          },
+                          {
+                            "type": "boolean"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "val"
+                    ]
+                  },
+                  {
+                    "$ref": "#/definitions/__schema1"
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "xpr": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/definitions/__schema0"
+                        }
+                      }
+                    },
+                    "required": [
+                      "xpr"
+                    ]
+                  },
+                  {
+                    "$ref": "#/definitions/__schema2"
+                  },
+                  {
+                    "type": "string",
+                    "enum": [
+                      "=",
+                      "!=",
+                      "<",
+                      "<=",
+                      ">",
+                      ">=",
+                      "+",
+                      "-",
+                      "*",
+                      "/"
+                    ]
+                  },
+                  {
+                    "type": "string",
+                    "enum": [
+                      "and",
+                      "or",
+                      "not",
+                      "in",
+                      "not in",
+                      "like",
+                      "not like",
+                      "between",
+                      "is",
+                      "null",
+                      "not null",
+                      "exists",
+                      "not exists"
+                    ]
+                  }
+                ]
+              },
+              "__schema1": {
+                "type": "object",
+                "properties": {
+                  "list": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "ref": {
+                              "minItems": 1,
+                              "type": "array",
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "where": {
+                                        "type": "array",
+                                        "items": {
+                                          "$ref": "#/definitions/__schema0"
+                                        }
+                                      }
+                                    },
+                                    "required": [
+                                      "id"
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "required": [
+                            "ref"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "val": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "number"
+                                },
+                                {
+                                  "type": "boolean"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "val"
+                          ]
+                        },
+                        {
+                          "$ref": "#/definitions/__schema1"
+                        }
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "list"
+                ]
+              },
+              "__schema2": {
+                "type": "object",
+                "properties": {
+                  "func": {
+                    "type": "string",
+                    "enum": [
+                      "count",
+                      "countdistinct",
+                      "sum",
+                      "avg",
+                      "average",
+                      "min",
+                      "max",
+                      "concat",
+                      "contains",
+                      "endswith",
+                      "indexof",
+                      "length",
+                      "startswith",
+                      "substring",
+                      "matchespattern",
+                      "tolower",
+                      "toupper",
+                      "trim",
+                      "lower",
+                      "upper",
+                      "date",
+                      "day",
+                      "fractionalseconds",
+                      "hour",
+                      "maxdatetime",
+                      "mindatetime",
+                      "minute",
+                      "month",
+                      "second",
+                      "time",
+                      "totaloffsetminutes",
+                      "totalseconds",
+                      "year",
+                      "now",
+                      "current_date",
+                      "current_time",
+                      "current_timestamp",
+                      "current_utcdate",
+                      "current_utctime",
+                      "current_utctimestamp",
+                      "ceiling",
+                      "floor",
+                      "round",
+                      "ceil",
+                      "abs",
+                      "mod",
+                      "power",
+                      "sqrt",
+                      "case",
+                      "coalesce",
+                      "nullif",
+                      "cast",
+                      "nano100_between",
+                      "seconds_between",
+                      "days_between",
+                      "months_between",
+                      "years_between"
+                    ],
+                    "description": "Portable function name (case-sensitive)"
+                  },
+                  "args": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "const": "*"
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "ref": {
+                              "minItems": 1,
+                              "type": "array",
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "where": {
+                                        "type": "array",
+                                        "items": {
+                                          "$ref": "#/definitions/__schema0"
+                                        }
+                                      }
+                                    },
+                                    "required": [
+                                      "id"
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "required": [
+                            "ref"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "val": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "number"
+                                },
+                                {
+                                  "type": "boolean"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "val"
+                          ]
+                        },
+                        {
+                          "$ref": "#/definitions/__schema2"
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "xpr": {
+                              "type": "array",
+                              "items": {
+                                "$ref": "#/definitions/__schema0"
+                              }
+                            }
+                          },
+                          "required": [
+                            "xpr"
+                          ]
+                        }
+                      ]
+                    },
+                    "description": "Function arguments: expressions, \"*\" for count(*), or field references"
+                  },
+                  "as": {
+                    "description": "Result column alias",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "func",
+                  "args"
+                ]
+              },
+              "__schema3": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "const": "*"
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "ref": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "where": {
+                                  "type": "array",
+                                  "items": {
+                                    "$ref": "#/definitions/__schema0"
+                                  }
+                                }
+                              },
+                              "required": [
+                                "id"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "as": {
+                        "type": "string"
+                      },
+                      "expand": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/definitions/__schema3"
+                        }
+                      }
+                    },
+                    "required": [
+                      "ref"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "get_tutorial_step",
+          "description": "Return a single published tutorial step in the requested `format`. No\nauthentication required — published tutorial content is public. Shares\nthe DeveloperService handler; the return shape is identical. Exactly one\nbody is returned in `content`; `contentFormat` echoes which representation\nit is.\n@param slug        Lowercase canonical tutorial slug.\n@param stepNumber  1-indexed step number.\n@param format      'markdown' (default, token-efficient source markdown\n                   matching /tutorials/<slug>.md) or 'html' (sliced HTML).. Returns: {slug: String, stepNumber: Integer, stepTitle: String, content: String, contentFormat: String, textLength: Integer, totalSteps: Integer}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "slug": {
+                "type": "string"
+              },
+              "stepNumber": {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              },
+              "format": {
+                "type": "string"
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "search_events",
+          "description": "Search the public SAP community events catalog — CodeJams, Devtoberfest,\nTechEd, and user-group events. Anonymous: the same events shown on the\nhomepage events band, but fully searchable and filterable. Returns events\nordered by start date (soonest first).\n@param query        Free-text match on event title and description (case-insensitive).\n@param eventType    Optional filter: 'codejam' | 'teched' | 'devtoberfest' | 'usergroup'.\n@param region       Optional region: 'AMERICAS' | 'EMEA' | 'APJ' | 'VIRTUAL' | 'ALL' (default 'ALL').\n@param upcomingOnly When true (default), only events not yet ended. Set false to include past events.\n@param limit        Max results, [1, 50]. Default 20.. Returns: Array of {slug: String, title: String, eventType: String, description: String, location: String, region: String, isVirtual: Boolean, startDate: Date, endDate: Date, url: String}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "query": {
+                "type": "string"
+              },
+              "eventType": {
+                "type": "string"
+              },
+              "region": {
+                "type": "string"
+              },
+              "upcomingOnly": {
+                "type": "boolean"
+              },
+              "limit": {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "search_teched",
+          "description": "Search the public SAP TechEd 2026 session catalog. Anonymous: the same\nsessions shown on the /teched/ page, filterable by venue/track and\nfree-text over title/abstract, ordered by scheduled start (soonest first).\n@param query  Free-text match on session title and abstract (case-insensitive).\n@param venue  Optional venue filter: 'BERLIN' | 'VIRTUAL'.\n@param track  Optional track filter (track slug, or a case-insensitive name substring).\n@param limit  Max results, [1, 50]. Default 20.. Returns: Array of {slug: String, title: String, abstract: String, venue: String, track: String, scheduledStart: Timestamp, room: String, url: String, speakers: Array of String}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "query": {
+                "type": "string"
+              },
+              "venue": {
+                "type": "string"
+              },
+              "track": {
+                "type": "string"
+              },
+              "limit": {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "search_channels",
+          "description": "Search the public external-channels catalog — SAP and community YouTube\nchannels, blogs, podcasts, and feeds. Anonymous: the same published\nchannels shown on the /channels directory, fully searchable and\nfilterable. Only published channels with a working link are returned,\nordered by category then name.\n@param query      Free-text match on channel name, purpose, and tags (case-insensitive).\n@param category   Optional exact-match filter on the channel category.\n@param platform   Optional exact-match filter on the channel platform (e.g. 'YouTube', 'Blog', 'Podcast').\n@param ownerScope Optional owner filter: 'sap' | 'community' | 'all' (default 'all').\n@param limit      Max results, [1, 50]. Default 20.. Returns: Array of {name: String, url: String, purpose: String, category: String, subcategory: String, platform: String, isSapOwned: Boolean, ownerType: String, ownerName: String, status: String, focusAreas: Array of String, tags: Array of String, slug: String}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "query": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              },
+              "platform": {
+                "type": "string"
+              },
+              "ownerScope": {
+                "type": "string"
+              },
+              "limit": {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "semantic_search",
+          "description": "Public semantic/vector search over the SAP developer content corpus.\nAnonymous: the caller sends TEXT ONLY — the server embeds the query\nserver-side and returns scored content references. It NEVER returns raw\nembedding vectors and NEVER accepts a caller-supplied vector. Off (503)\nunless ChatSettings.semanticSearchEnabled is set. Fails open ([]) on any\nretrieval error so a backfill gap never surfaces as an error to an agent.\n@param query    Free-text query. Empty → []. The server embeds this.\n@param corpus   'tutorials' (default) | 'concepts' | 'external' | 'teched' | 'all'.\n@param topK     Max results, clamped [1, 50]. Default ChatSettings.embeddingTopK (5).\n@param minScore Cosine floor; rows below are dropped. Default ChatSettings.embeddingMinScore (0.25).. Returns: Array of {slug: String, title: String, stepNumber: Integer, snippet: String, score: Decimal, url: String, contentType: String}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "query": {
+                "type": "string"
+              },
+              "corpus": {
+                "type": "string"
+              },
+              "topK": {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              },
+              "minScore": {
+                "type": "number"
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "getFacets",
+          "description": "Call function getFacets in SearchService. Returns: {totalCount: Integer, typeCounts: Array of {name: String, count: Integer}, experienceCounts: Array of {name: String, count: Integer}, tagCounts: Array of {name: String, count: Integer}}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "search": {
+                "type": "string"
+              },
+              "taskTypes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "experience": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "search_tutorials",
+          "description": "Fuzzy full-text search across published tutorials. Returns slug + title +\nshort snippet + tag list. Use this to discover tutorials by topic.\n\n@param query      Search terms (natural language accepted; word-boundary\n                  matching handles hyphenated tags and prose punctuation).\n@param tags       Optional exact-match filter on tutorial primary tag.\n@param experience Optional experience-level filter: 'beginner',\n                  'intermediate', 'advanced'.\n@param limit      Max results (default 10, hard max 100).\n@returns          Array of tutorial matches ordered by relevance score.. Returns: Array of {slug: String, title: String, snippet: String, tags: Array of String}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "query": {
+                "type": "string"
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "experience": {
+                "type": "string"
+              },
+              "limit": {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "list_missions",
+          "description": "List published missions with the number of tutorials in each. Anonymous\n— the same missions the /missions/ page shows.\n\n@param tags  Optional tag filter (returns only missions whose primaryTag\n             matches any of the supplied values).\n@param limit Max results (default 20, hard max 50).\n@returns     Missions ordered by title.. Returns: Array of {slug: String, title: String, description: String, tutorialCount: Integer}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "limit": {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "get_mission",
+          "description": "Fetch a mission by slug, with its ordered tutorial list. Returns null if\nno published mission matches. Slug is case-insensitive.\n\n@param slug Mission slug (lowercased server-side).\n@returns    Mission with ordered tutorial list, or null if not found.. Returns: {slug: String, title: String, description: String, tutorials: Array of {slug: String, title: String, order: Integer}}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "slug": {
+                "type": "string"
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "get_tutorial",
+          "description": "Fetch tutorial metadata and ordered step list by slug.\nReturns null for unknown slugs, empty slugs, or INACTIVE tutorials.\n\n@param slug  Tutorial slug (case-insensitive).\n@returns     Tutorial metadata with step list, or null if not found.. Returns: {slug: String, title: String, description: String, tags: Array of String, steps: Array of {number: Integer, title: String}}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "slug": {
+                "type": "string"
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        }
+      ],
+      "output_schema_note": "Only schemas actually advertised are recorded"
+    },
+    "graph": {
+      "url": "https://developers.sap.com/mcp/graph",
+      "initialize": {
+        "protocolVersion": "2025-03-26",
+        "capabilities": {
+          "tools": {
+            "listChanged": true
+          },
+          "resources": {
+            "subscribe": false,
+            "listChanged": true
+          },
+          "prompts": {
+            "listChanged": false
+          }
+        },
+        "serverInfo": {
+          "name": "KnowledgeGraphService",
+          "version": "1.0.0",
+          "description": "MCP server for KnowledgeGraphService"
+        },
+        "instructions": "Use the `describe` tool to explore the data model and available actions/functions. Then use `query` to read data or `call` to invoke actions or functions."
+      },
+      "tools": [
+        {
+          "name": "query",
+          "description": "Query any entity in KnowledgeGraphService service. Use describe to discover available entities and their fields.",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "entity": {
+                "type": "string",
+                "enum": [
+                  "Concepts",
+                  "TutorialConceptLinks",
+                  "ConceptEdges",
+                  "ConceptAliases",
+                  "ChangeView",
+                  "ConceptMergePreviewRuns",
+                  "PublishedConcepts",
+                  "PublishedConceptsWithAliases"
+                ],
+                "description": "The entity to query"
+              },
+              "where": {
+                "description": "CQN where clause as array of expression tokens. Format: [expr, operator, expr, keyword?, expr, operator, expr, ...]\n\nExpressions:\n- Field reference: { \"ref\": [\"fieldName\"] } or { \"ref\": [\"assoc\", \"field\"] }\n- Infix filter: { \"ref\": [{ \"id\": \"books\", \"where\": [{ \"ref\": [\"stock\"] }, \">\", { \"val\": 100 }] }] }\n- Literal value: { \"val\": value }\n- List of values: { \"list\": [{ \"val\": v1 }, { \"val\": v2 }] }\n- Nested expression: { \"xpr\": [...tokens...] }\n- Function call: { \"func\": \"funcName\", \"args\": [expr, ...] }\n\nExamples:\n- [{ \"ref\": [\"title\"] }, \"=\", { \"val\": \"Jane Eyre\" }]\n- [{ \"ref\": [\"price\"] }, \">\", { \"val\": 10 }, \"and\", { \"ref\": [\"stock\"] }, \">\", { \"val\": 0 }]\n- [{ \"ref\": [\"name\"] }, \"like\", { \"val\": \"A%\" }]\n- [{ \"ref\": [\"status\"] }, \"is\", \"null\"]\n- [{ \"ref\": [\"price\"] }, \"between\", { \"val\": 10 }, \"and\", { \"val\": 50 }]\n- [\"exists\", { \"ref\": [{ \"id\": \"books\", \"where\": [{ \"ref\": [\"stock\"] }, \">\", { \"val\": 100 }] }] }]\n- [{ \"func\": \"year\", \"args\": [{ \"ref\": [\"publishedAt\"] }] }, \"=\", { \"val\": 2024 }]\n- [{ \"ref\": [\"createdAt\"] }, \"<=\", { \"ref\": [\"$now\"] }] - compare with current timestamp\n- [{ \"ref\": [\"createdBy\"] }, \"=\", { \"ref\": [\"$user\"] }] - filter by current user",
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/__schema0"
+                }
+              },
+              "select": {
+                "description": "List of column expressions to return. Defaults to all fields if not specified.\n\nColumn types:\n- Ref path: { \"ref\": [\"field\"], \"as\": \"alias\" } for fields with optional alias\n- Path expression: { \"ref\": [\"assoc\", \"field\"], \"as\": \"alias\" } for association navigation\n- Expand: { \"ref\": [\"assoc\"], \"expand\": [{ \"ref\": [\"field1\"] }, { \"ref\": [\"field2\"] }] } for to-many as nested arrays. Use [\"*\"] to expand all.\n- Function call: { \"func\": \"funcName\", \"args\": [expr, ...], \"as\": \"alias\" }\n- Expression: { \"xpr\": [expr, operator, expr, ...], \"as\": \"alias\" } for calculated columns\n\nExamples:\n- [{ \"ref\": [\"title\"] }, { \"ref\": [\"price\"] }] - select fields\n- [{ \"ref\": [\"author\", \"name\"], \"as\": \"authorName\" }] - association path with alias\n- [{ \"ref\": [\"books\"], \"expand\": [{ \"ref\": [\"title\"] }, { \"ref\": [\"price\"] }] }] - expand to-many\n- [{ \"func\": \"count\", \"args\": [\"*\"], \"as\": \"total\" }] - count all rows\n- [{ \"func\": \"toupper\", \"args\": [{ \"ref\": [\"title\"] }], \"as\": \"upperTitle\" }] - string function\n- [{ \"xpr\": [{ \"ref\": [\"price\"] }, \"*\", { \"ref\": [\"stock\"] }], \"as\": \"totalValue\" }] - calculated column",
+                "type": "array",
+                "items": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "ref": {
+                          "minItems": 1,
+                          "type": "array",
+                          "items": {
+                            "anyOf": [
+                              {
+                                "type": "string"
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "where": {
+                                    "type": "array",
+                                    "items": {
+                                      "$ref": "#/definitions/__schema0"
+                                    }
+                                  }
+                                },
+                                "required": [
+                                  "id"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "as": {
+                          "type": "string"
+                        },
+                        "expand": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/definitions/__schema3"
+                          }
+                        }
+                      },
+                      "required": [
+                        "ref"
+                      ]
+                    },
+                    {
+                      "$ref": "#/definitions/__schema2"
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "xpr": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/definitions/__schema0"
+                          }
+                        },
+                        "as": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "xpr"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "groupBy": {
+                "description": "Field(s) to group results by for aggregation queries. Use \"field\" for simple fields or \"assoc.field\" for association paths. Use with aggregate functions in select.",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "having": {
+                "description": "CQN having clause for filtering grouped results. Same format as where clause but applied after GROUP BY.\n\nExamples:\n- [{ \"func\": \"count\", \"args\": [\"*\"] }, \">\", { \"val\": 5 }] - groups with more than 5 items\n- [{ \"func\": \"sum\", \"args\": [{ \"ref\": [\"stock\"] }] }, \">=\", { \"val\": 100 }] - groups with total stock >= 100",
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/__schema0"
+                }
+              },
+              "limit": {
+                "description": "Maximum number of results to return",
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              },
+              "offset": {
+                "description": "Number of results to skip before returning rows (OFFSET / $skip). Use together with limit and orderBy for stable pagination.",
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "orderBy": {
+                "description": "Array of order expressions to sort results.\n\nEach expression:\n- ref: Field reference as array, e.g. [\"fieldName\"] or [\"assoc\", \"field\"]\n- sort: \"asc\" or \"desc\" (optional)\n- nulls: \"first\" or \"last\" (optional)\n\nExamples:\n- [{ \"ref\": [\"price\"], \"sort\": \"desc\" }] - sort by price descending\n- [{ \"ref\": [\"name\"] }, { \"ref\": [\"date\"], \"sort\": \"desc\" }] - multi-field sort",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "ref": {
+                      "minItems": 1,
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "sort": {
+                      "type": "string",
+                      "enum": [
+                        "asc",
+                        "desc"
+                      ]
+                    },
+                    "nulls": {
+                      "type": "string",
+                      "enum": [
+                        "first",
+                        "last"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "ref"
+                  ]
+                }
+              },
+              "search": {
+                "description": "Full-text search term. Searches across all string elements of the entity. Use this for fuzzy or keyword-based lookups instead of constructing complex where clauses.",
+                "type": "string"
+              },
+              "distinct": {
+                "description": "Return only unique/distinct rows",
+                "type": "boolean"
+              },
+              "one": {
+                "description": "Return a single record object instead of an array. Implies limit of 1.",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "entity"
+            ],
+            "definitions": {
+              "__schema0": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "ref": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "where": {
+                                  "type": "array",
+                                  "items": {
+                                    "$ref": "#/definitions/__schema0"
+                                  }
+                                }
+                              },
+                              "required": [
+                                "id"
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "required": [
+                      "ref"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "val": {
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "number"
+                          },
+                          {
+                            "type": "boolean"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "val"
+                    ]
+                  },
+                  {
+                    "$ref": "#/definitions/__schema1"
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "xpr": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/definitions/__schema0"
+                        }
+                      }
+                    },
+                    "required": [
+                      "xpr"
+                    ]
+                  },
+                  {
+                    "$ref": "#/definitions/__schema2"
+                  },
+                  {
+                    "type": "string",
+                    "enum": [
+                      "=",
+                      "!=",
+                      "<",
+                      "<=",
+                      ">",
+                      ">=",
+                      "+",
+                      "-",
+                      "*",
+                      "/"
+                    ]
+                  },
+                  {
+                    "type": "string",
+                    "enum": [
+                      "and",
+                      "or",
+                      "not",
+                      "in",
+                      "not in",
+                      "like",
+                      "not like",
+                      "between",
+                      "is",
+                      "null",
+                      "not null",
+                      "exists",
+                      "not exists"
+                    ]
+                  }
+                ]
+              },
+              "__schema1": {
+                "type": "object",
+                "properties": {
+                  "list": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "ref": {
+                              "minItems": 1,
+                              "type": "array",
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "where": {
+                                        "type": "array",
+                                        "items": {
+                                          "$ref": "#/definitions/__schema0"
+                                        }
+                                      }
+                                    },
+                                    "required": [
+                                      "id"
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "required": [
+                            "ref"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "val": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "number"
+                                },
+                                {
+                                  "type": "boolean"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "val"
+                          ]
+                        },
+                        {
+                          "$ref": "#/definitions/__schema1"
+                        }
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "list"
+                ]
+              },
+              "__schema2": {
+                "type": "object",
+                "properties": {
+                  "func": {
+                    "type": "string",
+                    "enum": [
+                      "count",
+                      "countdistinct",
+                      "sum",
+                      "avg",
+                      "average",
+                      "min",
+                      "max",
+                      "concat",
+                      "contains",
+                      "endswith",
+                      "indexof",
+                      "length",
+                      "startswith",
+                      "substring",
+                      "matchespattern",
+                      "tolower",
+                      "toupper",
+                      "trim",
+                      "lower",
+                      "upper",
+                      "date",
+                      "day",
+                      "fractionalseconds",
+                      "hour",
+                      "maxdatetime",
+                      "mindatetime",
+                      "minute",
+                      "month",
+                      "second",
+                      "time",
+                      "totaloffsetminutes",
+                      "totalseconds",
+                      "year",
+                      "now",
+                      "current_date",
+                      "current_time",
+                      "current_timestamp",
+                      "current_utcdate",
+                      "current_utctime",
+                      "current_utctimestamp",
+                      "ceiling",
+                      "floor",
+                      "round",
+                      "ceil",
+                      "abs",
+                      "mod",
+                      "power",
+                      "sqrt",
+                      "case",
+                      "coalesce",
+                      "nullif",
+                      "cast",
+                      "nano100_between",
+                      "seconds_between",
+                      "days_between",
+                      "months_between",
+                      "years_between"
+                    ],
+                    "description": "Portable function name (case-sensitive)"
+                  },
+                  "args": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "const": "*"
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "ref": {
+                              "minItems": 1,
+                              "type": "array",
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "where": {
+                                        "type": "array",
+                                        "items": {
+                                          "$ref": "#/definitions/__schema0"
+                                        }
+                                      }
+                                    },
+                                    "required": [
+                                      "id"
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "required": [
+                            "ref"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "val": {
+                              "anyOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "number"
+                                },
+                                {
+                                  "type": "boolean"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "val"
+                          ]
+                        },
+                        {
+                          "$ref": "#/definitions/__schema2"
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "xpr": {
+                              "type": "array",
+                              "items": {
+                                "$ref": "#/definitions/__schema0"
+                              }
+                            }
+                          },
+                          "required": [
+                            "xpr"
+                          ]
+                        }
+                      ]
+                    },
+                    "description": "Function arguments: expressions, \"*\" for count(*), or field references"
+                  },
+                  "as": {
+                    "description": "Result column alias",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "func",
+                  "args"
+                ]
+              },
+              "__schema3": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "const": "*"
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "ref": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "where": {
+                                  "type": "array",
+                                  "items": {
+                                    "$ref": "#/definitions/__schema0"
+                                  }
+                                }
+                              },
+                              "required": [
+                                "id"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "as": {
+                        "type": "string"
+                      },
+                      "expand": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/definitions/__schema3"
+                        }
+                      }
+                    },
+                    "required": [
+                      "ref"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "kg_shared_concepts",
+          "description": "Concept overlap between two tutorials — the concepts BOTH teach. Answers\n\"what do these two tutorials have in common?\". Anonymous; published KG\ncontent is public.\n@param slug_a  First tutorial slug (lowercase canonical).\n@param slug_b  Second tutorial slug (lowercase canonical).. Returns: Array of {conceptSlug: String, name: String}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "slug_a": {
+                "type": "string"
+              },
+              "slug_b": {
+                "type": "string"
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "kg_neighborhood",
+          "description": "Fuller graph neighborhood for a tutorial: prerequisites, what-to-learn-next,\nshared concepts, and concepts it teaches. PageRank-blended when enabled;\neach entry flags whether the node is graph-isolated. Anonymous.\n@param slug   Tutorial slug (lowercase canonical).\n@param depth  Max entries per arm, [1, 50]. Default 10.. Returns: {prerequisites: Array of {slug: String, title: String, score: Double, isolated: Boolean}, whatToLearnNext: Array of {slug: String, title: String, score: Double, isolated: Boolean}, sharedConcepts: Array of {slug: String, title: String, score: Double, isolated: Boolean}, teaches: Array of {slug: String, title: String, score: Double, isolated: Boolean}}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "slug": {
+                "type": "string"
+              },
+              "depth": {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "kg_search_concepts",
+          "description": "Free-text search across knowledge-graph concepts and the tutorials that\nteach them. Returns ranked concept and tutorial matches. Bridges on-demand\nconcept extraction when that feature is enabled. Anonymous.\n@param query         Free-text search terms.\n@param maxConcepts   Max concept results, [1, 25]. Default 25.\n@param maxTutorials  Max tutorial results, [1, 25]. Default 10.. Returns: {concepts: Array of {slug: String, name: String, score: Double}, tutorials: Array of {slug: String, title: String, score: Double}}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "query": {
+                "type": "string"
+              },
+              "maxConcepts": {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              },
+              "maxTutorials": {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "kg_community",
+          "description": "Surface a knowledge-graph community (Louvain cluster) by its stable\nfingerprint: member tutorial slugs, the LLM-generated cluster label,\nand whether it has been promoted to a mission. Read-only. Community\ndata is DEV-only until the promotion flow reaches production.\n@param id  Community fingerprint (stable SHA-256 of sorted member slugs,\n           NOT the volatile Louvain communityId).. Returns: {communityId: String, label: String, memberTutorials: Array of {slug: String, title: String}, size: Integer, promotedToMissionSlug: String}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "kg_learning_path",
+          "description": "Ordered prerequisite chain / \"what should I learn next\" for a goal.\nReturns the sequence of tutorials to complete, prerequisites first.\n@param goal       Tutorial or mission/group slug (lowercase). Empty for next-best.\n@param goal_type  'tutorial' | 'mission' | 'group' | 'next-best'.. Returns: {goalType: String, goal: String, totalSteps: Integer, cyclesBroken: Integer, truncated: Boolean, personalized: Boolean, steps: Array of {order: Integer, tutorialSlug: String, teachesConcepts: Array of String, satisfiesPrereqFor: Array of String, alreadyPartial: Boolean}}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "goal": {
+                "type": "string"
+              },
+              "goal_type": {
+                "type": "string"
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "learningPath",
+          "description": "Ordered, personalized prerequisite chain toward a goal.\ngoalType: 'tutorial' | 'mission' | 'group' | 'next-best'.. Returns: {goalType: String, goal: String, totalSteps: Integer, cyclesBroken: Integer, truncated: Boolean, personalized: Boolean, steps: Array of {order: Integer, tutorialSlug: String, teachesConcepts: Array of String, satisfiesPrereqFor: Array of String, alreadyPartial: Boolean}}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "goal": {
+                "type": "string"
+              },
+              "goalType": {
+                "type": "string"
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "neighborhood",
+          "description": "Call function neighborhood in KnowledgeGraphService. Returns: {tutorial: {slug: String, title: String}, graphVersion: String, teaches: Array of {slug: String, name: String, description: String, published: Boolean}, prerequisitesOf: Array of {slug: String, title: String, weight: Decimal, reason: String}, sharedConcepts: Array of {slug: String, title: String, weight: Decimal, reason: String}, whatToLearnNext: Array of {slug: String, title: String, weight: Decimal, reason: String}, otherResources: Array of {type: String, slug: String, title: String, url: String, level: String, durationHours: Decimal, authorName: String, postedAt: Timestamp, effortLevel: Integer, categoryLabel: String, channelTitle: String, publishedAt: Timestamp, thumbnailUrl: String, category: String, apiType: String, language: String, stars: Integer, lastCommitAt: Timestamp, source: String, sourceLabel: String, product: String, anchor: String, anchorLabel: String, snippet: String, eventType: String, location: String, scope: String, virtualOrInPerson: String, startDate: Date, endDate: Date, youtubeUrl: String, speakerNames: String, scheduledStart: Timestamp, sessionCode: String, activityTaskSlug: String, activityTaskType: String, overlapCount: Integer, metaText: String}, typeConfig: Array of {type: String, icon: String, singular: String, plural: String, priority: Integer, metaTemplate: String}}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "slug": {
+                "type": "string"
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "neighborhoodFull",
+          "description": "Call function neighborhoodFull in KnowledgeGraphService. Returns: {tutorial: {slug: String, title: String}, graphVersion: String, prerequisitesOf: Array of {slug: String, title: String, weight: Decimal, reason: String}, sharedConcepts: Array of {slug: String, title: String, weight: Decimal, reason: String}, whatToLearnNext: Array of {slug: String, title: String, weight: Decimal, reason: String}, otherResourcesByType: Array of {type: String, config: {type: String, icon: String, singular: String, plural: String, priority: Integer, metaTemplate: String}, items: Array of {type: String, slug: String, title: String, url: String, level: String, durationHours: Decimal, authorName: String, postedAt: Timestamp, effortLevel: Integer, categoryLabel: String, channelTitle: String, publishedAt: Timestamp, thumbnailUrl: String, category: String, apiType: String, language: String, stars: Integer, lastCommitAt: Timestamp, source: String, sourceLabel: String, product: String, anchor: String, anchorLabel: String, snippet: String, eventType: String, location: String, scope: String, virtualOrInPerson: String, startDate: Date, endDate: Date, youtubeUrl: String, speakerNames: String, scheduledStart: Timestamp, sessionCode: String, activityTaskSlug: String, activityTaskType: String, overlapCount: Integer, metaText: String}}, typeConfig: Array of {type: String, icon: String, singular: String, plural: String, priority: Integer, metaTemplate: String}}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "slug": {
+                "type": "string"
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "pathBetween",
+          "description": "Call function pathBetween in KnowledgeGraphService. Returns: Array of String",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "fromSlug": {
+                "type": "string"
+              },
+              "toSlug": {
+                "type": "string"
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "conceptsForUser",
+          "description": "Call function conceptsForUser in KnowledgeGraphService. Returns: {learned: Array of {slug: String, name: String, description: String, published: Boolean}, partial: Array of {slug: String, name: String, description: String, published: Boolean}}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "userId": {
+                "type": "string"
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "kg_prerequisites",
+          "description": "Tutorials that teach concepts this tutorial depends on. Answers \"what\nshould I learn first?\". Backed by the same graph the sidebar uses.\n\n@param tutorial_slug Tutorial slug (lowercase).\n@param depth         Max returned entries (default 10, hard max 50).\n@returns             Prerequisite tutorials ordered by strength.. Returns: Array of {slug: String, title: String, weight: Decimal, reason: String}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "tutorial_slug": {
+                "type": "string"
+              },
+              "depth": {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "kg_what_to_learn_next",
+          "description": "Tutorials that build on what this one teaches. Answers \"what should I\nlearn next?\". PageRank-blended (#916) when enabled.\n\n@param tutorial_slug Tutorial slug (lowercase).\n@param limit         Max returned entries (default 10, hard max 50).\n@returns             Next-step tutorials ordered by strength.. Returns: Array of {slug: String, title: String, weight: Decimal, reason: String}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "tutorial_slug": {
+                "type": "string"
+              },
+              "limit": {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "searchKG",
+          "description": "Anonymous KG search for the ⌘K command palette (issue #1036).\nSame seed/walk/hydrate/link-aggregate as expandSearchConcepts, MINUS\nthe on-demand-extraction enqueue. Fail-open — never returns a warning.. Returns: {concepts: Array of {slug: String, name: String, score: Double}, tutorials: Array of {slug: String, title: String, score: Double}}",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "term": {
+                "type": "string"
+              },
+              "maxConcepts": {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              },
+              "maxTutorials": {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": false,
+            "destructiveHint": true,
+            "idempotentHint": false,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "describe",
+          "description": "Describe the data model of KnowledgeGraphService service. Returns an overview of all entities and actions with descriptions. Specify 'entity' to get element details, or 'action' to get parameter details.",
+          "inputSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "entities": {
+                "description": "Specific entities to get element details for.",
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "Concepts",
+                    "TutorialConceptLinks",
+                    "ConceptEdges",
+                    "ConceptAliases",
+                    "ChangeView",
+                    "ConceptMergePreviewRuns",
+                    "PublishedConcepts",
+                    "PublishedConceptsWithAliases"
+                  ]
+                }
+              },
+              "actions": {
+                "description": "Specific actions or functions to get parameter details for.",
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "kg_shared_concepts",
+                    "kg_neighborhood",
+                    "kg_search_concepts",
+                    "kg_community",
+                    "kg_learning_path",
+                    "learningPath",
+                    "neighborhood",
+                    "neighborhoodFull",
+                    "pathBetween",
+                    "conceptsForUser",
+                    "kg_prerequisites",
+                    "kg_what_to_learn_next",
+                    "searchKG"
+                  ]
+                }
+              }
+            }
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        }
+      ],
+      "output_schema_note": "Only schemas actually advertised are recorded"
+    }
+  },
+  "limitations": [
+    "No Claude execution or model payload capture",
+    "No SAP system/Notes access",
+    "No rate-limit stress testing",
+    "No semantic/embedding/administrative tools invoked"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "sap-context": {
+      "type": "stdio",
+      "command": "python3",
+      "args": ["scripts/sap_context.py", "serve"]
+    }
+  }
+}

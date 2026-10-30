@@ -1,0 +1,8 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [{"hooks": [{"type": "command", "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/sap_context.py\" hook", "timeout": 10}]}],
+    "PreToolUse": [{"matcher": "*", "hooks": [{"type": "command", "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/sap_context.py\" hook", "timeout": 10}]}],
+    "PostToolUse": [{"matcher": "mcp__sap-context__.*", "hooks": [{"type": "command", "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/sap_context.py\" hook", "timeout": 10}]}],
+    "Stop": [{"hooks": [{"type": "command", "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/sap_context.py\" hook", "timeout": 10}]}]
+  }
+}

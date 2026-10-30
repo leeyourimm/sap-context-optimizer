@@ -1,0 +1,4 @@
+__pycache__/
+.sap-context/
+sap-context.local.json
+*.pyc
