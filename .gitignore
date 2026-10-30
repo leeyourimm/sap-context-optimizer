@@ -4,3 +4,6 @@ sap-context.local.json
 *.pyc
 local-abap/
 private-abap/
+*.stream.jsonl
+*.stderr.txt
+*.approval.local.json

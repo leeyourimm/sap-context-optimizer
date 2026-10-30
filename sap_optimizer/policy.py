@@ -57,6 +57,12 @@ def load_policy(root):
         if not all(isinstance(doc.get(k), str) and doc[k].strip()
                    for k in ("title", "product", "release")):
             raise PolicyError("Document title/product/release required")
+        if doc.get("access", "public") not in ("public", "login_required"):
+            raise PolicyError("Document access must be public or login_required")
+        markers = doc.get("required_markers", [])
+        if (not isinstance(markers, list) or len(markers) > 10 or
+                any(not isinstance(m, str) or not m.strip() or len(m) > 300 for m in markers)):
+            raise PolicyError("Invalid reviewed body markers")
     return value
 
 

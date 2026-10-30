@@ -1,0 +1,48 @@
+{
+  "calls": [
+    {
+      "id": "abap-754-call-function",
+      "source_url": "https://help.sap.com/doc/abapdocu_754_index_htm/7.54/en-US/abapcall_function.htm",
+      "body_retrieved": true,
+      "applicability_verified": false,
+      "declared_scope_comparison": "declared_match",
+      "observed_body_chars": 2436,
+      "title": "CALL FUNCTION - ABAP Keyword Documentation",
+      "observed_title": "CALL FUNCTION - ABAP Keyword Documentation",
+      "declared_product": "ABAP",
+      "declared_release": "7.54",
+      "http_status": 200,
+      "access": "public_body_retrieved",
+      "retrieved_at_utc": "2026-10-30T12:18:28.037611+00:00",
+      "response_sha256": "cb27428bd8dae2525b52925ab23e881d8ef2f904ecbf1b998c9affddae2be361",
+      "body_sha256": "bfced92ee6d28807a00891329d610173d6ad3a37e52d74e2a7e37a62add3361e",
+      "body_validation": "reviewed_title_and_markers"
+    },
+    {
+      "id": "abap-754-select",
+      "source_url": "https://help.sap.com/doc/abapdocu_754_index_htm/7.54/en-US/abapselect.htm",
+      "body_retrieved": true,
+      "applicability_verified": false,
+      "declared_scope_comparison": "declared_match",
+      "observed_body_chars": 7549,
+      "title": "SELECT - ABAP Keyword Documentation",
+      "observed_title": "SELECT - ABAP Keyword Documentation",
+      "declared_product": "ABAP",
+      "declared_release": "7.54",
+      "http_status": 200,
+      "access": "public_body_retrieved",
+      "retrieved_at_utc": "2026-10-30T12:18:28.418985+00:00",
+      "response_sha256": "847feccdc5dbdcff24c7e3f70a4fa0c3edcdc3377333d80e7068319c9a8b0e3c",
+      "body_sha256": "341217e052f8677c4030aad72744cdea4f637ee22a076801a8f9b9664f4f66fd",
+      "body_validation": "reviewed_title_and_markers"
+    }
+  ],
+  "model_calls": 0,
+  "actual_cost_usd": null,
+  "limitations": [
+    "Two ABAP 7.54 keyword pages only",
+    "No FI/CO/MM/SD product-error coverage certified",
+    "No SAP Note/KBA body access",
+    "No general Help Portal search"
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "scope": "Public evidence/retrieval tasks; declared release is a test condition, not sample compatibility certification",
+  "tasks": [
+    {
+      "id": "tutorial",
+      "prompt": "SAP RAP validation 공식 튜토리얼 본문에 근거해 validation과 action의 차이를 설명해 주세요.",
+      "product": "SAP S/4HANA",
+      "release": "2022",
+      "deployment": "on-premise",
+      "abap_language_version": "Standard ABAP",
+      "required_ranges": []
+    },
+    {
+      "id": "fi",
+      "prompt": "FI 회계전표 전기 실패입니다. 오류 코드와 회사 설정은 제공하지 않았습니다. 확정 가능한 내용과 추가 확인 정보를 구분하세요.",
+      "product": "SAP S/4HANA",
+      "release": "2022",
+      "deployment": "on-premise",
+      "abap_language_version": "Standard ABAP",
+      "required_ranges": []
+    },
+    {
+      "id": "co",
+      "prompt": "CO 정산 오류입니다. 오류 코드가 없습니다. 이 환경에 적용되는 공식 제품 근거와 Customizing 확인 사항을 구분하세요.",
+      "product": "SAP S/4HANA",
+      "release": "2022",
+      "deployment": "on-premise",
+      "abap_language_version": "Standard ABAP",
+      "required_ranges": []
+    },
+    {
+      "id": "mm",
+      "prompt": "MM 입고 후 송장 검증에서 차이가 발생합니다. 오류 코드는 없습니다. 원인과 해결을 단정할 수 있나요?",
+      "product": "SAP S/4HANA",
+      "release": "2022",
+      "deployment": "on-premise",
+      "abap_language_version": "Standard ABAP",
+      "required_ranges": []
+    },
+    {
+      "id": "sd",
+      "prompt": "SD 청구문서가 회계로 전기되지 않습니다. 오류 코드 없이 원인을 확정하지 말고 공식 근거와 필요한 확인 사항을 설명하세요.",
+      "product": "SAP S/4HANA",
+      "release": "2022",
+      "deployment": "on-premise",
+      "abap_language_version": "Standard ABAP",
+      "required_ranges": []
+    },
+    {
+      "id": "keyword-document",
+      "prompt": "ABAP 7.54 CALL FUNCTION의 sy-subrc 동작을 공식 제품 문서 본문으로 확인하고 update task와 일반 호출을 구별하세요.",
+      "product": "ABAP",
+      "release": "7.54",
+      "deployment": "on-premise",
+      "abap_language_version": "Standard ABAP",
+      "required_ranges": []
+    },
+    {
+      "id": "function-module",
+      "prompt": "Z_ABAPGIT_UNIT_TEST 실제 선언과 구현을 원본 줄 번호와 함께 설명하세요. RAP 관계 누락 및 외부 객체는 명시하세요. 샘플 코드를 실행했다고 주장하지 마세요.",
+      "product": "SAP S/4HANA",
+      "release": "2022",
+      "deployment": "on-premise",
+      "abap_language_version": "Standard ABAP",
+      "required_ranges": [
+        {
+          "path": "fugr/src/zabapgit_unit_test.fugr.z_abapgit_unit_test.abap",
+          "start": 1,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "rap-action",
+      "prompt": "acceptTravel 실제 선언과 구현을 원본 줄 번호와 함께 설명하세요. RAP 관계 누락 및 외부 객체는 명시하세요. 샘플 코드를 실행했다고 주장하지 마세요.",
+      "product": "SAP S/4HANA",
+      "release": "2022",
+      "deployment": "on-premise",
+      "abap_language_version": "Standard ABAP",
+      "required_ranges": [
+        {
+          "path": "rap100/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap",
+          "start": 29,
+          "end": 30
+        },
+        {
+          "path": "rap100/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap",
+          "start": 376,
+          "end": 396
+        },
+        {
+          "path": "rap100/src/zrap100_r_traveltp_sol.bdef.asbdef",
+          "start": 41,
+          "end": 41
+        }
+      ]
+    },
+    {
+      "id": "rap-validation",
+      "prompt": "validateDates 실제 선언과 구현을 원본 줄 번호와 함께 설명하세요. RAP 관계 누락 및 외부 객체는 명시하세요. 샘플 코드를 실행했다고 주장하지 마세요.",
+      "product": "SAP S/4HANA",
+      "release": "2022",
+      "deployment": "on-premise",
+      "abap_language_version": "Standard ABAP",
+      "required_ranges": [
+        {
+          "path": "rap100/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap",
+          "start": 23,
+          "end": 24
+        },
+        {
+          "path": "rap100/src/zrap100_bp_traveltp_sol.clas.locals_imp.abap",
+          "start": 197,
+          "end": 257
+        },
+        {
+          "path": "rap100/src/zrap100_r_traveltp_sol.bdef.asbdef",
+          "start": 36,
+          "end": 36
+        }
+      ]
+    }
+  ]
+}

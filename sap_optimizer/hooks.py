@@ -46,13 +46,20 @@ def hook(root, event):
                 "Never invent error codes, objects or SAP Note contents. Customizing-dependent fixes are conditional. "
                 "External access: " + str(p["external_access"]) + "; declared scope (not independently verified): " + json.dumps(scope, ensure_ascii=False)}}
     if name == "PostToolUse":
-        if event.get("tool_name") in ("mcp__sap-context__sap_repo_search", "mcp__sap-context__sap_repo_read"):
+        if event.get("tool_name") in ("mcp__sap-context__sap_repo_search", "mcp__sap-context__sap_repo_read",
+                                      "mcp__sap-context__sap_repo_keyword", "mcp__sap-context__sap_repo_search_compact"):
             result = event.get("tool_response", {})
             if isinstance(result, dict) and not result.get("isError"):
                 data = result.get("structuredContent")
                 if data is None:
                     try:
                         data = json.loads(result["content"][0]["text"])
+                    except (KeyError, IndexError, TypeError, ValueError):
+                        data = {}
+                if isinstance(data, dict) and data.get("format") == "sap-context-lossless/1":
+                    from .compact import expand
+                    try:
+                        data = expand(data)
                     except (KeyError, IndexError, TypeError, ValueError):
                         data = {}
                 if isinstance(data, dict) and (data.get("source") or any(s.get("source") for s in data.get("results", []))):
