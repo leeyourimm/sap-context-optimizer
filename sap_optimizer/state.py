@@ -20,6 +20,7 @@ class State:
         with self.connect() as db:
             db.execute("CREATE TABLE IF NOT EXISTS metrics (at REAL, kind TEXT, data TEXT)")
             db.execute("CREATE TABLE IF NOT EXISTS turns (session TEXT PRIMARY KEY, sap INTEGER, body INTEGER, warned INTEGER)")
+            db.execute("CREATE TABLE IF NOT EXISTS repository_turns (session TEXT PRIMARY KEY)")
         os.chmod(self.path, 0o600)
 
     def connect(self):
@@ -35,6 +36,7 @@ class State:
             previous = db.execute("SELECT sap FROM turns WHERE session=?", (session,)).fetchone()
             sap = bool(sap or (previous and previous[0]))
             db.execute("INSERT OR REPLACE INTO turns VALUES (?,?,0,0)", (session, int(sap)))
+            db.execute("DELETE FROM repository_turns WHERE session=?", (session,))
         return sap
 
     def mark_body(self, session):
@@ -49,6 +51,14 @@ class State:
     def warn(self, session):
         with self.connect() as db:
             db.execute("UPDATE turns SET warned=1 WHERE session=?", (session,))
+
+    def mark_repository(self, session):
+        with self.connect() as db:
+            db.execute("INSERT OR REPLACE INTO repository_turns VALUES (?)", (session,))
+
+    def repository_seen(self, session):
+        with self.connect() as db:
+            return db.execute("SELECT 1 FROM repository_turns WHERE session=?", (session,)).fetchone() is not None
 
     def summary(self):
         with self.connect() as db:

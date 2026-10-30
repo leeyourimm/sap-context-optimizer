@@ -8,6 +8,8 @@ from .hooks import run_hook
 from .policy import PolicyError, load_policy, require_external
 from .probe import probe
 from .transport import ProtocolError
+from .benchmark import compare
+from .repository import Repository
 
 
 def usage_summary(path):
@@ -31,7 +33,7 @@ def usage_summary(path):
 
 
 def main(default_root):
-    parser = argparse.ArgumentParser(description="SAP Context Optimizer M0/B0 (Python 3.12+, stdlib only)")
+    parser = argparse.ArgumentParser(description="SAP Context Optimizer M0/B0/B1 (Python 3.12+, stdlib only)")
     parser.add_argument("--root", default=str(default_root))
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("serve")
@@ -41,6 +43,23 @@ def main(default_root):
     p.add_argument("--output", required=True)
     p = sub.add_parser("usage")
     p.add_argument("file")
+    sub.add_parser("repo-status", help="Read-only local snapshot status; no network")
+    p = sub.add_parser("repo-search", help="Local automatic exact/BM25/reference search")
+    p.add_argument("query")
+    p.add_argument("--mode", choices=["auto", "exact", "keyword"], default="auto")
+    p.add_argument("--no-references", action="store_true")
+    p = sub.add_parser("repo-read", help="Read original local range/full file")
+    p.add_argument("path")
+    p.add_argument("--start", type=int, default=1)
+    p.add_argument("--end", type=int)
+    p.add_argument("--sha256")
+    p.add_argument("--snapshot")
+    p = sub.add_parser("repo-references")
+    p.add_argument("object_id")
+    p = sub.add_parser("repo-compare", help="Local A/B/C source and payload comparison")
+    p.add_argument("query")
+    p.add_argument("--required-object", action="append", default=[])
+    p.add_argument("--required-symbol", action="append", default=[], help="JSON object with object_id/symbol/kind")
     args = parser.parse_args()
     root = Path(args.root).resolve()
     try:
@@ -61,6 +80,21 @@ def main(default_root):
             return 1 if any("error" in v for v in report["services"].values()) else 0
         elif args.command == "usage":
             print(json.dumps(usage_summary(args.file), ensure_ascii=False, indent=2))
+        elif args.command.startswith("repo-"):
+            # CLI output stays local; no Claude integration or implicit model approval.
+            repo = Repository(root, load_policy(root))
+            if args.command == "repo-status":
+                result = repo.status()
+            elif args.command == "repo-search":
+                result = repo.search(args.query, args.mode, not args.no_references)
+            elif args.command == "repo-read":
+                result = repo.read(args.path, args.start, args.end, args.sha256, args.snapshot)
+            elif args.command == "repo-references":
+                result = repo.references(args.object_id)
+            else:
+                result = compare(repo, args.query, args.required_object,
+                                 [json.loads(s) for s in args.required_symbol])
+            print(json.dumps(result, ensure_ascii=False, indent=2))
     except (PolicyError, ProtocolError, OSError, ValueError) as exc:
         print(type(exc).__name__ + ": " + str(exc), file=sys.stderr)
         return 1

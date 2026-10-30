@@ -1,0 +1,3 @@
+INTERFACE zif_b1_posting PUBLIC.
+  METHODS post.
+ENDINTERFACE.

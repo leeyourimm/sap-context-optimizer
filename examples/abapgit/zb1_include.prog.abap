@@ -1,0 +1,1 @@
+DATA quantity TYPE i.

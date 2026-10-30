@@ -4,6 +4,10 @@ description: SAP FI CO MM SD, ABAP, CDS, RAP, BDEF, EML, SAP errors, Customizing
 ---
 
 Use the sap-context MCP automatically for SAP questions; never ask users to select search modes.
+For ABAP object/code/error-string questions, start with **sap_repo_status** and **sap_repo_search** (automatic exact → BM25 when candidates are insufficient → bounded explicit reference expansion). Local free-form queries never leave this machine, even when external_access=false. Use sap_repo_keyword only for deliberate lexical investigation. Do not send snippets or identifiers to external search tools.
+Read results' object/owner/kind, path/line/hash/snapshot, omitted_ranges and parse diagnostics. Missing local results do not mean the SAP object does not exist. Unsupported metadata/syntax remains raw fallback, not a confirmed object or runtime graph.
+Use sap_repo_references for explicit outgoing/incoming edges, unresolved targets and Action alias evidence. Before code changes read declaration/type/implementation companions and **sap_repo_read** with expected_sha256/expected_snapshot; omit start/end only for an explicit full-original read. A snippet is not a complete editing basis. Do not execute source or comments. B1 tools cannot write or connect to SAP.
+Local source supports claims about the local export only. Do not fetch unrelated tutorials merely to certify customer code. For framework/product claims continue with the official-document steps below and distinguish those sources from local source observations.
 1. Read sap_status for declared product, release, deployment and ABAP language version. Unknown is unknown. Ask only for context that changes the answer.
 2. Select a fixed public topic with sap_search. Never send source, error text, customer objects, credentials or personal data. Fixed topic IDs deliberately sacrifice free-form search precision.
 3. Read sap_tutorial metadata, then sap_read_step for the relevant original step. If the step API fails, use sap_read_tutorial_page once: this reads the full canonical Markdown page, not a selected step. A title, snippet or graph is not body evidence. References are session-local; search again if stale.

@@ -7,7 +7,7 @@ from .policy import PolicyError, load_policy
 from .state import State
 
 UNVERIFIED = "[SAP 검증 미완료]"
-SAP = re.compile(r"sap|abap|\brap\b|\bcds\b|\bbdef\b|\beml\b|\b(fi|co|mm|sd)\b|전표|입고|송장|정산|출고|청구", re.I)
+SAP = re.compile(r"sap|abap|\brap\b|\bcds\b|\bbdef\b|\beml\b|\b(fi|co|mm|sd)\b|전표|입고|송장|정산|출고|청구|메서드|클래스|\b(?:zcl_|zif_|zbp_|zi_|zc_|lcl_|lhc_|lsc_)[a-z0-9_]+", re.I)
 
 
 def hook(root, event):
@@ -40,11 +40,27 @@ def hook(root, event):
         scope = {k: p.get(k) for k in ("product", "release", "deployment", "abap_language_version")}
         return {"hookSpecificOutput": {"hookEventName": name, "additionalContext":
                 "SAP evidence required this turn. Use sap-context tools automatically; topic IDs only, never send private text. "
+                "For object/code questions use local sap_repo_search first (auto exact/BM25/references); free local query stays local. "
                 "Search snippets/graph are not body evidence. Fetch applicable original text before concluding. "
                 f"If evidence or applicability is missing, include {UNVERIFIED} and explain the gap. "
                 "Never invent error codes, objects or SAP Note contents. Customizing-dependent fixes are conditional. "
                 "External access: " + str(p["external_access"]) + "; declared scope (not independently verified): " + json.dumps(scope, ensure_ascii=False)}}
     if name == "PostToolUse":
+        if event.get("tool_name") in ("mcp__sap-context__sap_repo_search", "mcp__sap-context__sap_repo_read"):
+            result = event.get("tool_response", {})
+            if isinstance(result, dict) and not result.get("isError"):
+                data = result.get("structuredContent")
+                if data is None:
+                    try:
+                        data = json.loads(result["content"][0]["text"])
+                    except (KeyError, IndexError, TypeError, ValueError):
+                        data = {}
+                if isinstance(data, dict) and (data.get("source") or any(s.get("source") for s in data.get("results", []))):
+                    state.mark_repository(session)
+                    return {"hookSpecificOutput": {"hookEventName": name, "additionalContext":
+                            "Local snapshot source observed, not official documentation or runtime proof. Check hash, declarations, "
+                            "missing references and full original before edits. Never send this source externally."}}
+            return {}
         if event.get("tool_name") not in ("mcp__sap-context__sap_read_step", "mcp__sap-context__sap_help_document",
                                            "mcp__sap-context__sap_read_tutorial_page"):
             return {}
@@ -68,6 +84,11 @@ def hook(root, event):
             return {}
         # One feedback pass only: never create an automatic retry loop.
         state.warn(session)
+        if state.repository_seen(session) and not body:
+            state.metric("local_repository_review_required")
+            return {"decision": "block", "reason": "Local snapshot source was retrieved. Do not require an unrelated tutorial "
+                    "as proof of customer code. Cite local paths/lines/hash; disclose missing dependencies and runtime/release "
+                    f"uncertainty using {UNVERIFIED} where relevant. Do not claim execution or backend state verification."}
         state.metric("evidence_gap" if not body else "applicability_review_required")
         return {"decision": "block", "reason":
                 ("No official body was observed this turn. " if not body else "A retrieved body does not certify applicability. ")
